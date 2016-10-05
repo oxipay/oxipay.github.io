@@ -9,6 +9,51 @@
             "location": "/#oxipay-documentation",
             "text": "test",
             "title": "Oxipay Documentation"
+        },
+        {
+            "location": "/platforms/shopify/",
+            "text": "",
+            "title": "Shopify"
+        },
+        {
+            "location": "/platforms/woocommerce/",
+            "text": "",
+            "title": "WooCommerce"
+        },
+        {
+            "location": "/platforms/magento/v1x/",
+            "text": "",
+            "title": "1x"
+        },
+        {
+            "location": "/platforms/magento/v2x/",
+            "text": "",
+            "title": "2x"
+        },
+        {
+            "location": "/platforms/magento/onestep/",
+            "text": "",
+            "title": "OneStep"
+        },
+        {
+            "location": "/custom-integration/how-it-works/",
+            "text": "",
+            "title": "How it works"
+        },
+        {
+            "location": "/custom-integration/gateway-signing-mechanism/",
+            "text": "",
+            "title": "Gateway Signing Mechanism"
+        },
+        {
+            "location": "/custom-integration/api-reference/request-values/",
+            "text": "",
+            "title": "Request values"
+        },
+        {
+            "location": "/custom-integration/api-reference/response-values/",
+            "text": "",
+            "title": "Response values"
         }
     ]
 }
