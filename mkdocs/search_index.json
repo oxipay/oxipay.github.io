@@ -1,0 +1,14 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Oxipay Documentation\n\n\ntest",
+            "title": "Home"
+        },
+        {
+            "location": "/#oxipay-documentation",
+            "text": "test",
+            "title": "Oxipay Documentation"
+        }
+    ]
+}
