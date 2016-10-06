@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-10-05</lastmod>
+     <lastmod>2016-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>None/platforms/shopify/</loc>
-     <lastmod>2016-10-05</lastmod>
+     <lastmod>2016-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/platforms/woocommerce/</loc>
-     <lastmod>2016-10-05</lastmod>
+     <lastmod>2016-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,19 +35,29 @@
         
     <url>
      <loc>None/custom-integration/how-it-works/</loc>
-     <lastmod>2016-10-05</lastmod>
+     <lastmod>2016-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/custom-integration/gateway-signing-mechanism/</loc>
-     <lastmod>2016-10-05</lastmod>
+     <lastmod>2016-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None</loc>
      <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/guidelines/banner-adverts/</loc>
+     <lastmod>2016-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

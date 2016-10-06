@@ -54,6 +54,21 @@
             "location": "/custom-integration/api-reference/response-values/",
             "text": "",
             "title": "Response values"
+        },
+        {
+            "location": "/guidelines/banner-adverts/",
+            "text": "Banner Adverts\n\n\nModal dialog windows\n\n\nBlah blah blah\n\n\nvar x = 29",
+            "title": "Banner Adverts"
+        },
+        {
+            "location": "/guidelines/banner-adverts/#banner-adverts",
+            "text": "",
+            "title": "Banner Adverts"
+        },
+        {
+            "location": "/guidelines/banner-adverts/#modal-dialog-windows",
+            "text": "Blah blah blah  var x = 29",
+            "title": "Modal dialog windows"
         }
     ]
 }
