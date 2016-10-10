@@ -1,341 +1,363 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <title>Shopify - Oxipay Documentation</title>
-  
-
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-
-  
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
-
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Shopify";
-    var mkdocs_page_input_path = "platforms\shopify.md";
-    var mkdocs_page_url = "/platforms/shopify/";
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
-  <script src="../../js/theme.js"></script> 
-
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Oxipay Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../..">Home</a>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Platforms</span></li>
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Shopify - Oxipay Documentation</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Oxipay Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Platforms <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li class="active">
+    <a href="./">Shopify</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../woocommerce/">WooCommerce</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Magento</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../magento/v1x/">1x</a>
+</li>
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Shopify</a>
+<li >
+    <a href="../magento/v2x/">2x</a>
+</li>
+
         
-            <ul>
             
-                <li class="toctree-l3"><a href="#setting-up-oxipay-on-your-shopify-store">Setting up OxiPay on your Shopify Store</a></li>
-                
+<li >
+    <a href="../magento/onestep/">OneStep</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
             
-                <li class="toctree-l3"><a href="#integrating-oxipay">Integrating OxiPay</a></li>
-                
-                    <li><a class="toctree-l4" href="#oxipay-updates">OxiPay Updates</a></li>
-                
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Custom Integration <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../custom-integration/how-it-works/">How it works</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../custom-integration/gateway-signing-mechanism/">Gateway Signing Mechanism</a>
+</li>
+
+                    
+                        
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">API reference</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../custom-integration/api-reference/request-values/">Request values</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../custom-integration/api-reference/response-values/">Response values</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Marketing and Advertising <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../guidelines/banner-adverts/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../guidelines/installing-simple/">Installing the Simple Way</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../guidelines/installing-complex/">Installing the Complex Way</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../guidelines/modal-page/">Javascript Modal Page</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../guidelines/banners/">Banners and Tags</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
             
             </ul>
-        
-    </li>
 
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../woocommerce/">WooCommerce</a>
-        
-    </li>
-
-        
-            
-    <ul class="subnav">
-    <li><span>Magento</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../magento/v1x/">1x</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../magento/v2x/">2x</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../magento/onestep/">OneStep</a>
-        
-    </li>
-
-        
-    </ul>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Custom Integration</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../custom-integration/how-it-works/">How it works</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../custom-integration/gateway-signing-mechanism/">Gateway Signing Mechanism</a>
-        
-    </li>
-
-        
-            
-    <ul class="subnav">
-    <li><span>API reference</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../custom-integration/api-reference/request-values/">Request values</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../custom-integration/api-reference/response-values/">Response values</a>
-        
-    </li>
-
-        
-    </ul>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Marketing and Advertising Guidelines</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../guidelines/banner-adverts/">Introduction</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../guidelines/installing-simple/">Installing the Simple Way</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../guidelines/installing-complex/">Installing the Complex Way</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../guidelines/modal-page/">Javascript Modal Page</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../guidelines/banners/">Banners and Tags</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Oxipay Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Platforms &raquo;</li>
-        
-      
-    
-    <li>Shopify</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../..">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../woocommerce/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <h1 id="setting-up-oxipay-on-your-shopify-store">Setting up OxiPay on your Shopify Store</h1>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#setting-up-oxipay-on-your-shopify-store">Setting up OxiPay on your Shopify Store</a></li>
+        
+    
+        <li class="main "><a href="#integrating-oxipay">Integrating OxiPay</a></li>
+        
+            <li><a href="#oxipay-updates">OxiPay Updates</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="setting-up-oxipay-on-your-shopify-store">Setting up OxiPay on your Shopify Store</h1>
 <p>This document outlines the steps needed to integrate the OxiPay Payment Gateway into your Shopify store. The OxiPay Payment Gateway enables customers of your store to purchase items using their credit cards on an interest free payment plan.</p>
 <p>Please note that Oxipay makes use of Shopify’s API architecture to enable the processing payments via the OxiPay Payment Gateway. This API architecture significantly simplifies the configuration process and eliminates the need to install additional plugins or third party software packages.</p>
-<blockquote>
-<p><strong>NOTE</strong> Beware of sites or email messages that prompt you to install a plugin or a software package to enable OxiPay as a payment gateway on your Shopify site. OxiPay can be configured without the need for plugins or additional software.</p>
-</blockquote>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    Beware of sites or email messages that prompt you to install a plugin or a software package to enable OxiPay as a payment gateway on your Shopify site. OxiPay can be configured without the need for plugins or additional software.
+  </div>
+</div>
+
 <h1 id="integrating-oxipay">Integrating OxiPay</h1>
 <p>1 – First log into the admin area of your Shopify store, then click on the Settings item at the bottom left.</p>
 <p>2 – From the Settings side-bar menu that appears, click on the Payments item. This will open up the Payments options page where you can specify the various payment gateways you would like to enable during checkout.</p>
-<blockquote>
-<p><strong>NOTE</strong> Oxipay has been configured as an alternate payment gateway that accepts credit cards. This means that you can continue to use Shopify Payments or PayPal in conjuction with Oxipay. In fact, You can also have other alternative payment gateways such as BitPay running alongside Oxipay.</p>
-</blockquote>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    Oxipay has been configured as an alternate payment gateway that accepts credit cards. This means that you can continue to use Shopify Payments or PayPal in conjuction with Oxipay. In fact, You can also have other alternative payment gateways such as BitPay running alongside Oxipay.
+  </div>
+</div>
+
 <p>6 – From within the Alternative Payments section; open up the ‘Select additional payment method’ drop-down menu and select OxiPay.</p>
-<blockquote>
-<p><strong>NOTE</strong> The OxiPay option might or might not be visible. If you cannot see Oxipay, proceed to the next step (Step 7). Otherwise, if you can see Oxipay, you can skip to Step 10.</p>
-</blockquote>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    The OxiPay option might or might not be visible. If you cannot see Oxipay, proceed to the next step (Step 7). Otherwise, if you can see Oxipay, you can skip to Step 10.
+  </div>
+</div>
+
 <p>7 – If Oxipay is not visible as an option from the drop-down menu, navigate to the following URL to manually add Oxipay as a payment gateway option:</p>
 <p>https://www.shopify.com/login?redirect=authorize_gateway%2F1031227</p>
-<blockquote>
-<p><strong>IMPORTANT</strong> Copy and paste the above URL in a new tab in the current browser window that you are using. Clicking on the link might open it up in a different browser depending on how you setup your default computer browsers.</p>
-</blockquote>
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Important</h3>
+  </div>
+  <div class="panel-body">
+    Copy and paste the above URL in a new tab in the current browser window that you are using. Clicking on the link might open it up in a different browser depending on how you setup your default computer browsers.
+  </div>
+</div>
+
 <p>8 – You will be prompted to type in your store address as well as email and password combination.</p>
 <p>8 – This will present a screen prompting to add Oxipay as a payment gateway on your store. Click on Add payment gateway.</p>
 <p>9 – If successful, you will be presented with a pop-up at the bottom of your screen indicating that Oxipay was successfully added to the Alternative payments section.</p>
 <p>10 – Scroll to the Alternative payments section, open up the Select additional payment method drop-down menu and then select Oxipay.</p>
 <p>11 – This will open up an area where you can type in your Merchant Number and Encryption Key as provided to you by Certegy, you can also specify the credit cards that you would like to accept on your Shopify store. Then click on Activate.</p>
-<p>NOTE Checking the Show checkbox makes your Encryption Key visible as you type it in; otherwise it is hidden and is replaced with a set of dots instead </p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    Checking the Show checkbox makes your Encryption Key visible as you type it in; otherwise it is hidden and is replaced with a set of dots instead 
+  </div>
+</div>
+
 <p>9 – This will open up the Oxipay gateway settings area where you can type in your Merchant Number and Encryption Key as supplied to you by Certegy.</p>
 <p>Important You will not be able to process payments via Oxipay until you input your Merchant Number and Encryption Key. You will also need to update your Encryption Key if it is recycled via the Merchant Portal.</p>
 <p>8 – Below is a description of some of the other settings that might appear on the Oxipay gateway settings area.</p>
-<blockquote>
-<p><strong>IMPORTANT</strong> Some of these settings might not be visible to you, such as Test Mode for instance.</p>
-</blockquote>
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Important</h3>
+  </div>
+  <div class="panel-body">
+    Some of these settings might not be visible to you, such as Test Mode for instance.
+  </div>
+</div>
+
 <p><strong>Test Mode</strong>: Ticking this option will run Oxipay in test mode, normally done when troubleshooting or diagnosing issues. In test mode, all Oxipay transactions are simulated and cards are not charged.</p>
 <p><strong>Merchant Number</strong>: This is the unique number that identifies you as a merchant to the OxiPay Payment Gateway.</p>
 <p><strong>Encryption Key</strong>: This is used to authenticate you as a merchant and to ensure that no one can tamper with the information sent as part of purchase orders.</p>
 <p><strong>Cards Accepted</strong>: This is where you can specify that types of Credit Cards you want to accept when customers checkout using OxiPay.</p>
-<blockquote>
-<p><strong>NOTE</strong> at the time of writing this document, OxiPay has been configured to only accepts Visa and/or MasterCard credit cards. Please contact us to discuss your options in processing OxiPay transaction using other credit card types.</p>
-</blockquote>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    At the time of writing this document, OxiPay has been configured to only accepts Visa and/or MasterCard credit cards. Please contact us to discuss your options in processing OxiPay transaction using other credit card types.
+  </div>
+</div>
+
 <h2 id="oxipay-updates">OxiPay Updates</h2>
 <p>Updates to OxiPay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our OxiPay Payment Gateway or to accommodate new or deprecated functionality within the Shopify API.</p>
 <p>If an update is released to OxiPay – such as additional accepted credit card types for instance - and you notice that these changes haven’t been reflected on your Shopify store, we recommend that you de-activate and then re-active OxiPay again. If the issue persists, please contact us to resolve it as soon as possible.</p>
-<blockquote>
-<p><strong>NOTE</strong> De-activating and then re-activating the plugin ensures that your Shopify site detects new configuration changes in the OxiPay Payment Gateway straight away.</p>
-</blockquote>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../woocommerce/" class="btn btn-neutral float-right" title="WooCommerce">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
   </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
+  <div class="panel-body">
+    De-activating and then re-activating the plugin ensures that your Shopify site detects new configuration changes in the OxiPay Payment Gateway straight away.
+  </div>
+</div></div>
         </div>
-      </div>
 
-    </section>
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
 
-  </div>
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../woocommerce/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-
-</body>
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
