@@ -219,18 +219,23 @@
         
             <li><a href="#option-2">Option 2</a></li>
         
-            <li><a href="#css">CSS</a></li>
-        
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
 <h1 id="the-simple-way-some-htmlcss-knowledge">The Simple Way (Some HTML/CSS Knowledge)</h1>
+<p><div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    Please note that this documentation is still a work in process
+  </div>
+</div></p>
 <p>This method decribes the Simple Way to add the banners that are found here. <br> 
 For Merchants who are not experienced web developers or do not have access to one, we have created a simple and easy process so that they can display oxipay branding on their websites.
-Below we have provided a series of premade images which have multiple ways that you can display them on your websites.</p>
-<p>There are two options we suggest using in the Simple Way.</p>
+We have provided a series of premade images which have multiple ways that you can display them on your websites.</p>
 <h3 id="option-1">Option 1</h3>
 <p>The easiet way would be to download the image and upload it to the website using the same methods that you uploaded standard content to your site. For example through your text editor in your content management system like Wordpress.
 <br><img alt="01-add-media.png" src="../../img/marketing-and-guidlines/01-add-media.png" />
@@ -240,22 +245,23 @@ Below we have provided a series of premade images which have multiple ways that 
 <br><img alt="03-add-link.png" src="../../img/marketing-and-guidlines/03-add-link.png" />
 <br>Step 3: Set it to link to <a target="_blank" href="https://oxipay.com.au/works">https://oxipay.com.au/works</a> and set it to open in a new window.</p>
 <h3 id="option-2">Option 2</h3>
-<p>Alternativly for each image we have provided a small snippit of html that you can use. This will automatically load the images from our servers and display it on your site. It will also include a link to our how it works page so your customers can better undertand how Oxipay will benifit.
+<p>Alternativly we have provided a small snippit of html that you can use which is found under each image in the for banners section. This will automatically load the images from our servers and display it on your site. It will also include a link to our how it works page so your customers can better undertand how Oxipay will benifit.
 The snippit will look something like the following.</p>
-<pre><code>&lt;a id=&quot;oxipay-banner-01&quot; target=&quot;_blank&quot; href=&quot;https://oxipay.com.au/works&quot;&gt; &lt;img alt=&quot;Oxipay&quot; src=&quot;path/to/image&quot; /&gt; &lt;/a&gt;
+<pre><code>/** Example HTML **/
+&lt;a id=&quot;oxipay-banner-01&quot; target=&quot;_blank&quot; href=&quot;https://oxipay.com.au/works&quot;&gt; &lt;img alt=&quot;Oxipay&quot; src=&quot;https://images.oxipay.com.au/content/image/oxipay-banner-01&quot; /&gt; &lt;/a&gt;
 </code></pre>
 
-<h3 id="css">CSS</h3>
+<h4 id="css">CSS</h4>
 <p>There is no CSS styling required if you choose the Simple Way.
 However sometime the defualt stylying might not look that great. We recommend that you do apply some basic styling for the best presentation possible.</p>
 <pre><code>**** Example CSS ****
 
-#oxipay-banner-1 {
+#oxipay-banner-01 {
     display:block;
     overflow:hidden;
     width:100%;
 }
-#oxipay-banner-1 img {
+#oxipay-banner-01 img {
     display:block;
     width:100%;
 }
