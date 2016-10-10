@@ -147,7 +147,7 @@
             
             
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Marketing and Advertising <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Marketing & Advertising <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
@@ -239,7 +239,9 @@
 
 <h1 id="integrating-oxipay">Integrating OxiPay</h1>
 <p>1 – First log into the admin area of your Shopify store, then click on the Settings item at the bottom left.</p>
+<p><img alt="1.png" src="../../img/platforms/shopify/1.png" /></p>
 <p>2 – From the Settings side-bar menu that appears, click on the Payments item. This will open up the Payments options page where you can specify the various payment gateways you would like to enable during checkout.</p>
+<p><img alt="2.png" src="../../img/platforms/shopify/2.png" /></p>
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
@@ -249,7 +251,7 @@
   </div>
 </div>
 
-<p>6 – From within the Alternative Payments section; open up the ‘Select additional payment method’ drop-down menu and select OxiPay.</p>
+<p>3 – From within the Alternative Payments section; open up the ‘Select additional payment method’ drop-down menu and select OxiPay.</p>
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
@@ -259,22 +261,18 @@
   </div>
 </div>
 
-<p>7 – If Oxipay is not visible as an option from the drop-down menu, navigate to the following URL to manually add Oxipay as a payment gateway option:</p>
+<p>4 – If Oxipay is not visible as an option from the drop-down menu, navigate to the following URL to manually add Oxipay as a payment gateway option:</p>
 <p>https://www.shopify.com/login?redirect=authorize_gateway%2F1031227</p>
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title">Important</h3>
-  </div>
-  <div class="panel-body">
-    Copy and paste the above URL in a new tab in the current browser window that you are using. Clicking on the link might open it up in a different browser depending on how you setup your default computer browsers.
-  </div>
-</div>
-
-<p>8 – You will be prompted to type in your store address as well as email and password combination.</p>
-<p>8 – This will present a screen prompting to add Oxipay as a payment gateway on your store. Click on Add payment gateway.</p>
-<p>9 – If successful, you will be presented with a pop-up at the bottom of your screen indicating that Oxipay was successfully added to the Alternative payments section.</p>
-<p>10 – Scroll to the Alternative payments section, open up the Select additional payment method drop-down menu and then select Oxipay.</p>
-<p>11 – This will open up an area where you can type in your Merchant Number and Encryption Key as provided to you by Certegy, you can also specify the credit cards that you would like to accept on your Shopify store. Then click on Activate.</p>
+<p>5 – You will be prompted to type in your store address as well as email and password combination.</p>
+<p><img alt="3.png" src="../../img/platforms/shopify/3.png" /></p>
+<p>6 – This will present a screen prompting to add Oxipay as a payment gateway on your store. Click on Add payment gateway.</p>
+<p><img alt="4.png" src="../../img/platforms/shopify/4.png" /></p>
+<p>7 – If successful, you will be presented with a pop-up at the bottom of your screen indicating that Oxipay was successfully added to the Alternative payments section.</p>
+<p><img alt="5.png" src="../../img/platforms/shopify/5.png" /></p>
+<p>8 – Scroll to the Alternative payments section, open up the Select additional payment method drop-down menu and then select Oxipay.</p>
+<p><img alt="6.png" src="../../img/platforms/shopify/6.png" /></p>
+<p>9 – This will open up an area where you can type in your Merchant Number and Encryption Key as provided to you by Certegy, you can also specify the credit cards that you would like to accept on your Shopify store. Then click on Activate.</p>
+<p><img alt="7.png" src="../../img/platforms/shopify/7.png" /></p>
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
@@ -284,9 +282,9 @@
   </div>
 </div>
 
-<p>9 – This will open up the Oxipay gateway settings area where you can type in your Merchant Number and Encryption Key as supplied to you by Certegy.</p>
+<p>10 – This will open up the Oxipay gateway settings area where you can type in your Merchant Number and Encryption Key as supplied to you by Certegy.</p>
 <p>Important You will not be able to process payments via Oxipay until you input your Merchant Number and Encryption Key. You will also need to update your Encryption Key if it is recycled via the Merchant Portal.</p>
-<p>8 – Below is a description of some of the other settings that might appear on the Oxipay gateway settings area.</p>
+<p>Below is a description of some of the other settings that might appear on the Oxipay gateway settings area.</p>
 <div class="panel panel-danger">
   <div class="panel-heading">
     <h3 class="panel-title">Important</h3>
@@ -296,10 +294,33 @@
   </div>
 </div>
 
-<p><strong>Test Mode</strong>: Ticking this option will run Oxipay in test mode, normally done when troubleshooting or diagnosing issues. In test mode, all Oxipay transactions are simulated and cards are not charged.</p>
-<p><strong>Merchant Number</strong>: This is the unique number that identifies you as a merchant to the OxiPay Payment Gateway.</p>
-<p><strong>Encryption Key</strong>: This is used to authenticate you as a merchant and to ensure that no one can tamper with the information sent as part of purchase orders.</p>
-<p><strong>Cards Accepted</strong>: This is where you can specify that types of Credit Cards you want to accept when customers checkout using OxiPay.</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Configuration</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test Mode</td>
+      <td>Ticking this option will run Oxipay in test mode, normally done when troubleshooting or diagnosing issues. In test mode, all Oxipay transactions are simulated and cards are not charged.</td>
+    </tr>
+    <tr>
+      <td>Merchant Number</td>
+      <td>This is the unique number that identifies you as a merchant to the OxiPay Payment Gateway.</td>
+    </tr>
+    <tr>
+      <td>Encryption Key</td>
+      <td>This is used to authenticate you as a merchant and to ensure that no one can tamper with the information sent as part of purchase orders.</td>
+    </tr>
+    <tr>
+      <td>Cards Accepted</td>
+      <td>This is where you can specify that types of Credit Cards you want to accept when customers checkout using OxiPay.</td>
+    </tr>
+  </tbody>
+</table>
+
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
