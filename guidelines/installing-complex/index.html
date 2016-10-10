@@ -8,7 +8,7 @@
   
   
   
-  <title>Introduction - Oxipay Documentation</title>
+  <title>Installing the Complex Way - Oxipay Documentation</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Introduction";
-    var mkdocs_page_input_path = "guidelines\banner-adverts.md";
-    var mkdocs_page_url = "/guidelines/banner-adverts/";
+    var mkdocs_page_name = "Installing the Complex Way";
+    var mkdocs_page_input_path = "guidelines\installing-complex.md";
+    var mkdocs_page_url = "/guidelines/installing-complex/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -162,17 +162,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Introduction</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#adding-an-oxipay-banner">Adding an Oxipay Banner</a></li>
-                
-                    <li><a class="toctree-l4" href="#contents">Contents</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../banner-adverts/">Introduction</a>
         
     </li>
 
@@ -185,8 +176,19 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../installing-complex/">Installing the Complex Way</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Installing the Complex Way</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#the-complex-way-intimediate-htmlcss-and-javascript-knowledge">The Complex Way (Intimediate HTML/CSS and Javascript Knowledge)</a></li>
+                
+                    <li><a class="toctree-l4" href="#linking-to-oxipay">Linking to Oxipay</a></li>
+                
+                    <li><a class="toctree-l4" href="#installing-the-css">Installing the CSS</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -234,7 +236,7 @@
         
       
     
-    <li>Introduction</li>
+    <li>Installing the Complex Way</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -244,22 +246,128 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="adding-an-oxipay-banner">Adding an Oxipay Banner</h1>
-<p>Advertising Oxipay on your website is a good way to introduce your users to the Oxipay service and drive more sales through your store. So we have created a selection of banners for you to chose from and display on your websites. 
-For ease of use we have created two ways for you to display Oxipay branding on your website. The first way was created to require minimal HTML knowledge and the second way requires intimediate HTML/CSS and JavaScript knowledge.</p>
-<p>While we do provide two methods to display Oxipay on your website. We do highly recommend that you choose the second approach if possible. The complex way will it is harder to set up intially is the better choice out of the two options. It will proved your costmers with a better viewing experince and possible increase sales.</p>
-<h2 id="contents">Contents</h2>
-<p><ul>
-    <li><a href="/guidelines/installing-simple"><h3>Installing the Simple Way (Some HTML/CSS Knowledge)</h3></a></li>
-    <li><a href="/guidelines/installing-complex"><h3>Installing the Complex Way (Intimediate HTML/CSS and Javascript Knowledge)</h3></a></li>
-    <li><a href="/guidelines/modal-page"><h3>Javascript Modal Page</h3></a></li>
-    <li><a href="/guidelines/banners"><h3>List of available Banners</h3></a></li>
-    <li><a href="/guidelines/banners"><h3>List of available Tags</h3></a></li></p>
-<p></ul>
-<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
-<br>
-<br>
-<small>Version 1:00</small></p>
+                <h2 id="the-complex-way-intimediate-htmlcss-and-javascript-knowledge">The Complex Way (Intimediate HTML/CSS and Javascript Knowledge)</h2>
+<p>If you have some development knowledge or have access to a developer we recommened that you chose this way. 
+Choose one or more of the following banners and place the HTML listed in the your prefered spot on your website.
+Link to or copy our CSS to your website on the page that the banner will be displayed.</p>
+<h3 id="linking-to-oxipay">Linking to Oxipay</h3>
+<p>If you are more web savy we recommend that you use a modal to open our custom page <a href="https://oxipay.com.au/externalmodal">Exteral Modal</a> in an exteral modal such as Bootstrap 4's Modal.</p>
+<h3 id="installing-the-css">Installing the CSS</h3>
+<p>Download, Intergrate or Link to our external provide CSS.</p>
+<p>Option 1</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://advertising.oxipay.com.au/css/banners.css&quot; type=&quot;text/css&quot;&gt;
+</code></pre>
+
+<p>Option 2
+<br>Download and install our CSS on your website.</p>
+<p><a href="#" download>oxipay-banners.css</a></p>
+<p>Option 3
+<br>Install the parts off CSS relivant to the Banners/Tags you are using.</p>
+<pre><code>/** Installs our font **/
+@font-face {
+    font-family: 'AvenirLTStd-Medium';
+    src: url(&quot;AvenirLTStd-Medium.eot&quot;);
+    src: local(&quot;☺&quot;), url(&quot;AvenirLTStd-Medium.woff&quot;) format(&quot;woff&quot;), url(&quot;AvenirLTStd-Medium.ttf&quot;) format(&quot;truetype&quot;), url(&quot;AvenirLTStd-Medium.svg&quot;) format(&quot;svg&quot;);
+    font-weight: normal;
+    font-style: normal;
+}
+/** Banner 01 **/
+
+#oxipay-banner-01 {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    max-width: 1120px;
+    margin: 0 auto;
+    border: 2px solid #e2e2e2;
+    max-height: 110px;
+    font-family: 'AvenirLTStd-Medium';
+    color: #252525;
+    text-decoration: none;
+}
+@media screen and (max-width: 670px) {
+    #oxipay-banner-01 {
+        margin-top: 20px;
+        max-height: 100%;
+    }
+}
+@media screen and (max-width: 750px) {
+    #oxipay-banner-01 {
+        margin-top: 20px;
+    }
+}
+#oxipay-banner-01 .logo {
+    background-color: #252525;
+    float: left;
+    width: 26%;
+    height: 120px;
+    padding: 0 2%;
+    overflow: hidden;
+}
+#oxipay-banner-01 .logo img {
+    height: 100%;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+#oxipay-banner-01 .text {
+    float: left;
+    padding-left: 2%;
+    padding-top: 10px;
+    overflow: hidden;
+    width: 54%;
+}
+#oxipay-banner-01 h3 {
+    font-size: 30px;
+    margin: 0;
+    font-family: 'AvenirLTStd-Medium';
+    color: #252525;
+}
+#oxipay-banner-01 p {
+    font-size: 16px;
+    margin: 0;
+}
+#oxipay-banner-01 .button {
+    width: 20%;
+    overflow: hidden;
+    float: left;
+}
+#oxipay-banner-01 .info {
+    display: block;
+    float: right;
+    line-height: 30px;
+    padding: 10px 15px;
+    background-color: #e68821;
+    margin-right: 15px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 2px;
+}
+#oxipay-banner-01:hover .info {
+    background-color: #bf6e15;
+}
+@media screen and (max-width: 670px) {
+    #oxipay-banner-01 .logo {
+        width: 100%;
+        float: none;
+    }
+    #oxipay-banner-01 .text {
+        width: 100%;
+        float: none;
+    }
+    #oxipay-banner-01 .button {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+    }
+    #oxipay-banner-01 .info {
+        margin: 0 auto;
+        float: right;
+        margin: 0 15px 15px;
+    }
+}
+</code></pre>
               
             </div>
           </div>
@@ -267,10 +375,10 @@ For ease of use we have created two ways for you to display Oxipay branding on y
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../installing-simple/" class="btn btn-neutral float-right" title="Installing the Simple Way">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../modal-page/" class="btn btn-neutral float-right" title="Javascript Modal Page">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../custom-integration/api-reference/response-values/" class="btn btn-neutral" title="Response values"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installing-simple/" class="btn btn-neutral" title="Installing the Simple Way"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -296,10 +404,10 @@ For ease of use we have created two ways for you to display Oxipay branding on y
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../custom-integration/api-reference/response-values/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../installing-simple/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../installing-simple/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../modal-page/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

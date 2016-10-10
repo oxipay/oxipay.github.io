@@ -8,7 +8,7 @@
   
   
   
-  <title>Introduction - Oxipay Documentation</title>
+  <title>Banners and Tags - Oxipay Documentation</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Introduction";
-    var mkdocs_page_input_path = "guidelines\banner-adverts.md";
-    var mkdocs_page_url = "/guidelines/banner-adverts/";
+    var mkdocs_page_name = "Banners and Tags";
+    var mkdocs_page_input_path = "guidelines\banners.md";
+    var mkdocs_page_url = "/guidelines/banners/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -162,17 +162,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Introduction</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#adding-an-oxipay-banner">Adding an Oxipay Banner</a></li>
-                
-                    <li><a class="toctree-l4" href="#contents">Contents</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../banner-adverts/">Introduction</a>
         
     </li>
 
@@ -199,8 +190,22 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../banners/">Banners and Tags</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Banners and Tags</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#banners">Banners</a></li>
+                
+                    <li><a class="toctree-l4" href="#banner-01">Banner-01</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#price-tags">Price Tags</a></li>
+                
+                    <li><a class="toctree-l4" href="#tag-01">Tag-01</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -234,7 +239,7 @@
         
       
     
-    <li>Introduction</li>
+    <li>Banners and Tags</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -244,22 +249,40 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="adding-an-oxipay-banner">Adding an Oxipay Banner</h1>
-<p>Advertising Oxipay on your website is a good way to introduce your users to the Oxipay service and drive more sales through your store. So we have created a selection of banners for you to chose from and display on your websites. 
-For ease of use we have created two ways for you to display Oxipay branding on your website. The first way was created to require minimal HTML knowledge and the second way requires intimediate HTML/CSS and JavaScript knowledge.</p>
-<p>While we do provide two methods to display Oxipay on your website. We do highly recommend that you choose the second approach if possible. The complex way will it is harder to set up intially is the better choice out of the two options. It will proved your costmers with a better viewing experince and possible increase sales.</p>
-<h2 id="contents">Contents</h2>
-<p><ul>
-    <li><a href="/guidelines/installing-simple"><h3>Installing the Simple Way (Some HTML/CSS Knowledge)</h3></a></li>
-    <li><a href="/guidelines/installing-complex"><h3>Installing the Complex Way (Intimediate HTML/CSS and Javascript Knowledge)</h3></a></li>
-    <li><a href="/guidelines/modal-page"><h3>Javascript Modal Page</h3></a></li>
-    <li><a href="/guidelines/banners"><h3>List of available Banners</h3></a></li>
-    <li><a href="/guidelines/banners"><h3>List of available Tags</h3></a></li></p>
-<p></ul>
-<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
-<br>
-<br>
-<small>Version 1:00</small></p>
+                <h1 id="banners">Banners</h1>
+<h2 id="banner-01">Banner-01</h2>
+<p><p><img alt="Banner 1" src="../../img/marketing-and-guidlines/oxipay-banner-v1.png" /></p>
+<strong>Image Download</strong> <br>
+<p><a href="/img/marketing-and-guidlines/oxipay-banner-v1.png" download>Download Banner-01</a></p>
+<strong>Simple HTML</strong> </p>
+<pre><code>&lt;a id=&quot;oxipay-banner-01&quot; href=&quot;https://oxipay.com.au/works&quot;&gt;&lt;img src=&quot;https://advertising.oxipay.com.au/images/banner-01&quot;&gt;&lt;/a&gt;
+</code></pre>
+
+<p><strong>Complex HTML</strong> (Requires <a href="#CSS">CSS</a> and <a href="#">Javascript</a>)</p>
+<pre><code>&lt;a href=&quot;https://oxipay.com.au/works&quot; id=&quot;oxipay-banner-01&quot; class=&quot;oxipay-banner&quot;&gt;
+    &lt;div class=&quot;logo&quot;&gt;
+        &lt;img alt=&quot;Oxipay&quot; src=&quot;https://advertising.oxipay.com.au/images/oxipay.svg&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;text&quot;&gt;
+        &lt;h3&gt;Pay the easier way.&lt;/h3&gt;
+        &lt;p&gt;Choose Oxipay at the checkout and pay for your purchase in 4 easy no interest payments&lt;/p&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;button&quot;&gt;
+        &lt;p class=&quot;info&quot;&gt;More info&lt;/p&gt;
+    &lt;/div&gt;  
+&lt;/a&gt;
+</code></pre>
+
+<h1 id="price-tags">Price Tags</h1>
+<p>This is the little price tag thingys</p>
+<h2 id="tag-01">Tag-01</h2>
+<pre><code>&lt;a href=&quot;#&quot; id=&quot;use-oxipay&quot;&gt;
+    &lt;p&gt;Pay the easier way with &lt;img alt=&quot;Oxipay&quot; src=&quot;https://advertising.oxipay.com.au/images/oxipay.svg&quot; /&gt; &lt;span&gt;More info&lt;/span&gt;&lt;/p&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><small>*We reserve to right to change any linked image at anytime without prior notice</small></p>
               
             </div>
           </div>
@@ -267,10 +290,8 @@ For ease of use we have created two ways for you to display Oxipay branding on y
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../installing-simple/" class="btn btn-neutral float-right" title="Installing the Simple Way">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../../custom-integration/api-reference/response-values/" class="btn btn-neutral" title="Response values"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../modal-page/" class="btn btn-neutral" title="Javascript Modal Page"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -296,10 +317,8 @@ For ease of use we have created two ways for you to display Oxipay branding on y
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../custom-integration/api-reference/response-values/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../modal-page/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../installing-simple/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
