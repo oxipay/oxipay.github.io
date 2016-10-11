@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Banners and Tags - Oxipay Documentation</title>
+	<title>Banners and Tags list - Oxipay Documentation</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -169,14 +169,8 @@
 
                     
                         
-<li >
-    <a href="../modal-page/">Installing the Modal Page</a>
-</li>
-
-                    
-                        
 <li class="active">
-    <a href="./">Banners and Tags</a>
+    <a href="./">Banners and Tags list</a>
 </li>
 
                     
@@ -194,7 +188,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../modal-page/">
+                    <a rel="next" href="../installing-complex/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
@@ -237,8 +231,8 @@
 <pre><code>&lt;a id=&quot;oxipay-banner-01&quot; href=&quot;https://oxipay.com.au/works&quot;&gt;&lt;img src=&quot;http://images.oxipay.com.au/content/images/oxipay-banner-01.png&quot;&gt;&lt;/a&gt;
 </code></pre>
 
-<p><strong>Complex HTML</strong> (Requires <a href="#CSS">CSS</a> and <a href="#">Javascript</a>)</p>
-<pre><code>&lt;a href=&quot;https://oxipay.com.au/works&quot; id=&quot;oxipay-banner-01&quot; class=&quot;oxipay-banner&quot;&gt;
+<p><strong>Complex HTML</strong> (Requires <a href="/guidelines/installing-complex/#installing-the-css">CSS</a> and <a href="/guidelines/installing-complex/#installing-the-modal-page">Modal</a>)</p>
+<pre><code>&lt;a id=&quot;oxipay-banner-01&quot; href=&quot;#oxipay-modal&quot; rel=&quot;modal:open&quot; data-toggle=&quot;modal&quot; data-target=&quot;#oxipay-modal&quot;&gt;
     &lt;div class=&quot;logo&quot;&gt;
         &lt;img alt=&quot;Oxipay&quot; src=&quot;http://images.oxipay.com.au/content/images/oxipay.svg&quot; /&gt;
     &lt;/div&gt;
@@ -263,8 +257,8 @@
 <pre><code>&lt;a id=&quot;oxipay-tag-01&quot; href=&quot;https://oxipay.com.au/works&quot;&gt;&lt;img src=&quot;http://images.oxipay.com.au/content/images/oxipay-tag-01.png&quot;&gt;&lt;/a&gt;
 </code></pre>
 
-<p><strong>Complex HTML</strong> (Requires <a href="/guidelines/installing-complex#installing-the-css">CSS</a> and <a href="/guidelines/modal-page/">JQuery</a>)</p>
-<pre><code>&lt;a href=&quot;#&quot; id=&quot;oxipay-tag-01&quot;&gt;
+<p><strong>Complex HTML</strong> (Requires <a href="/guidelines/installing-complex/#installing-the-css">CSS</a> and <a href="/guidelines/installing-complex/#installing-the-modal-page">Modal</a>)</p>
+<pre><code>&lt;a id=&quot;oxipay-tag-01&quot; href=&quot;#oxipay-modal&quot; rel=&quot;modal:open&quot; data-toggle=&quot;modal&quot; data-target=&quot;#oxipay-modal&quot;&gt;
     &lt;p&gt;Pay the easier way with &lt;img alt=&quot;Oxipay&quot; src=&quot;http://images.oxipay.com.au/content/images/oxipay.svg&quot; /&gt; &lt;span&gt;More info&lt;/span&gt;&lt;/p&gt;
 &lt;/a&gt;
 </code></pre>
@@ -293,7 +287,6 @@
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
-        <script src="../../js/custom.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">
