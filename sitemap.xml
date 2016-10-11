@@ -24,8 +24,20 @@
     </url>
         
     <url>
-     <loc>None</loc>
-     <lastmod></lastmod>
+     <loc>None/platforms/magento_1x/</loc>
+     <lastmod>2016-10-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/platforms/magento_2x/</loc>
+     <lastmod>2016-10-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/platforms/onestep/</loc>
+     <lastmod>2016-10-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
