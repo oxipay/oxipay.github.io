@@ -15,7 +15,6 @@
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
         <link rel="stylesheet" href="../../css/highlight.css">
         <link href="../../css/base.css" rel="stylesheet">
-        <link href="../../css/styles.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -201,13 +200,21 @@
     
         <li class="main active"><a href="#setting-up-oxipay-on-a-woocommerce-store">Setting up Oxipay on a WooCommerce Store</a></li>
         
-            <li><a href="#installing-the-plugin">Installing the Plugin</a></li>
+            <li><a href="#introduction">Introduction</a></li>
         
-            <li><a href="#configuring-the-plugin">Configuring the Plugin</a></li>
+            <li><a href="#installing-oxipay">Installing Oxipay</a></li>
+        
+            <li><a href="#automatic-installation">Automatic Installation</a></li>
+        
+            <li><a href="#manual-installation">Manual Installation</a></li>
+        
+            <li><a href="#configuring-oxipay">Configuring Oxipay</a></li>
         
             <li><a href="#oxipay-plugin-settings">Oxipay Plugin Settings</a></li>
         
             <li><a href="#updates-to-oxipay">Updates to Oxipay</a></li>
+        
+            <li><a href="#de-activating-and-deleting-oxipay">De-activating and Deleting Oxipay</a></li>
         
     
     </ul>
@@ -215,6 +222,7 @@
             <div class="col-md-9" role="main">
 
 <h1 id="setting-up-oxipay-on-a-woocommerce-store">Setting up Oxipay on a WooCommerce Store</h1>
+<h2 id="introduction">Introduction</h2>
 <p>This document outlines the steps needed to install the Oxipay plugin on your WooCommerce store that runs on WordPress. Please note that the procedure outlined in this article was performed using Internet Explorer and so you might encounter a slightly different workflow or user interface if using another browser such as FireFox or Chrome.</p>
 <div class="panel panel-primary">
   <div class="panel-heading">
@@ -225,7 +233,7 @@
   </div>
 </div>
 
-<h2 id="installing-the-plugin">Installing the Plugin</h2>
+<h2 id="installing-oxipay">Installing Oxipay</h2>
 <div class="alert alert-info" role="alert">You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.</div>
 
 <p>You can install the Oxipay Plugin using one of two ways: <strong>automatically</strong> via the WordPress Admin page, or <strong>manually</strong> by copying files to the WordPress server (to be performed by an IT professional or a Web developer).</p>
@@ -238,7 +246,8 @@
   </div>
 </div>
 
-<h3 id="automatic-installation-via-wordpress-admin">Automatic Installation via WordPress Admin</h3>
+<h2 id="automatic-installation">Automatic Installation</h2>
+<p>This section outlines how you can install the Oxipay plugin automatically using the <strong>WordPress Admin</strong>. We recommend that you follow this procedure since it does not require extensive knowledge of how the WooCommerce platform is configured internally and minimises any chance of errors.</p>
 <p>1 - Navigate to the URL below and then click on the Download repository link; this will download a zip file; rename that .zip file to Oxipay.zip </p>
 <div class="alert alert-info" role="alert"><b>https://github.com/oxipay/oxipay-woocommerce/releases</b></div>
 
@@ -258,7 +267,7 @@
 <p><img alt="6.png" src="../../img/platforms/woocommerce/6.png" /></p>
 <p>10 - Plugins on the page are listed alphabetically, scroll to the bottom and confirm that the Oxipay plugin is installed and activated.</p>
 <p><img alt="7.png" src="../../img/platforms/woocommerce/7.png" /></p>
-<h3 id="manual-installation">Manual Installation</h3>
+<h2 id="manual-installation">Manual Installation</h2>
 <div class="panel panel-danger">
   <div class="panel-heading">
     <h3 class="panel-title">Important</h3>
@@ -272,7 +281,7 @@
 <div class="alert alert-info" role="alert"><b>https://github.com/oxipay/oxipay-woocommerce/releases</b></div>
 
 <p>2 - Unzip the file and then copy the un-zipped folder into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins</p>
-<h2 id="configuring-the-plugin">Configuring the Plugin</h2>
+<h2 id="configuring-oxipay">Configuring Oxipay</h2>
 <p>1 - Log into the WordPress Admin page.</p>
 <p>2 - Hover over Plugins on the left sidebar. From the submenu that appears, click on Installed Plugins.</p>
 <p><img alt="8.png" src="../../img/platforms/woocommerce/8.png" /></p>
@@ -296,15 +305,27 @@ Next is a description of the various settings that you will find on this page.</
 
 <p><img alt="12.png" src="../../img/platforms/woocommerce/12.png" /></p>
 <table class="table">
+<thead></thead>
   <tbody>
     <tr>
-      <td><b>Title and Description</b></td>
-      <td>This controls the title and description of Oxipay that users see when selecting Oxipay as a payment option. Default values are provided which you can override.</td>
+      <td><b>Title</b></td>
+      <td>This controls the title of Oxipay that users see when selecting Oxipay as a payment option. Default value is provided which you can override.</td>
     </tr>
   </tbody>
 </table>
 
 <p><img alt="14.png" src="../../img/platforms/woocommerce/14.png" /></p>
+<table>
+<thead></thead>
+  <tbody>
+    <tr>
+      <td><b>Description</b></td>
+      <td>This controls the description of Oxipay that users see when selecting Oxipay as a payment option. Default value is provided which you can override.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img alt="27.png" src="../../img/platforms/woocommerce/27.png" /></p>
 <table class="table">
   <tbody>
     <tr>
@@ -378,20 +399,20 @@ Next is a description of the various settings that you will find on this page.</
   </div>
 </div>
 
-<h3 id="to-delete-the-existing-oxipay-plugin">To delete the existing Oxipay plugin</h3>
-<p>1 – Log into WordPress Admin.</p>
-<p>2 – Click on Plugins on the left sidebar; then click on Installed Plugins.</p>
-<p>3 – Scroll to the bottom, bring Oxipay into focus and then click on the Deactive link.</p>
+<h2 id="de-activating-and-deleting-oxipay">De-activating and Deleting Oxipay</h2>
+<p>1 – Log into <strong>WordPress Admin</strong>.</p>
+<p>2 – Click on <strong>Plugins</strong> on the left sidebar; then click on <strong>Installed Plugins</strong>.</p>
+<p>3 – Scroll to the bottom, bring Oxipay into focus and then click on the <strong>Deactive</strong> link associated with it.</p>
 <p><img alt="21.png" src="../../img/platforms/woocommerce/21.png" /></p>
-<p>4 – If successful, the message Plugin deactivated will be displayed at the top of the page.</p>
+<p>4 – If successful, the message<strong> Plugin deactivated</strong> will be displayed at the top of the page.</p>
 <p><img alt="22.png" src="../../img/platforms/woocommerce/22.png" /></p>
-<p>5 – Scroll to the bottom of the page again. This time around, click on the Delete link underneath Oxipay.</p>
+<p>5 – Scroll to the bottom of the page again. This time around, click on the <strong>Delete</strong> link underneath Oxipay.</p>
 <p><img alt="23.png" src="../../img/platforms/woocommerce/23.png" /></p>
-<p>6 – This will display a browser pop-up asking you to confirm if you want to proceed with deleting Oxipay.</p>
+<p>6 – This will display a page asking you to confirm if you want to proceed with deleting the Oxipay Plugin. Click on <strong>Yes, delete these files</strong>.</p>
 <p><img alt="24.png" src="../../img/platforms/woocommerce/24.png" /></p>
-<p>7 – This will display the plugin and the message Oxipay was successfully deleted will be displayed at the bottom of the page.</p>
+<p>7 – If successful, you will be re-directed back to the <strong>Plugins</strong> page with the message <strong>The selected plugin has been deleted.</strong> at the top.</p>
 <p><img alt="26.png" src="../../img/platforms/woocommerce/26.png" /></p>
-<p>8 – You can now proceed with installing the new version of the plugin using either the manual installation procedure or automatically via WordPress as per the instructions in the Initial Installation section of this document. The URL to use is the same as that one included in both the Automatic and Manual installation sections of this article.</p></div>
+<p>8 – You can now installing the new version of the plugin using either the <strong>automatic</strong> or <strong>manual</strong> procedures outlined above.</p></div>
         </div>
 
         <footer class="col-md-12">
