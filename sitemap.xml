@@ -4,7 +4,11 @@
     
     <url>
      <loc>None/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,31 +17,51 @@
         
     <url>
      <loc>None/platforms/shopify/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/platforms/woocommerce/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/platforms/magento_1x/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/platforms/magento_2x/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/platforms/onestep/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
@@ -47,13 +71,21 @@
         
     <url>
      <loc>None/custom-integration/how-it-works/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/custom-integration/gateway-signing-mechanism/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
@@ -69,25 +101,41 @@
         
     <url>
      <loc>None/guidelines/banner-adverts/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/guidelines/installing-simple/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/guidelines/installing-complex/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/guidelines/banners/</loc>
+<<<<<<< HEAD
      <lastmod>2016-10-14</lastmod>
+=======
+     <lastmod>2016-10-13</lastmod>
+>>>>>>> f3b8a524eb8a859d248e5ffe89a4c45c0d1cb57c
      <changefreq>daily</changefreq>
     </url>
         
