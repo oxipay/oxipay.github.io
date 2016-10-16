@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Magento 1.x - Oxipay Documentation</title>
+	<title>Magento 2 - Oxipay Documentation</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -74,14 +74,14 @@
 
                     
                         
-<li class="active">
-    <a href="./">Magento 1.x</a>
+<li >
+    <a href="../magento_1/">Magento 1</a>
 </li>
 
                     
                         
-<li >
-    <a href="../magento_2x/">Magento 2.x</a>
+<li class="active">
+    <a href="./">Magento 2</a>
 </li>
 
                     
@@ -180,12 +180,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../woocommerce/">
+                    <a rel="next" href="../magento_1/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../magento_2x/">
+                    <a rel="prev" href="../onestep/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -199,26 +199,35 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#setting-up-oxipay-on-a-magento-1x-store">Setting up Oxipay on a Magento 1.x Store</a></li>
+        <li class="main active"><a href="#setting-up-oxipay-on-a-magento-1-store">Setting up Oxipay on a Magento 1 Store</a></li>
         
             <li><a href="#installing-the-plugin">Installing the Plugin</a></li>
-        
-            <li><a href="#updates-to-oxipay">Updates to Oxipay</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="setting-up-oxipay-on-a-magento-1x-store">Setting up Oxipay on a Magento 1.x Store</h1>
-<p>This document outlines the steps needed to integrate the Oxipay Payment Gateway into your Magento store.</p>
+<h1 id="setting-up-oxipay-on-a-magento-1-store">Setting up Oxipay on a Magento 1 Store</h1>
+<p>This document outlines the steps needed to integrate the Oxipay Payment Gateway into your Magento v2 store.</p>
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Note</h3>
   </div>
   <div class="panel-body">
-    At the time of writing this article; Oxipay was developed and tested using Magento Community Edition 1.9. <br/>
-    Issues might be encountered if using an earlier version. If you do encounter issues, then please contact us to resolve them as soon as possible.
+    At the time of writing this article, Oxipay was developed and tested using Magento Community Edition v2.1.2 <br/>
+    Issues might be encountered if using an earlier version or a later version. If you do encounter issues, then please contact us to resolve them as soon as possible.
+
+  </div>
+
+</div>
+
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Important</h3>
+  </div>
+  <div class="panel-body">
+    Please consult the Magento v1 documentation if planning on integrating Oxipay into a Magento v1 Community Edition.
   </div>
 </div>
 
@@ -248,13 +257,12 @@
 </div>
 
 <p>3 - Copy all files in the unzipped Oxipay folder <code>Oxipay/app</code> into the <code>/app</code> folder in your Magento root folder.</p>
-<p>4 - Login into the Magento <strong>Admin Panel</strong>, then from within the <strong>Admin Panel</strong> menu click on <strong>System</strong>.</p>
-<p><img alt="1.png" src="../../img/platforms/magento_1x/1.png" /></p>
-<p>5 - This will open up the <strong>System</strong> menu. Click on <strong>Cache Management</strong>.</p>
-<p>Login into Magento <strong>Admin Panel</strong> and then navigate to <strong>System</strong> &gt; <strong>Cache Management</strong>.</p>
-<p><img alt="2.png" src="../../img/platforms/magento_1x/2.png" /></p>
+<p>4 - Login into the Magento <strong>Admin Panel</strong>, then from the left side menu, click on <strong>System</strong>.</p>
+<p><img alt="1.png" src="../../img/platforms/magento_2x/1.png" /></p>
+<p>5 - This will open up the <strong>System</strong> submenu. Click on <strong>Cache Management</strong>.</p>
+<p><img alt="2.png" src="../../img/platforms/magento_2x/2.png" /></p>
 <p>6 - From within the <strong>Cache Management</strong> page, click on the <strong>Flush Magento Cache</strong> button in the top right.</p>
-<p><img alt="3.png" src="../../img/platforms/magento_1x/3.png" /></p>
+<p><img alt="3.png" src="../../img/platforms/magento_2x/3.png" /></p>
 <p>7 - Confirm that Oxipay has been installed on your Magento Store. To do this, click on <strong>System</strong> in the <strong>Admin Panel</strong> then on <strong>Configuration</strong>.</p>
 <p><img alt="4.png" src="../../img/platforms/magento_1x/4.png" /></p>
 <p>8 - This will open up the <strong>Configuration</strong> page, scroll to the bottom and then click on <strong>Payment Methods</strong> on the left side menu.</p>
@@ -277,43 +285,7 @@
   <div class="panel-body">
     Missing fields might indicate that some of the Oxipay files that were downloaded as part of the installation process might have been corrupted inadvertently somewhere in the process.
   </div>
-</div>
-
-<h2 id="updates-to-oxipay">Updates to Oxipay</h2>
-<p>Updates to Oxipay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our Oxipay plugin or newer versions of Magento 1.x that include security or feature patches. We recommend that you first unintall the existing Oxipay plugin before installing a newer Oxipay version.</p>
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
-  <div class="panel-body">
-    Deleting the existing plugin ensures that code and any associated files from the previous version of the plugin do not negatively interfere with the newer version of the plugin.
-  </div>
-</div>
-
-<div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title">Important</h3>
-  </div>
-  <div class="panel-body">
-    At the time of writing this article, Oxipay can only be deleted by manually deleting the Oxipay specific folders and files that were integrated into Magento as part of the installation procedure.
-  </div>
-</div>
-
-<p>1 - Open the <code>app</code> folder inside the Magento root folder where you have installed your version of Magento and delete the files and folder paths listed underneath:</p>
-<p>Folders:</p>
-<ul>
-<li><code>app\code\community\Oxipay</code></li>
-<li><code>app\design\frontend\base\default\template\oxipayments</code></li>
-</ul>
-<p>Files:</p>
-<ul>
-<li><code>app\etc\modules\Oxipay_Oxipayments.xml</code></li>
-</ul>
-<p>2 - Login to <strong>Magento Admin</strong> and then navigate to <strong>System</strong> then <strong>Cache Management</strong>.</p>
-<p><img alt="2.png" src="../../img/platforms/magento_1x/2.png" /></p>
-<p>3 - On the top right, click on Flush Cache Storage to clear Magento's cache.</p>
-<p><img alt="3.png" src="../../img/platforms/magento_1x/3.png" /></p>
-<p>4 - Now you can proceed with installing the new version of the Oxipay plugin by following the <a href="./#Installing the Plugin">Installing the Plugin</a> section of this document again.</p></div>
+</div></div>
         </div>
 
         <footer class="col-md-12">
