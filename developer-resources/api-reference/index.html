@@ -202,7 +202,7 @@
 
 <h2 id="mapfrom-method"><code>MapFrom()</code> Method</h2>
 <p>As its name implies, the <code>MapFrom()</code> methods maps a request object that is passed to it from the shopping cart from the <code>IHttpRequest</code> format into the <code>XpAuthRequest</code>.</p>
-<p>The <code>IHttpRequest</code> request object that is passed into the <code>MapFrom()</code> method represents the transaction payload that contains the various transaction specific details such as the transaction amount, a customer's biling country and the shop's name (merchant's name as advertised on the internet and other media).</p>
+<p>The <code>IHttpRequest</code> request object that is passed to the <code>MapFrom()</code> method represents the transaction payload that contains the various transaction specific details such as the transaction amount, a customer's biling country and the shop's name (merchant's name as advertised on the internet and other media).</p>
 <p>Below is a table that summarises the various information that the translation layer expects to be within the request:</p>
 <table>
 <thead>
@@ -229,7 +229,7 @@
 <td>URL that users are re-directed to when they cancel a transaction.</td>
 </tr>
 <tr>
-<td><strong>Merchant Specific Information</strong></td>
+<td><strong>Merchant Specific</strong></td>
 <td></td>
 </tr>
 <tr>
@@ -249,7 +249,7 @@
 <td>Transaction's invoice</td>
 </tr>
 <tr>
-<td><strong>Purchase Order Specific Information</strong></td>
+<td><strong>Order Specific</strong></td>
 <td></td>
 </tr>
 <tr>
@@ -257,7 +257,7 @@
 <td>Total amount for that transaction including any shipping costs and taxes such as GST</td>
 </tr>
 <tr>
-<td><strong>Customer Specific Information</strong></td>
+<td><strong>Customer Specific</strong></td>
 <td></td>
 </tr>
 <tr>
@@ -337,7 +337,7 @@
 <td>Customer's shipping zip code</td>
 </tr>
 <tr>
-<td><strong>Oxipay Mode</strong></td>
+<td><strong>Gateway Specific</strong></td>
 <td></td>
 </tr>
 <tr>
@@ -378,6 +378,26 @@
 
 <h1 id="checkout-controller">Checkout Controller</h1>
 <h2 id="postindex-method"><code>PostIndex()</code> Method</h2>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method's Signature</td>
+<td>asdfasdf</td>
+</tr>
+<tr>
+<td>Method's Return type</td>
+<td>asdf</td>
+</tr>
+</tbody>
+</table>
+<p>The method returns an Oxipay specific checkout URL to which the shopping cart can post the transaction to and is an asynchronous method as specified by the method's <code>public async</code> return type.</p>
+<p>The shopping cart would need to be authenticated successfully using its signature, otherwise Oxipay will re-direct to a "401", "Signature Invalid".</p>
 <p>The method will initially attempt to verify the payload's signature and will also attempt to authenticate the request based on the merchant number that is being passed as well as the httpRequest. If it is unable to verify the payload's signature or unable to authenticate the request, then it will re-direct to a 401 error page with a <em>Signature Invalid</em> error message.</p>
 <p>Otherwise it will post to the authorisation API. If there is an error in processing the authentication request, then it will re-direct the user to an error page that includes the code and a descriptive message corresponding to that particular error.</p>
 <p>Additionally if the result of the post to the authorisation API is a valid result, then it will append an Oxipay specific transaction id to the URL, otherwise, it will append -1.</p>
