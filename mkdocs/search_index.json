@@ -121,24 +121,69 @@
             "title": "OneStep"
         },
         {
-            "location": "/custom-integration/how-it-works/",
+            "location": "/developer-resources/how-it-works/",
             "text": "",
             "title": "How it works"
         },
         {
-            "location": "/custom-integration/gateway-signing-mechanism/",
+            "location": "/developer-resources/gateway-signing-mechanism/",
             "text": "",
             "title": "Gateway Signing Mechanism"
         },
         {
-            "location": "/custom-integration/api-reference/request-values/",
-            "text": "",
-            "title": "Request values"
+            "location": "/developer-resources/api-reference/",
+            "text": "API Documentation\n\n\nThis is a complete guide to the Oxipay API. The API allows you to quickly integrate Oxipay as a payment gateway into your choice of eCommerce solutions. We've already used this API to integrate Oxipay into a number of leading eCommerce solutions including Shopify, WooCommerce and Magento.\n\n\nAPI Documentation\n\n\nIntegrating Oxipay as a payment gateway into a shopping cart platform involves defining a translation layer that is specific to that platform.\n\n\nMapFrom()\n\n\nThe \nMapFrom()\n methods maps a request object from type IHttpRequest to type XpAuthRequest. The request object has two properties:\n\n\n\n\nAn input stream of type \nStream\n\n\nA query string that is a name value collection, type \nNameValueCollection\n\n\n\n\n\n  \n\n    \n\n      \nModifier\n\n      \nMethod and Description\n\n    \n\n  \n\n  \n\n    \n\n      \npublic\n\n      \n\n      \nMapFrom()\n\n      \n\n      Maps a request from type \nIHttpRequest\n to type \nXpAuthRequest\n.\n      \n\n    \n\n    \n\n      \npublic\n\n      \nLogout\n\n      \n\n      Processes a log out request of type \nLougoutRequest\n. Returns an \nInvalid Logout Request\n if the log out request is null, whitespace or is the default value.\n\n      \n\n    \n\n  \n\n\n\n\n\nCheckout Controller\n\n\nPostIndex()\n Method\n\n\nThe method will initially attempt to verify the payload's signature and will also attempt to authenticate the request based on the merchant number that is being passed as well as the httpRequest. If it is unable to verify the payload's signature or unable to authenticate the request, then it will re-direct to a 401 error page with a \nSignature Invalid\n error message.\n\n\nOtherwise it will post to the authorisation API. If there is an error in processing the authentication request, then it will re-direct the user to an error page that includes the code and a descriptive message corresponding to that particular error.\n\n\nAdditionally if the result of the post to the authorisation API is a valid result, then it will append an Oxipay specific transaction id to the URL, otherwise, it will append -1.\n\n\nNote that the Oxipay transaction id is different to the transaction id that might be referenced in your shopping platform.\n\n\nIf an exception is thrown as a result of a failed authentication reuqest, then based on the result of the failed authentication request, will re-direct the user to a page that includes the code and a message of that particular failed authentication.\n\n\nAlso note that the \nPostIndex()\n method is an asynchronous method as specified by the method's \npublic async\n return type.\n\n\nGetIndex()\n Method\n\n\nReturns the current view.\n\n\nProcessInstore()\n Method\n\n\nThe \nProcessInstore()\n method will use the transaciton ID that is passed to it to return URL for processing an instore transaction - normally created from within the Oxipay merchant portal - as opposed to transactions created from within a shopping cart.\n\n\nA transaction ID of \n0\n will result in an instance of the \nHttpNotFoundResult\n class being return with the message \nTransaction Not Found\n\n\nThe method does a post to the Authorisation API and if the result of the authorisation is an error that it will redirect to a page the includes the code of the error as well as a message relating to it.\n\n\nNote that the method will throw an exception that redirects to a generic error page.\n\n\nLogin\n\n\nConstructor Summary\n\n\nConstructor and Description\n\n\nLoginController()\n\n\nMethod Summary\n\n\n\n  \n\n    \n\n      \nModifier\n\n      \nMethod and Description\n\n    \n\n  \n\n  \n\n    \n\n      \npublic\n\n      \n\n      \nCheckToken()\n\n      \n\n      Verifies the validity of a token, returns an \nInvalid Token\n log warning message if the token is null or is white space.\n      \n\n    \n\n    \n\n      \npublic\n\n      \nLogout\n\n      \n\n      Processes a log out request of type \nLougoutRequest\n. Returns an \nInvalid Logout Request\n if the log out request is null, whitespace or is the default value.",
+            "title": "API Documentation"
         },
         {
-            "location": "/custom-integration/api-reference/response-values/",
+            "location": "/developer-resources/api-reference/#api-documentation",
+            "text": "This is a complete guide to the Oxipay API. The API allows you to quickly integrate Oxipay as a payment gateway into your choice of eCommerce solutions. We've already used this API to integrate Oxipay into a number of leading eCommerce solutions including Shopify, WooCommerce and Magento.",
+            "title": "API Documentation"
+        },
+        {
+            "location": "/developer-resources/api-reference/#api-documentation_1",
+            "text": "Integrating Oxipay as a payment gateway into a shopping cart platform involves defining a translation layer that is specific to that platform.",
+            "title": "API Documentation"
+        },
+        {
+            "location": "/developer-resources/api-reference/#mapfrom",
+            "text": "The  MapFrom()  methods maps a request object from type IHttpRequest to type XpAuthRequest. The request object has two properties:   An input stream of type  Stream  A query string that is a name value collection, type  NameValueCollection   \n   \n     \n       Modifier \n       Method and Description \n     \n   \n   \n     \n       public \n       \n       MapFrom() \n       \n      Maps a request from type  IHttpRequest  to type  XpAuthRequest .\n       \n     \n     \n       public \n       Logout \n       \n      Processes a log out request of type  LougoutRequest . Returns an  Invalid Logout Request  if the log out request is null, whitespace or is the default value.",
+            "title": "MapFrom()"
+        },
+        {
+            "location": "/developer-resources/api-reference/#checkout-controller",
             "text": "",
-            "title": "Response values"
+            "title": "Checkout Controller"
+        },
+        {
+            "location": "/developer-resources/api-reference/#postindex-method",
+            "text": "The method will initially attempt to verify the payload's signature and will also attempt to authenticate the request based on the merchant number that is being passed as well as the httpRequest. If it is unable to verify the payload's signature or unable to authenticate the request, then it will re-direct to a 401 error page with a  Signature Invalid  error message.  Otherwise it will post to the authorisation API. If there is an error in processing the authentication request, then it will re-direct the user to an error page that includes the code and a descriptive message corresponding to that particular error.  Additionally if the result of the post to the authorisation API is a valid result, then it will append an Oxipay specific transaction id to the URL, otherwise, it will append -1.  Note that the Oxipay transaction id is different to the transaction id that might be referenced in your shopping platform.  If an exception is thrown as a result of a failed authentication reuqest, then based on the result of the failed authentication request, will re-direct the user to a page that includes the code and a message of that particular failed authentication.  Also note that the  PostIndex()  method is an asynchronous method as specified by the method's  public async  return type.",
+            "title": "PostIndex() Method"
+        },
+        {
+            "location": "/developer-resources/api-reference/#getindex-method",
+            "text": "Returns the current view.",
+            "title": "GetIndex() Method"
+        },
+        {
+            "location": "/developer-resources/api-reference/#processinstore-method",
+            "text": "The  ProcessInstore()  method will use the transaciton ID that is passed to it to return URL for processing an instore transaction - normally created from within the Oxipay merchant portal - as opposed to transactions created from within a shopping cart.  A transaction ID of  0  will result in an instance of the  HttpNotFoundResult  class being return with the message  Transaction Not Found  The method does a post to the Authorisation API and if the result of the authorisation is an error that it will redirect to a page the includes the code of the error as well as a message relating to it.  Note that the method will throw an exception that redirects to a generic error page.",
+            "title": "ProcessInstore() Method"
+        },
+        {
+            "location": "/developer-resources/api-reference/#login",
+            "text": "",
+            "title": "Login"
+        },
+        {
+            "location": "/developer-resources/api-reference/#constructor-summary",
+            "text": "Constructor and Description  LoginController()",
+            "title": "Constructor Summary"
+        },
+        {
+            "location": "/developer-resources/api-reference/#method-summary",
+            "text": "Modifier \n       Method and Description \n     \n   \n   \n     \n       public \n       \n       CheckToken() \n       \n      Verifies the validity of a token, returns an  Invalid Token  log warning message if the token is null or is white space.\n       \n     \n     \n       public \n       Logout \n       \n      Processes a log out request of type  LougoutRequest . Returns an  Invalid Logout Request  if the log out request is null, whitespace or is the default value.",
+            "title": "Method Summary"
         },
         {
             "location": "/guidelines/banner-adverts/",

@@ -46,20 +46,20 @@
     
         
     <url>
-     <loc>None/custom-integration/how-it-works/</loc>
+     <loc>None/developer-resources/how-it-works/</loc>
      <lastmod>2016-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/custom-integration/gateway-signing-mechanism/</loc>
+     <loc>None/developer-resources/gateway-signing-mechanism/</loc>
      <lastmod>2016-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None</loc>
-     <lastmod></lastmod>
+     <loc>None/developer-resources/api-reference/</loc>
+     <lastmod>2016-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
