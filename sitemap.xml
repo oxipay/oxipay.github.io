@@ -46,19 +46,25 @@
     
         
     <url>
-     <loc>None/developer-resources/Introduction/</loc>
+     <loc>None/developer_resources/introduction/</loc>
      <lastmod>2016-10-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/developer-resources/api-reference/</loc>
+     <loc>None/developer_resources/checkout_process/</loc>
      <lastmod>2016-10-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/developer-resources/gateway-signing-mechanism/</loc>
+     <loc>None/developer_resources/api_reference/</loc>
+     <lastmod>2016-10-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/developer_resources/signing_mechanism/</loc>
      <lastmod>2016-10-25</lastmod>
      <changefreq>daily</changefreq>
     </url>

@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Gateway Signing Mechanism - Oxipay Documentation</title>
+	<title>Introduction - Oxipay Documentation</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -101,20 +101,26 @@
                     <ul class="dropdown-menu">
                     
                         
-<li >
-    <a href="../Introduction/">Introduction</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../api-reference/">API Reference</a>
-</li>
-
-                    
-                        
 <li class="active">
-    <a href="./">Gateway Signing Mechanism</a>
+    <a href="./">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../checkout_process/">Checkout Process</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../api_reference/">API Reference</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../signing_mechanism/">Signing Mechanism</a>
 </li>
 
                     
@@ -165,12 +171,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../api-reference/">
+                    <a rel="next" href="../../platforms/onestep/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../guidelines/banner-adverts/">
+                    <a rel="prev" href="../checkout_process/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -184,24 +190,27 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#signing-mechanism">Signing Mechanism</a></li>
+        <li class="main active"><a href="#introduction">Introduction</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="signing-mechanism">Signing Mechanism</h1>
-<p>This section includes information on the signing and verification methods that Oxipay uses. Oxipay uses HMAC-SHA256 for purposes of signing and verifying requests and responses. In this context:</p>
-<ul>
-<li>
-<p>A key that is known to both the merchant using the particular shopping cart and Oxipay. This is also known as an API Key.</p>
-</li>
-<li>
-<p>A <code>message</code> which is a string of all key-value pairs that are stored alphabetically and are concatenated with seperators. Please note that we have adopted the convention of prefixing the various keys with <code>x_</code> similar to what is adopted by Shopify.</p>
-</li>
-</ul>
-<p>The resulting HMAC-SHA256 signature needs to be hex-encoded and passed along with the remainder of the transaction payload as a value of the key <code>x_signature</code></p></div>
+<h1 id="introduction">Introduction</h1>
+<p>This section is a Developer's guide into how to integrate Oxipay into shopping carts that allow integration of external payment gateways. We have already used this API to integrate Oxipay as a payment method into a number of leading shopping carts and eCommerce solutions including Shopify, WooCommerce and Magento.</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    This guide assumes that the Developer has prior knowledge and familiarity with the shopping cart they intend to integrate Oxipay into.
+  </div>
+</div>
+
+<p>Shopping carts vary in the way they process a purchase order including in what they classify as mandotary information needed to process a transaction, they way the communicate a purchase order over the internet and the way the process it.</p>
+<p>To accomodate these differences between the variou shopping platforms and to reduce the amount code changes that have to be introduced to the underlying Oxipay code, a generic translation layer has been developed.</p>
+<p>To integrate Oxipay into your choice of shopping carts, you will need to massage the purchase payload information from a format that is specific to that particular shopping platform into a format that can be read and processed by the translation layer. Upon successfully processing the transation payload, the translation layer would then pass the purchase order to Oxipay for further processing.</p></div>
         </div>
 
         <footer class="col-md-12">
