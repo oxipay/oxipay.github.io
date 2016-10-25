@@ -136,10 +136,6 @@
                 
                     <li><a class="toctree-l4" href="#postindex-method">PostIndex() Method</a></li>
                 
-                    <li><a class="toctree-l4" href="#getindex-method">GetIndex() Method</a></li>
-                
-                    <li><a class="toctree-l4" href="#processinstore-method">ProcessInstore() Method</a></li>
-                
             
             </ul>
         
@@ -425,13 +421,6 @@
 <p>Failure to successfully authenticate  the request will result in being re-directed to a <code>401</code> error page with a <code>Signature Invalid</code> message.</p>
 <p>Also note that Oxipay might re-direct to an error page if the request was authenticated but was not authorised after being posted to the Authorisation API. The error page will include both a code and a description message for that particular failed authorisaiton.</p>
 <p>If an exception occurs, then the method will also re-direct to an error page that includes a code and a message for that particular error.</p>
-<h2 id="getindex-method"><code>GetIndex()</code> Method</h2>
-<p>Returns the current view.</p>
-<h2 id="processinstore-method"><code>ProcessInstore()</code> Method</h2>
-<p>The <code>ProcessInstore()</code> method will use the transaciton ID that is passed to it to return URL for processing an instore transaction - normally created from within the Oxipay merchant portal - as opposed to transactions created from within a shopping cart.</p>
-<p>A transaction ID of <code>0</code> will result in an instance of the <code>HttpNotFoundResult</code> class being return with the message <code>Transaction Not Found</code></p>
-<p>The method does a post to the Authorisation API and if the result of the authorisation is an error that it will redirect to a page the includes the code of the error as well as a message relating to it.</p>
-<p>Note that the method will throw an exception that redirects to a generic error page.</p>
               
             </div>
           </div>
