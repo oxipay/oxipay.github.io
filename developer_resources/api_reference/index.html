@@ -131,9 +131,18 @@
             
                 <li class="toctree-l3"><a href="#api-reference">API Reference</a></li>
                 
-                    <li><a class="toctree-l4" href="#request-values">Request Values</a></li>
+                    <li><a class="toctree-l4" href="#oxipay-endpoints">Oxipay Endpoints</a></li>
                 
-                    <li><a class="toctree-l4" href="#response-values">Response Values</a></li>
+                    <li><a class="toctree-l4" href="#request-post-format">Request POST Format</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#sample-post">Sample POST</a></li>
+                
+                    <li><a class="toctree-l4" href="#request-post-key-value-pairs">Request POST key-value pairs</a></li>
+                
+                    <li><a class="toctree-l4" href="#response-post">Response POST</a></li>
+                
+                    <li><a class="toctree-l4" href="#response-post-key-value-pairs">Response POST key-value pairs</a></li>
                 
             
             </ul>
@@ -225,8 +234,28 @@
               
                 <h1 id="api-reference">API Reference</h1>
 <p>Communicating with Oxipay in order to process a transaction via our payment gateway involves <strong>POST</strong>ing a request to the Oxipay endpoint. This can be viewed as an authorisation request that is performed by the shopping cat in order to process the payment via Oxipay.</p>
-<p>Below is an overview of the various key-value combinations that can be passed to Oxipay (<strong>Request Values</strong>), a description of what they are as well as an indication of whether they are mandatory or optional. Please note that Oxipay adopts the convention of pre-fixing the various key names with <code>x_</code></p>
-<h2 id="request-values">Request Values</h2>
+<p>There are two Oxipay endpoints that transaction information can be posted to and these are the live (production) payment gateway and the test (sandbox) payment gateway.</p>
+<h2 id="oxipay-endpoints">Oxipay Endpoints</h2>
+<p>The Production Oxipay endpoint is:<br> <a href="https://secure.oxipay.com.au/Checkout?platform=Default">https://secure.oxipay.com.au/Checkout?platform=Default</a></p>
+<p>The Sandbox Oxipay endpoint is:<br> <a href="https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default">https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default</a></p>
+<h2 id="request-post-format">Request POST Format</h2>
+<p>Posting to the Oxipay endpoing, regardless of whether this is done in the live or test environments, should be done in the <code>application/x-www-form-urlencoded</code> format whereby the queyr string will represent the body of the HTTP message that is sent to Oxipay. The various key-value pairs that represent the transaction payload are seperated by the <code>&amp;</code> character whilst the key-value pairs are seperated by the <code>=</code> character. Note that Oxipay adopts the convention of prefixing the various key names with <code>x_</code> and we anticipate that you will adopt a similar convention when integrating Oxipay into your shopping cart.</p>
+<p>Below is an overview of the various key-value combination that can be passed to Oxipay (<strong>Request Values</strong>), a description of what they are as well as an indication of whether they are mandatory or optional.</p>
+<h1 id="sample-post">Sample POST</h1>
+<p>Below is a sample request that might be posted to an Oxipay endpoing. Note that the POST is in the <code>application/x-www-form-urlencoded</code> format.</p>
+<pre><code class="URL">x_reference=123&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=AUD
+&amp;x_url_callback=sample_callback_url&amp;x_url_complete=sample_complete_url
+&amp;x_shop_country=AU&amp;x_shop_name=Sample+Shop&amp;x_test=true
+&amp;x_customer_first_name=first&amp;x_customer_last_name=last
+&amp;x_customer_email=sample%40email.com&amp;x_customer_billing_country=AU
+&amp;x_customer_billing_city=Adelaide&amp;x_customer_billing_address1=97+Pirie
+&amp;x_customer_billing_address2=St&amp;x_customer_billing_state=SA
+&amp;x_customer_billing_zip=5000&amp;x_invoice=%123
+&amp;x_description=Sample+Store+-+%123
+&amp;x_url_cancel=sample_cancel_url&amp;x_signature=dummy_signature
+</code></pre>
+
+<h2 id="request-post-key-value-pairs">Request POST key-value pairs</h2>
 <table>
 <thead>
 <tr>
@@ -257,49 +286,49 @@
 </tr>
 <tr>
 <td>x_customer_billing_address1</td>
-<td>Customer's billing address, line 1</td>
+<td>Billing address, line 1</td>
 <td>unicode string</td>
 <td>97 Pirie St</td>
 </tr>
 <tr>
 <td>x_customer_billing_address2</td>
-<td>Customer's billing address, line 2</td>
+<td>Billing address, line 2</td>
 <td>unicode string</td>
 <td>Level 6</td>
 </tr>
 <tr>
 <td>x_customer_billing_city</td>
-<td>Customer's billing city</td>
+<td>Billing city</td>
 <td>unicode string</td>
 <td>Adelaide</td>
 </tr>
 <tr>
 <td>x_customer_billing_country</td>
-<td>Customer's billing country</td>
+<td>Billing country</td>
 <td>iso-3166-1 alpha-2</td>
 <td>AU</td>
 </tr>
 <tr>
 <td>x_customer_billing_phone</td>
-<td>Customer's billing phone number, can be mobile or landline</td>
+<td>Billing phone number, can be mobile or landline</td>
 <td>unicode string</td>
 <td>0400 000 000</td>
 </tr>
 <tr>
 <td>x_customer_billing_state</td>
-<td>Customer's billing state</td>
+<td>Billing state</td>
 <td>unicode string</td>
 <td>SA</td>
 </tr>
 <tr>
 <td>x_customer_billing_zip</td>
-<td>Customer's billing zip code</td>
+<td>Billing zip code</td>
 <td>unicode string</td>
 <td>5000</td>
 </tr>
 <tr>
 <td>x_customer_email</td>
-<td>Customer's billing email address</td>
+<td>Billing email address</td>
 <td>unicode string</td>
 <td>dummy@gmail.com</td>
 </tr>
@@ -323,25 +352,25 @@
 </tr>
 <tr>
 <td>x_customer_shipping_address1</td>
-<td>Customer's shipping address, line 1</td>
+<td>Shipping address, line 1</td>
 <td>unicode string</td>
 <td>97 Pirie St</td>
 </tr>
 <tr>
 <td>x_customer_shipping_address2</td>
-<td>Customer's shipping address, line 2</td>
+<td>Shipping address, line 2</td>
 <td>unicode string</td>
 <td>Level 6</td>
 </tr>
 <tr>
 <td>x_customer_shipping_city</td>
-<td>Customer's shipping city</td>
+<td>Shipping city</td>
 <td>unicode string</td>
 <td>Adelaide</td>
 </tr>
 <tr>
 <td>x_customer_shipping_country</td>
-<td>Customer's shipping country</td>
+<td>Shipping country</td>
 <td>unicode string</td>
 <td>AU</td>
 </tr>
@@ -365,13 +394,13 @@
 </tr>
 <tr>
 <td>x_customer_shipping_state</td>
-<td>Customer's shipping state</td>
+<td>Shipping state</td>
 <td>unicode string</td>
 <td>SA</td>
 </tr>
 <tr>
 <td>x_customer_shipping_zip</td>
-<td>Customer's shipping zip code</td>
+<td>Shipping zip code</td>
 <td>unicode string</td>
 <td>5000</td>
 </tr>
@@ -421,24 +450,26 @@
 <td>x_url_callback <strong>Required</strong></td>
 <td>Callback notifications are sent asynchronously to this URL</td>
 <td>URL</td>
-<td>oxipay.com.au/callback</td>
+<td>shop.com.au/callback</td>
 </tr>
 <tr>
 <td>x_url_cancel <strong>Required</strong></td>
 <td>Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead</td>
 <td>URL</td>
-<td>oxipay.com.au/cancel</td>
+<td>shop.com.au/cancel</td>
 </tr>
 <tr>
 <td>x_url_complete <strong>Required</strong></td>
 <td>Customers are redirected to this URL if they have successfully processed their transaction using Oxipay</td>
 <td>URL</td>
-<td>oxipay.com.au/compete</td>
+<td>shop.com.au/compete</td>
 </tr>
 </tbody>
 </table>
-<h2 id="response-values">Response Values</h2>
-<p>Below is an overview of the various response values that Oxipay returns when processing a transaction. Note that some of these key-value pairs echo corresponding key-value pairs in the request that Oxipay receives - as is the case with <code>x_currency</code> for instnace.</p>
+<h2 id="response-post">Response POST</h2>
+<p>Once a transaction has been processed by Oxipay, Oxipay will communicate with the shopping platform using the <code>x_url_callback</code> URL that is specified as part of the request POST. The response is also sent in the <code>application/x-www-form-urlencoded</code> format as an asynchronous POST. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction whether it has failed or is pending another action for instance.</p>
+<h2 id="response-post-key-value-pairs">Response POST key-value pairs</h2>
+<p>Below is an overview of the various response key-value pairs that Oxipay returns after it has finished processing a transaction. Note that some of these key-value pairs echo corresponding key-value pairs in the request that Oxipay receives - as is the case with <code>x_currency</code> for instance.</p>
 <table>
 <thead>
 <tr>
@@ -472,6 +503,36 @@
 <td>Indicates whether the transaciton is to be processed as a live or a test transaction</td>
 <td>true/false</td>
 <td>true</td>
+</tr>
+<tr>
+<td>x_amount <strong>Required</strong></td>
+<td>Represents the transaction's total amount inc. any taxes and shipping costs</td>
+<td>decimal</td>
+<td>99.90</td>
+</tr>
+<tr>
+<td>x_gateway_reference <strong>Required</strong></td>
+<td>A reference for the authorisation issues by Oxipay that is unique</td>
+<td>unique string</td>
+<td>123</td>
+</tr>
+<tr>
+<td>x_timestamp <strong>Required</strong></td>
+<td>Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ</td>
+<td>iso-8601 in UTC</td>
+<td>2017-06-24T12:11:43Z</td>
+</tr>
+<tr>
+<td>x_result <strong>Required</strong></td>
+<td>Values that represent the outcome of a transaction</td>
+<td>Valid values are <strong>completed</strong>, <strong>failed</strong> and <strong>pending</strong></td>
+<td><strong>failed</strong></td>
+</tr>
+<tr>
+<td>x_message <strong>Required</strong></td>
+<td>A custom error message that is displayed to the end user</td>
+<td>ascii string</td>
+<td>Signature Invalid</td>
 </tr>
 </tbody>
 </table>
