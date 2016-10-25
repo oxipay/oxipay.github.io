@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Signing Mechanism - Oxipay Documentation</title>
+	<title>Signature Generation - Oxipay Documentation</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -120,7 +120,7 @@
                     
                         
 <li class="active">
-    <a href="./">Signing Mechanism</a>
+    <a href="./">Signature Generation</a>
 </li>
 
                     
@@ -190,14 +190,17 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#signing-mechanism">Signing Mechanism</a></li>
+        <li class="main active"><a href="#signature-generation">Signature Generation</a></li>
+        
+    
+        <li class="main "><a href="#example">Example</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="signing-mechanism">Signing Mechanism</h1>
+<h1 id="signature-generation">Signature Generation</h1>
 <p>This section includes information on the signing and verification methods that Oxipay uses. Oxipay uses HMAC-SHA256 for purposes of signing and verifying requests and responses. In this context:</p>
 <ul>
 <li>
@@ -207,7 +210,11 @@
 <p>A <code>message</code> which is a string of all key-value pairs that are stored alphabetically and are concatenated with seperators. Please note that we have adopted the convention of prefixing the various keys with <code>x_</code> similar to what is done in Shopify.</p>
 </li>
 </ul>
-<p>The resulting HMAC-SHA256 signature needs to be hex-encoded and passed along with the remainder of the transaction payload as a value of the key <code>x_signature</code></p></div>
+<p>The resulting HMAC-SHA256 signature needs to be hex-encoded and passed along with the remainder of the transaction payload as a value of the key <code>x_signature</code></p>
+<h1 id="example">Example</h1>
+<p>Below is a example of what the payload might look like when posted from the shopping cart to the Oxipay payment gateway in URL encoded query string format.</p>
+<pre><code>x_reference=123456789&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=AUD&amp;x_url_callback=sample_callback_url&amp;x_url_complete=sample_complete_url&amp;x_shop_country=AU&amp;x_shop_name=Sample+Shop&amp;x_test=true&amp;x_customer_first_name=first&amp;x_customer_last_name=last&amp;x_customer_email=sample%40email.com&amp;x_customer_billing_country=AU&amp;x_customer_billing_city=Adelaide&amp;x_customer_billing_address1=97+Pirie&amp;x_customer_billing_address2=St&amp;x_customer_billing_state=SA&amp;x_customer_billing_zip=5000&amp;x_invoice=%123456789&amp;x_description=Sample+Store+-+%123456789&amp;x_url_cancel=sample_cancel_url&amp;x_signature=dummysignaturelaskdjfhjnojelkfmlaksdf
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
