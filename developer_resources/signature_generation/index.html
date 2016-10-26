@@ -131,6 +131,13 @@
 
         
             
+    <li class="toctree-l1 ">
+        <a class="" href="../sample_curl/">Sample cURL Script</a>
+        
+    </li>
+
+        
+            
     <li class="toctree-l1 current">
         <a class="current" href="./">Signature Generation</a>
         
@@ -229,7 +236,7 @@
 <p>The <em>API Key</em> serves as the <code>key</code> for HMAC-SHA256. This API key is only known to Oxipay and the merchant. Note that API keys are unique to every merchant and are also recycled on a regular basis.</p>
 </li>
 <li>
-<p>The HTTP POST serves as the <code>message</code> and is the string of all key-value pairs that represent the transaction request POST. Note that the keys for the various key-value pairs are prefixed with <code>x_</code>. Also note that you would need to sort the various keys alphabetically and then concatentate them with a seperator. </p>
+<p>The HTTP POST serves as the <code>message</code> and is the string of all key-value pairs that represent the transaction request POST. Note that the keys for the various key-value pairs are prefixed with <code>x_</code>. Also note that you would need to sort the various keys alphabetically.</p>
 </li>
 </ul>
 <p>The resulting HMAC-SHA256 signature needs to be hex-encoded and passed along with the remainder of the transaction payload as a value of the key <code>x_signature</code></p>
@@ -265,7 +272,7 @@
         <a href="../../guidelines/banner-adverts/" class="btn btn-neutral float-right" title="Introduction">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../api_reference/" class="btn btn-neutral" title="API Reference"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sample_curl/" class="btn btn-neutral" title="Sample cURL Script"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -291,7 +298,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../api_reference/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../sample_curl/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../../guidelines/banner-adverts/" style="color: #fcfcfc">Next &raquo;</a></span>
