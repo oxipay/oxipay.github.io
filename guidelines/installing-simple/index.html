@@ -8,7 +8,7 @@
   
   
   
-  <title>Banners and Tags list - Oxipay Documentation</title>
+  <title>Installing the Basic Way - Oxipay Documentation</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -25,9 +25,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Banners and Tags list";
-    var mkdocs_page_input_path = "guidelines\banners.md";
-    var mkdocs_page_url = "/guidelines/banners/";
+    var mkdocs_page_name = "Installing the Basic Way";
+    var mkdocs_page_input_path = "guidelines\installing-simple.md";
+    var mkdocs_page_url = "/guidelines/installing-simple/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -163,8 +163,19 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../installing-simple/">Installing the Basic Way</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Installing the Basic Way</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#the-basic-way">The Basic Way</a></li>
+                
+                    <li><a class="toctree-l4" href="#option-1">Option 1</a></li>
+                
+                    <li><a class="toctree-l4" href="#option-2">Option 2</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -177,22 +188,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Banners and Tags list</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#banners">Banners</a></li>
-                
-                    <li><a class="toctree-l4" href="#banner-01">Banner-01</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#price-tags">Price Tags</a></li>
-                
-                    <li><a class="toctree-l4" href="#tag-01">Tag-01</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../banners/">Banners and Tags list</a>
         
     </li>
 
@@ -226,7 +223,7 @@
         
       
     
-    <li>Banners and Tags list</li>
+    <li>Installing the Basic Way</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -236,49 +233,45 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="banners">Banners</h1>
-<p>Recommended placement is at the bottom of each page.</p>
-<h2 id="banner-01">Banner-01</h2>
-<p><p><img alt="Banner 01" src="//images.oxipay.com.au/content/images/oxipay-banner-01.png" /></p>
-<strong>Image Download</strong> <br>
-<p><a href="//images.oxipay.com.au/content/images/oxipay-banner-01.png" download>Download Banner-01</a></p>
-<strong>Simple HTML</strong> </p>
-<pre><code>&lt;a id=&quot;oxipay-banner-01&quot; target=&quot;_blank&quot;  href=&quot;https://oxipay.com.au/works&quot;&gt;&lt;img src=&quot;//images.oxipay.com.au/content/images/oxipay-banner-01.png&quot;&gt;&lt;/a&gt;
+                <h1 id="the-basic-way">The Basic Way</h1>
+<p>(Minimal Website knowledge)
+This method describes the Basic Way to add the banners that are found <a href="/guidelines/banners">here.</a></p>
+<p>For Merchants who are not experienced web developers or do not have access to one, we have created a simple and easy process so that they can display oxipay branding on their websites.
+We have provided a series of premade images which have multiple ways that you can display them on your websites.</p>
+<h3 id="option-1">Option 1</h3>
+<p><div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
+  <div class="panel-body">
+    This step by step guide is done using Wordpress. Most Content Management Systems will follow a similar process.
+  </div>
+</div>
+<br><strong>Step 1:</strong> Download the desired banner or tag from our <a href="/guidelines/banners">banners section</a>. 
+<br><strong>Step 2:</strong> Log into your websites Content Managment System (eg: Wordpress) and click edit to the page that you would like the banner to appear on.
+<br><strong>Step 3:</strong> Upload the image through the text editor by clicking the add media option.
+<br><img alt="01-add-media.png" src="../../img/marketing-and-guidlines/01-add-media.png" />
+<br><strong>Step 4:</strong> Make sure you have the image selected and click on the Insert link option.
+<br><img alt="02-add-link.png" src="../../img/marketing-and-guidlines/02-add-link.png" />
+<br><strong>Step 5:</strong> Set it to link to <a target="_blank" href="https://oxipay.com.au/works">https://oxipay.com.au/works</a> and to open in a new window (Target = _blank).
+<br><img alt="03-add-link.png" src="../../img/marketing-and-guidlines/03-add-link.png" />
+<br><strong>Step 6:</strong> Save and your changes should be visable on page you edited.</p>
+<h3 id="option-2">Option 2</h3>
+<p>Alternatively we have provided a small snippet of html that you can use. This is found under each image in the <a href="/guidelines/banners">banners section</a>. This will automatically load the images from our servers and display it on your site. It will also include a link to our "how it works" page so your customers can better understand how Oxipay will benefit.
+The snippet will look something like the following.</p>
+<pre><code>/** Example HTML **/
+&lt;a id=&quot;oxipay-banner-01&quot; target=&quot;_blank&quot; href=&quot;https://oxipay.com.au/works&quot;&gt;&lt;img src=&quot;//images.oxipay.com.au/content/images/oxipay-banner-01.png&quot;&gt;&lt;/a&gt;
 </code></pre>
 
-<p><strong>Complex HTML</strong> (Requires <a href="/guidelines/installing-complex/#installing-the-css">CSS</a> and <a href="/guidelines/installing-complex/#installing-the-modal-page">Modal</a>)</p>
-<pre><code>&lt;a id=&quot;oxipay-banner-01&quot; href=&quot;#oxipay-modal&quot; rel=&quot;modal:open&quot; data-toggle=&quot;modal&quot; data-target=&quot;#oxipay-modal&quot;&gt;
-    &lt;div class=&quot;logo&quot;&gt;
-        &lt;img alt=&quot;Oxipay&quot; src=&quot;//images.oxipay.com.au/content/images/oxipay.svg&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;text&quot;&gt;
-        &lt;h3&gt;Pay the easier way.&lt;/h3&gt;
-        &lt;p&gt;Choose Oxipay at the checkout and pay for your purchase in 4 easy no interest payments&lt;/p&gt;
-
-    &lt;/div&gt;
-    &lt;div class=&quot;button&quot;&gt;
-        &lt;p class=&quot;info&quot;&gt;More info&lt;/p&gt;
-    &lt;/div&gt;  
-&lt;/a&gt;
-</code></pre>
-
-<h1 id="price-tags">Price Tags</h1>
-<p>Recommended placement is under the price of the item before the add to cart button.</p>
-<h2 id="tag-01">Tag-01</h2>
-<p><p><img alt="Tag 01" src="//images.oxipay.com.au/content/images/oxipay-tag-01.png" /></p>
-<strong>Image Download</strong> <br>
-<p><a href="//images.oxipay.com.au/content/images/oxipay-tag-01.png" download>Download Tag-01</a></p>
-<strong>Simple HTML</strong> </p>
-<pre><code>&lt;a id=&quot;oxipay-tag-01&quot; target=&quot;_blank&quot; href=&quot;https://oxipay.com.au/works&quot;&gt;&lt;img src=&quot;//images.oxipay.com.au/content/images/oxipay-tag-01.png&quot;&gt;&lt;/a&gt;
-</code></pre>
-
-<p><strong>Complex HTML</strong> (Requires <a href="/guidelines/installing-complex/#installing-the-css">CSS</a> and <a href="/guidelines/installing-complex/#installing-the-modal-page">Modal</a>)</p>
-<pre><code>&lt;a id=&quot;oxipay-tag-01&quot; href=&quot;#oxipay-modal&quot; rel=&quot;modal:open&quot; data-toggle=&quot;modal&quot; data-target=&quot;#oxipay-modal&quot;&gt;
-    &lt;p&gt;Pay the easier way with &lt;img alt=&quot;Oxipay&quot; src=&quot;//images.oxipay.com.au/content/images/oxipay.svg&quot; /&gt; &lt;span&gt;More info&lt;/span&gt;&lt;/p&gt;
-&lt;/a&gt;
-</code></pre>
-
-<p><small>*We reserve to right to change any linked image at anytime without prior notice</small></p>
+<p>To install this snippet either place it on your sites html on the desired pages you'd like it to appear or click on the HTML option in your test editor and past in the snippet.
+<br><strong>Step 1:</strong> Find the code snippet for desired banner or tag from our <a href="/guidelines/banners">banners section</a>. 
+<br><strong>Step 2:</strong> Log into your websites Content Managment System (eg: Wordpress) and click edit to the page that you would like the banner to appear on.
+<br><strong>Step 3:</strong> Click on the HTML option in your pages text editor.
+<br><img alt="simple-html-2.jpg" src="../../img/marketing-and-guidlines/simple-html-1.jpg" />
+<br><strong>Step 4:</strong> Paste the HTML snippet in the text editor.
+<br><img alt="simple-html-3.jpg" src="../../img/marketing-and-guidlines/simple-html-2.jpg" />
+<br><strong>Step 5:</strong> Save and your changes should be visable on the page you edited.
+<br><img alt="simple-html-3.jpg" src="../../img/marketing-and-guidlines/simple-html-3.jpg" /></p>
               
             </div>
           </div>
@@ -286,8 +279,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../installing-complex/" class="btn btn-neutral float-right" title="Installing the Developer Way">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../installing-complex/" class="btn btn-neutral" title="Installing the Developer Way"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../banner-adverts/" class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -313,8 +308,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../installing-complex/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../banner-adverts/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../installing-complex/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
