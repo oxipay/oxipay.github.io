@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,31 +13,31 @@
         
     <url>
      <loc>None/platforms/shopify/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/platforms/woocommerce/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/platforms/magento_1/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/platforms/magento_2/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/platforms/onestep/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -47,31 +47,31 @@
         
     <url>
      <loc>None/developer_resources/introduction/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/developer_resources/checkout_process/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/developer_resources/api_reference/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/developer_resources/sample_curl/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/developer_resources/signature_generation/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -80,26 +80,20 @@
     
         
     <url>
-     <loc>None/guidelines/banner-adverts/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <loc>None/guidelines/introduction/</loc>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/guidelines/installing-simple/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <loc>None/guidelines/installation/</loc>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/guidelines/installing-complex/</loc>
-     <lastmod>2016-11-16</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/guidelines/banners/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <loc>None/guidelines/widgets/</loc>
+     <lastmod>2016-12-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
