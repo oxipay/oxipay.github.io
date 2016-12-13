@@ -8,7 +8,7 @@
   
   
   
-  <title>WooCommerce - Oxipay Documentation</title>
+  <title>PrestaShop - Oxipay Documentation</title>
   
 
   <link rel="shortcut icon" href="../../img/favicon.ico">
@@ -25,9 +25,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "WooCommerce";
-    var mkdocs_page_input_path = "platforms\woocommerce.md";
-    var mkdocs_page_url = "/platforms/woocommerce/";
+    var mkdocs_page_name = "PrestaShop";
+    var mkdocs_page_input_path = "platforms\prestashop.md";
+    var mkdocs_page_url = "/platforms/prestashop/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -77,31 +77,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">WooCommerce</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#setting-up-oxipay-on-a-woocommerce-store">Setting up Oxipay on a WooCommerce Store</a></li>
-                
-                    <li><a class="toctree-l4" href="#introduction">Introduction</a></li>
-                
-                    <li><a class="toctree-l4" href="#installing-oxipay">Installing Oxipay</a></li>
-                
-                    <li><a class="toctree-l4" href="#automatic-installation">Automatic Installation</a></li>
-                
-                    <li><a class="toctree-l4" href="#manual-installation">Manual Installation</a></li>
-                
-                    <li><a class="toctree-l4" href="#configuring-oxipay">Configuring Oxipay</a></li>
-                
-                    <li><a class="toctree-l4" href="#oxipay-plugin-settings">Oxipay Plugin Settings</a></li>
-                
-                    <li><a class="toctree-l4" href="#updates-to-oxipay">Updates to Oxipay</a></li>
-                
-                    <li><a class="toctree-l4" href="#de-activating-and-deleting-oxipay">De-activating and Deleting Oxipay</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../woocommerce/">WooCommerce</a>
         
     </li>
 
@@ -128,8 +105,31 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../prestashop/">PrestaShop</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">PrestaShop</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#setting-up-oxipay-on-a-prestashop-store">Setting up Oxipay on a PrestaShop Store</a></li>
+                
+                    <li><a class="toctree-l4" href="#introduction">Introduction</a></li>
+                
+                    <li><a class="toctree-l4" href="#installing-oxipay">Installing Oxipay</a></li>
+                
+                    <li><a class="toctree-l4" href="#automatic-installation">Automatic Installation</a></li>
+                
+                    <li><a class="toctree-l4" href="#manual-installation">Manual Installation</a></li>
+                
+                    <li><a class="toctree-l4" href="#configuring-oxipay">Configuring Oxipay</a></li>
+                
+                    <li><a class="toctree-l4" href="#oxipay-plugin-settings">Oxipay Plugin Settings</a></li>
+                
+                    <li><a class="toctree-l4" href="#updates-to-oxipay">Updates to Oxipay</a></li>
+                
+                    <li><a class="toctree-l4" href="#de-activating-and-deleting-oxipay">De-activating and Deleting Oxipay</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -235,7 +235,7 @@
         
       
     
-    <li>WooCommerce</li>
+    <li>PrestaShop</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -245,30 +245,38 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="setting-up-oxipay-on-a-woocommerce-store">Setting up Oxipay on a WooCommerce Store</h1>
+                <h1 id="setting-up-oxipay-on-a-prestashop-store">Setting up Oxipay on a PrestaShop Store</h1>
 <h2 id="introduction">Introduction</h2>
-<p>This document outlines the steps needed to install the Oxipay plugin on your WooCommerce store that runs on WordPress. Please note that the procedure outlined in this article was performed using Internet Explorer and so you might encounter a slightly different workflow or user interface if using another browser such as FireFox or Chrome.</p>
+<p>This document outlines the steps needed to install Oxipay on your PrestaShop store. Oxipay enables customers to purchase items using their credit cards on an interest free payment plan.</p>
 <div class="panel">
-  At the time of writing this document, Oxipay was developed and tested using WooCommerce version 2.6.4. Issues might be encountered if using an earlier version. If you do encounter issues, then please contact us to resolve them as soon as possible.
+    The Oxipay plugin has been developed and tested against PrestaShop version 1.6.1.9 Please note however, that it should also compatible with all 1.6.X and 1.7.X versions.
 </div>
 
 <h2 id="installing-oxipay">Installing Oxipay</h2>
-<p><div class="panel">
-  You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.
-</div></p>
-<p>Installing the Oxipay Plugin can be done in one of two ways: <strong>automatically</strong> via the WordPress Admin page, or <strong>manually</strong> by copying files to the WordPress server (to be performed by an IT professional or a Web developer).</p>
 <div class="panel">
-  Before proceeding with either option, please ensure that the WooCommerce plugin is properly installed and activated on you WordPress site. Please consult WooCommerce's official documentation to confirm this.
+  You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.
+</div>
+
+<p>The Oxipay plugin can be installed automatically via PrestaShop's admin panel. The instructions underneath details the steps of how to upload the Oxipay plugin .zip file and then install it and configure the various parameters needed for it to work properly.</p>
+<div class="panel panel-primary">
+  <div class="panel-body">
+    Installation of the plugin requires you to be able to access the store's admin area. If you are having trouble in access your PrestaShop's admin area, then please consult PrestaShop's official support documentation or your IT department to resolve the issue.
+  </div>
 </div>
 
 <h2 id="automatic-installation">Automatic Installation</h2>
-<p>This section outlines how you can install the Oxipay plugin automatically using the <strong>WordPress Admin</strong>. We recommend that you follow this procedure since it does not require extensive knowledge of how the WooCommerce platform is configured internally and minimises any chance of errors.</p>
-<p>1 - Navigate to the URL below and then click on the Download repository link; this will download a zip file; rename that .zip file to Oxipay.zip </p>
-<div class="alert alert-info" role="alert"><b>https://github.com/oxipay/oxipay-woocommerce/releases</b></div>
-
-<p>2 - Log into the WordPress Admin page.</p>
-<p>3 - Hover over Plugins on the left sidebar; then from the submenu that appears, click on Add New</p>
-<p><img alt="1.png" src="../../img/platforms/woocommerce/1.png" /></p>
+<p>This section outlines how you can perform the automatic installation of the Oxipay plugin via PrestaShop's admin area.</p>
+<p><strong>1</strong> - First, you will need to download a copy of the Oxipay plugin for PrestaShop. To download your copy, navigate to the following URL, click on the <strong>Clone or download</strong> link in the top right then click on <strong>Download ZIP</strong> from the menu that appears. This will download the plugin as a ZIP file into your default installation directory. </p>
+<p><a href="https://github.com/oxipay/oxipay-prestashop">https://github.com/oxipay/oxipay-prestashop</a></p>
+<p><strong>2</strong> - Log into your PrestaShop's admin area using an <strong>Email address</strong> and a <strong>Password</strong> combination that has already been configured as an admin.</p>
+<p><img alt="1.png" src="../../img/platforms/prestashop/1.png" /></p>
+<p><strong>3</strong> - Once logged in, you will be presented with your store's dashboard. From the side menu that appears to the left, hover over <strong>Modules and Services</strong> and then click on <strong>Modules and Services</strong> from the sub-menu that appears.</p>
+<p><img alt="2.png" src="../../img/platforms/prestashop/2.png" /></p>
+<p><strong>4</strong> This wll take you to the Modules and Services page and wil display a list of modules that are available and can be installed/configured on your store.</p>
+<p><strong>5</strong> Scroll until you bring the <em>Modules List<strong> panel into focus and ensure that both filtering drop-downs are configured as follow - i.e. they are set to display </strong>Installed &amp; Not Installed<strong> plugins as well as those that are </strong>Enabled &amp; Disabled</em>*.</p>
+<p><img alt="3.png" src="../../img/platforms/prestashop/3.png" /></p>
+<p>Hover over Plugins on the left sidebar; then from the submenu that appears, click on Add New</p>
+<p><img alt="1.png" src="../../img/platforms/prestashop/1.png" /></p>
 <p>4 - This will display the Add Plugins page; click on the Upload Plugin button.</p>
 <p><img alt="2.png" src="../../img/platforms/woocommerce/2.png" /></p>
 <p>5 - This will display an area on the same page where you can chose the file you want to upload.</p>
@@ -403,6 +411,9 @@ Next is a description of the various settings that you will find on this page.</
 <h2 id="updates-to-oxipay">Updates to Oxipay</h2>
 <p>Updates to Oxipay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our Oxipay plugin or newer versions of WooCommerce or WordPress. Our recommendation is that the existing Oxipay plugin is first deactivated and then deleted.</p>
 <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Note</h3>
+  </div>
   <div class="panel-body">
     Deleting the existing plugin ensures that code and any associated files from the previous version of the plugin do not negatively interfere with the newer version of the plugin.
   </div>
@@ -429,10 +440,10 @@ Next is a description of the various settings that you will find on this page.</
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../magento_1/" class="btn btn-neutral float-right" title="Magento 1">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../developer_resources/introduction/" class="btn btn-neutral float-right" title="Introduction">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../shopify/" class="btn btn-neutral" title="Shopify"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../onestep/" class="btn btn-neutral" title="OneStep"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -458,10 +469,10 @@ Next is a description of the various settings that you will find on this page.</
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../shopify/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../onestep/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../magento_1/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../developer_resources/introduction/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

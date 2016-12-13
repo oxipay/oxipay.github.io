@@ -115,6 +115,13 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../prestashop/">PrestaShop</a>
+        
+    </li>
+
+        
     </ul>
 <li>
           
@@ -229,9 +236,6 @@
                 <h1 id="setting-up-oxipay-on-a-magento-1-store">Setting up Oxipay on a Magento 1 Store</h1>
 <p>This document outlines the steps needed to integrate the Oxipay Payment Gateway into your Magento store.</p>
 <div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
   <div class="panel-body">
     At the time of writing this article; Oxipay was developed and tested using Magento Community Edition 1.9. Issues might be encountered if using a different version. If you do encounter issues, please contact us to resolve them as soon as possible.
   </div>
@@ -240,18 +244,12 @@
 <p><br/></p>
 <h2 id="installing-the-plugin">Installing the Plugin</h2>
 <div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
   <div class="panel-body">
     You will need your <b>Merchant ID</b> and a corresponding <b>Encryption Key</b> before continuing with the installation. If you don't have either of these bits of information; please contact <a href="mailto:support@oxipay.com.au?Subject=Merchant ID">support@oxipay.com.au</a>.
   </div>
 </div>
 
 <div class="panel panel-danger">
-  <div class="panel-heading">
-    <h3 class="panel-title">Important</h3>
-  </div>
   <div class="panel-body">
     Performing the steps below requires some knowledge of the Magento platform. We recommend that these steps be performed by an IT professional or a web developer.<br/><br/>
     Before proceeding with the rest of the installation; ensure that you have a back of your Magento store. To create a backup, navigate to System -> Tools -> Backup. This is useful in the event you encounter issues with installing Oxipay.
@@ -261,9 +259,6 @@
 <p>1 - You can install the Oxipay plugin manually by copying the <a href="https://github.com/oxipay/oxipay-magento-1.x">oxipay-magento-1.x</a> source code into the <code>/app</code> folder under the Magento root directory. A zip file containing the Oxipay plugin can be found at the following location:<br/>
 <a href="https://github.com/oxipay/oxipay-magento-1.x/releases">https://github.com/oxipay/oxipay-magento-1.x/releases</a></p>
 <div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
   <div class="panel-body">
     oxipay-magento-1.x is a private GitHub repository. If you don't have access, please contact <a href="mailto:support@oxipay.com.au?Subject=Merchant ID">support@oxipay.com.au</a> to get access or to receive the plugin via email.
   </div>
@@ -282,9 +277,6 @@
 <p>7 - Confirm that Oxipay Checkout is visible as a Payment Method and once expanded it looks similar to the image below.</p>
 <p><img alt="6.png" src="../../img/platforms/magento_1/6.png" /></p>
 <div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
   <div class="panel-body">
     The <b>Merchant Key</b> and <b>API Key</b> have been blacked out in the image above.
   </div>
@@ -294,9 +286,6 @@
 <h2 id="updates-to-oxipay">Updates to Oxipay</h2>
 <p>Updates to the Oxipay plugin might be made in the future. To update the Oxipay plugin, we recommend that you first uninstall the existing Oxipay plugin before installing a newer version.</p>
 <div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
   <div class="panel-body">
     Deleting the existing plugin ensures that any files from the previous version don't cause any issues with the newer version.
   </div>
