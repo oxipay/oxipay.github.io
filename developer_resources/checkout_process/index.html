@@ -232,7 +232,10 @@
                 <h1 id="checkout-process">Checkout Process</h1>
 <p>Below is a chart that summarises the flow of a transaction when processing it using Oxipay.</p>
 <p><img src="/img/api/1.png" alt="Oxipay Checkout Process"></p>
-<p><strong>NOTE:</strong> We have included a sample cURL script that you can use to test the Oxipay sandbox endpoint. You can find the script under <a href="../sample_curl/">Sample cURL Script</a></p>
+<div class="panel">
+   We have included a sample cURL script that you can use to test the Oxipay sandbox endpoint. You can find the script under <a href="../sample_curl/">Sample cURL Script</a>.
+</div>
+
 <p><strong>Step 1</strong>: The customer places an order in a shopping cart providing details such as their first/last name, email address etc. The customer chooses Oxipay as the payment method.</p>
 <p><strong>Step 2</strong>: The customer is redirected to the Oxipay checkout endpoint via a <strong>HTTP POST</strong> (See <a href="/developer_resources/api_reference/#Request">Request POST</a> for details). Note that this post needs to be signed to ensure security (See <a href="/developer_resources/signature_generation/">Signature Generation</a> for details).</p>
 <p><strong>Step 3</strong>: The customer will then complete the purchase via the Oxipay Service. Customers that cancel will be redirected back to the <code>x_url_cancel</code> URL.</p>
