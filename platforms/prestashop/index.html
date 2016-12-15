@@ -112,21 +112,13 @@
             
                 <li class="toctree-l3"><a href="#setting-up-oxipay-on-a-prestashop-store">Setting up Oxipay on a PrestaShop Store</a></li>
                 
-                    <li><a class="toctree-l4" href="#introduction">Introduction</a></li>
-                
                     <li><a class="toctree-l4" href="#installing-oxipay">Installing Oxipay</a></li>
-                
-                    <li><a class="toctree-l4" href="#automatic-installation">Automatic Installation</a></li>
-                
-                    <li><a class="toctree-l4" href="#manual-installation">Manual Installation</a></li>
                 
                     <li><a class="toctree-l4" href="#configuring-oxipay">Configuring Oxipay</a></li>
                 
-                    <li><a class="toctree-l4" href="#oxipay-plugin-settings">Oxipay Plugin Settings</a></li>
+                    <li><a class="toctree-l4" href="#quick-config-actions">Quick Config Actions</a></li>
                 
-                    <li><a class="toctree-l4" href="#updates-to-oxipay">Updates to Oxipay</a></li>
-                
-                    <li><a class="toctree-l4" href="#de-activating-and-deleting-oxipay">De-activating and Deleting Oxipay</a></li>
+                    <li><a class="toctree-l4" href="#upgrading-oxipay">Upgrading Oxipay</a></li>
                 
             
             </ul>
@@ -246,7 +238,6 @@
             <div class="section">
               
                 <h1 id="setting-up-oxipay-on-a-prestashop-store">Setting up Oxipay on a PrestaShop Store</h1>
-<h2 id="introduction">Introduction</h2>
 <p>This document outlines the steps needed to install Oxipay on your PrestaShop store. Oxipay enables customers to purchase items using their credit cards on an interest free payment plan.</p>
 <div class="panel">
     The Oxipay plugin has been developed and tested against PrestaShop version 1.6.1.9 Please note however, that it should also compatible with all 1.6.X and 1.7.X versions.
@@ -257,14 +248,13 @@
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation procdure.
 </div>
 
-<p>The Oxipay plugin can be installed automatically via PrestaShop's admin panel. The instructions underneath details the steps of how to upload the Oxipay plugin .zip file and then install it and configure the various parameters needed for it to work properly.</p>
+<p>The plugin can be installed automatically via PrestaShop's admin panel. This section details how to upload the plugin .zip file, install and then configure its various parameters for it to work properly.</p>
 <div class="panel">
   Installation of the plugin requires you to be able to access the store's admin area. If you are having trouble in access your PrestaShop's admin area, then please consult PrestaShop's official support documentation or your IT department to resolve the issue.
 </div>
 
-<h2 id="automatic-installation">Automatic Installation</h2>
-<p>This section outlines how you can perform the automatic installation of the Oxipay plugin via PrestaShop's admin area.</p>
-<p><strong>1</strong> - First, you will need to download a copy of the Oxipay plugin for PrestaShop. To download your copy, navigate to the following URL, click on the <strong>Clone or download</strong> link in the top right then click on <strong>Download ZIP</strong> from the menu that appears. This will download the plugin as a ZIP file into your default installation directory. </p>
+<h3 id="installation-procedure">Installation Procedure</h3>
+<p><strong>1</strong> - Download a copy of the Oxipay plugin for PrestaShop. To download your copy, navigate to the following URL, click on the <strong>Clone or download</strong> link in the top right then click on <strong>Download ZIP</strong> from the menu that appears. This will download the plugin as a ZIP file into your default installation directory. </p>
 <p><a href="https://github.com/oxipay/oxipay-prestashop">https://github.com/oxipay/oxipay-prestashop</a></p>
 <p><strong>2</strong> - Log into your PrestaShop's admin area using an <strong>Email address</strong> and a <strong>Password</strong> combination that has already been configured as an admin.</p>
 <p><img alt="1.png" src="../../img/platforms/prestashop/1.png" /></p>
@@ -274,171 +264,118 @@
 <p><strong>5</strong> - Scroll downwards and bring the <strong>Modules List</strong> panel into focus and ensure that both filtering drop-downs are configured as follow - i.e. they are set to display <strong>Installed &amp; Not Installed</strong> plugins as well as those that are <strong>Enabled &amp; Disabled</strong>.</p>
 <p><img alt="3.png" src="../../img/platforms/prestashop/3.png" /></p>
 <div class="panel">
-  You might be presented with a warning at the top of the page indicating that you don't have "Bank wire" or "Payment by check" enabled on your site. If you don't intend on processing payment using either of those methods, then you can ignore this warning message
+  You might be presented with a warning at the top of the page indicating that you don't have <b>Bank wire</b> or <b>Payment by check</b> enabled on your site. If you don't intend on processing payment using either of those methods, then you can ignore this warning message
 </div>
 
-<p><strong>6</strong> 
-<img alt="1.png" src="../../img/platforms/prestashop/1.png" /></p>
-<p><strong>4</strong> - Scroll to the top of the page and then click on the <strong>Add a new module</strong> icon.</p>
+<p><strong>6</strong> - Scroll to the top of the page and then click on the <strong>Add a new module</strong> icon. This will open up the <strong>Add a new module</strong> panel.</p>
 <p><img alt="4.png" src="../../img/platforms/prestashop/4.png" /></p>
-<p><strong>5</strong> - Clicking on <strong>Add a new module</strong> will expand the <strong>Add a new module</strong> panel. Here you can upload the Oxipay plugin by first clicking on <strong>Chose a file</strong> where you can specify the folder that contains the Oxipay plugin .zip file. Then click on <strong>Upload this module</strong> to initiate the upload of the plugin.</p>
-<p>This will display the Add Plugins page; click on the Upload Plugin button.</p>
-<p><img alt="2.png" src="../../img/platforms/woocommerce/2.png" /></p>
-<p>5 - This will display an area on the same page where you can chose the file you want to upload.</p>
-<p><img alt="3.png" src="../../img/platforms/woocommerce/3.png" /></p>
-<p>6 - Click Choose File then browse to the folder containing the Oxipay.zip file. Select it and click Open.</p>
-<p>7 - Click on Install Now.</p>
-<p><img alt="4.png" src="../../img/platforms/woocommerce/4.png" /></p>
-<p>8 - This will start the installation process. Once completed, you’ll be presented with a page confirming that the installation was successful. Then click on the Activate Plugin link.</p>
-<p><img alt="5.png" src="../../img/platforms/woocommerce/5.png" /></p>
-<p>9 - Once the activation is complete, you will be re-directed to the Plugins page with a message indicating that the Plugin is activated.</p>
-<p><img alt="6.png" src="../../img/platforms/woocommerce/6.png" /></p>
-<p>10 - Plugins on the page are listed alphabetically, scroll to the bottom and confirm that the Oxipay plugin is installed and activated.</p>
-<p><img alt="7.png" src="../../img/platforms/woocommerce/7.png" /></p>
-<h2 id="manual-installation">Manual Installation</h2>
-<div class="panel panel-danger">
-  <div class="panel-body">
-    Performing the steps underneath requires solid knowledge of the WordPress and WooCommerce platforms as well as the computer file systems in general. We recommend that an IT professional or a Web Developer perform these steps to avoid any unintended damage to the existing Magento installation.
-  </div>
+<p><strong>7</strong> - From within the <strong>Add a new module</strong> panel, click on <strong>Choose a file</strong>. This will allow you to specify the folder or directory that contains the Oxipay .zip plugin. Once selected, click on <strong>Upload this module</strong> to initiate the uploading of the plugin.</p>
+<p><img alt="5.png" src="../../img/platforms/prestashop/5.png" /></p>
+<p><strong>8</strong> - If the installation of the plugin was successful, then you will be presented with a success alert at the top of the page indicated that the module was successfully donwloaded.</p>
+<p><img alt="6.png" src="../../img/platforms/prestashop/6.png" /></p>
+<p><strong>9</strong> - To confirm that thte plugin was successfully downloaded, scroll downwards until the <strong>Modules List</strong> panel is in focus. Then type in oxipay in the search field at the top left corner of the panel as per the screenshot below. This should filter out all other modules and only leave the <strong>Oxipay Prestashop</strong> module in focus.</p>
+<div class="panel">
+  Depending on the version of the plugin that you have downloaded, the version number displayed on the Oxipay prestashop plugin might be different to the one in the screenshot. This document has been prepared using version 1.1.0.
 </div>
 
-<p>1 - Navigate to the URL below and then download the latest Oxipay plugin .zip file.</p>
-<div class="alert alert-info" role="alert"><b>https://github.com/oxipay/oxipay-woocommerce/releases</b></div>
+<p><img alt="7.png" src="../../img/platforms/prestashop/7.png" /></p>
+<p><strong>10</strong> - Click n the green <strong>Install</strong> button next to the Oxipay prestashop listing.</p>
+<p><img alt="8.png" src="../../img/platforms/prestashop/8.png" /></p>
+<p><strong>11</strong> - Clicking on install will display a prompt requesting that you confirm that you want to go ahead with the installation of the plugin even though it has not been verified by PrestaShop. Click on the orange <strong>Proceed with the Installation</strong> button.</p>
+<div class="panel">
+  You can ignore the error message that indicates that the Oxipay module could not be verified. This error is displayed because the module was installed locally from your machine, rather than through PrestaShop's module marketplace.
+</div>
 
-<p>2 - Unzip the file and then copy the un-zipped folder into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins</p>
+<p><img alt="9.png" src="../../img/platforms/prestashop/9.png" /></p>
+<p><strong>12</strong> - If the installation is successful, you will be re-directed to the the Oxipay module configuration page with a message at the top of the page indicating that the module was installed successfully.</p>
+<p><img alt="10.png" src="../../img/platforms/prestashop/10.png" /></p>
 <h2 id="configuring-oxipay">Configuring Oxipay</h2>
-<p>1 - Log into the WordPress Admin page.</p>
-<p>2 - Hover over Plugins on the left sidebar. From the submenu that appears, click on Installed Plugins.</p>
-<p><img alt="8.png" src="../../img/platforms/woocommerce/8.png" /></p>
-<p>3 – On the Plugins page, scroll to the bottom of the page and then click on the Settings link underneath WooCommerce.</p>
-<p><img alt="9.png" src="../../img/platforms/woocommerce/9.png" /></p>
-<p>4 – This will bring up the WooCommerce settings page. Click on the Checkout tab.</p>
-<p><img alt="10.png" src="../../img/platforms/woocommerce/10.png" /></p>
-<p>5 – At the top of the page, click on the Oxipay link. This will bring up the various settings that can be configured for Oxipay.
-Next is a description of the various settings that you will find on this page.</p>
-<p><img alt="11.png" src="../../img/platforms/woocommerce/11.png" /></p>
-<h2 id="oxipay-plugin-settings">Oxipay Plugin Settings</h2>
-<p>Underneath is a description of the various Oxipay settings that you can configure. To bring up this page, follow the instructions listed in the <strong>Configuring the Plugin</strong> section.</p>
-<table class="table">
-  <tbody>
-    <tr>
-      <td><b>Enable</b></td>
-      <td>Ticking it enables Oxipay as a payment option, otherwise it is disabled.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img alt="12.png" src="../../img/platforms/woocommerce/12.png" /></p>
-<table class="table">
-<thead></thead>
-  <tbody>
-    <tr>
-      <td><b>Title</b></td>
-      <td>This controls the title of Oxipay that users see when selecting Oxipay as a payment option. Default value is provided which you can override.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img alt="14.png" src="../../img/platforms/woocommerce/14.png" /></p>
-<table>
-<thead></thead>
-  <tbody>
-    <tr>
-      <td><b>Description</b></td>
-      <td>This controls the description of Oxipay that users see when selecting Oxipay as a payment option. Default value is provided which you can override.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img alt="27.png" src="../../img/platforms/woocommerce/27.png" /></p>
-<table class="table">
-  <tbody>
-    <tr>
-      <td><b>Shop Name</b></td>
-      <td>The name of your business as advertised on the internet, TV or communicated to your customers via emails, brochures.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img alt="18.png" src="../../img/platforms/woocommerce/18.png" /></p>
-<table class="table">
-  <tbody>
-    <tr>
-      <td><b>Oxipay Gateway URL</b></td>
-      <td>Provided to you by Oxipay. This is the URL that your site needs to communicate with to process payments using Oxipay.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img alt="15.png" src="../../img/platforms/woocommerce/15.png" /></p>
-<table class="table">
-  <tbody>
-    <tr>
-      <td><b>Oxipay Sandbox Gateway URL</b></td>
-      <td>Provided to you by Oxipay as part of your testing of Oxipay during initial setup or to troubleshoot issues. This will process a test transaction on your store, but no dollar amounts will be deducted.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img alt="25.png" src="../../img/platforms/woocommerce/25.png" /></p>
-<table class="table">
-  <tbody>
-    <tr>
-      <td><b>Merchant ID</b></td>
-      <td>This is the ID that uniquely identifies your business. This value will be provided to you by Oxipay.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img alt="17.png" src="../../img/platforms/woocommerce/17.png" /></p>
-<table class="table">
-  <tbody>
-    <tr>
-      <td><b>API Key</b></td>
-      <td>An alpha-numeric sequence provided to you by Oxipay to verify that the payment request is from a current valid merchant. A new API key is generated and provided to you on a regular basis.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img alt="16.png" src="../../img/platforms/woocommerce/16.png" /></p>
-<table class="table">
-  <tbody>
-    <tr>
-      <td><b>Test Mode</b></td>
-      <td>Enables Oxipay Test Mode, do this as part of your initial setup of the plugin to verify proper installation or to troubleshoot issues. Enable it will allow you to process a test transaction where no dollar amounts are deducts.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img alt="13.png" src="../../img/platforms/woocommerce/13.png" /></p>
-<p>Once you have finished updating the various Oxipay settings, click on the <img alt="19.png" src="../../img/platforms/woocommerce/19.png" /> button at the bottom of the page. This will then display a message at the top of the page indicating that the saving was successful.</p>
-<p><img alt="20.png" src="../../img/platforms/woocommerce/20.png" /></p>
-<h2 id="updates-to-oxipay">Updates to Oxipay</h2>
-<p>Updates to Oxipay might be made in the future to either accommodate newer internet technologies that we deem essential to integrate into our Oxipay plugin or newer versions of WooCommerce or WordPress. Our recommendation is that the existing Oxipay plugin is first deactivated and then deleted.</p>
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Note</h3>
-  </div>
-  <div class="panel-body">
-    Deleting the existing plugin ensures that code and any associated files from the previous version of the plugin do not negatively interfere with the newer version of the plugin.
-  </div>
+<div class="panel">
+  This section assumes that you have just finished installing the Oxipay plugin and are still on the Oxipay Configuration page that you were automically re-directed to after installation.
 </div>
 
-<h2 id="de-activating-and-deleting-oxipay">De-activating and Deleting Oxipay</h2>
-<p>1 – Log into <strong>WordPress Admin</strong>.</p>
-<p>2 – Click on <strong>Plugins</strong> on the left sidebar; then click on <strong>Installed Plugins</strong>.</p>
-<p>3 – Scroll to the bottom, bring Oxipay into focus and then click on the <strong>Deactive</strong> link associated with it.</p>
-<p><img alt="21.png" src="../../img/platforms/woocommerce/21.png" /></p>
-<p>4 – If successful, the message<strong> Plugin deactivated</strong> will be displayed at the top of the page.</p>
-<p><img alt="22.png" src="../../img/platforms/woocommerce/22.png" /></p>
-<p>5 – Scroll to the bottom of the page again. This time around, click on the <strong>Delete</strong> link underneath Oxipay.</p>
-<p><img alt="23.png" src="../../img/platforms/woocommerce/23.png" /></p>
-<p>6 – This will display a page asking you to confirm if you want to proceed with deleting the Oxipay Plugin. Click on <strong>Yes, delete these files</strong>.</p>
-<p><img alt="24.png" src="../../img/platforms/woocommerce/24.png" /></p>
-<p>7 – If successful, you will be re-directed back to the <strong>Plugins</strong> page with the message <strong>The selected plugin has been deleted.</strong> at the top.</p>
-<p><img alt="26.png" src="../../img/platforms/woocommerce/26.png" /></p>
-<p>8 – You can now installing the new version of the plugin using either the <strong>automatic</strong> or <strong>manual</strong> procedures outlined above.</p>
-<p>Test 1</p>
+<p>This section details the various parameters that you would need to configure including this such as the plugin's logo, Oxipay endpoints to communicate with as well as the whether to enable Test Mode or not.</p>
+<ul>
+<li><strong>Title</strong> This configures the plugin title that gets displayed to the end user during checkout. By default it is configured to <strong>Oxipay</strong> but you have the option of changing it to something else such as <strong>Oxipay Australia</strong> or <strong>Oxipay Payment Gateway</strong> for instance.</li>
+</ul>
+<p><img alt="config1.png" src="../../img/platforms/prestashop/config1.png" />
+<hr></p>
+<ul>
+<li><strong>Logo</strong> This controls the Oxipay Logo that gets displayed </li>
+</ul>
+<p><img alt="config2.png" src="../../img/platforms/prestashop/config2.png" />
+<hr></p>
+<ul>
+<li><strong>Description</strong> This configures the plugin description text that gets displayed to the end user as part of the checkout process. By default, it is configured to be <strong>Breathe easy with Oxipay, an interest-free installment payment plan.</strong> but you do have the option of changing it to another text string.</li>
+</ul>
+<p><img alt="config3.png" src="../../img/platforms/prestashop/config3.png" />
+<hr></p>
+<ul>
+<li><strong>Oxipay Gateway URL</strong> This specifies the Oxipay end-point the plugin would need to communicate with for it to be able to process payments via Oxipay. Note that this is the live Oxipay Gateway URL meaning  transactions processed over it are real transactions that end up in real dollar amounts being deducted.</li>
+</ul>
+<p><img alt="config4.png" src="../../img/platforms/prestashop/config4.png" />
+<hr></p>
+<ul>
+<li><strong>Oxipay Sandbox Gateway URL</strong> This specifies the test Oxipay end-point that the plugin would need to communicate with when <strong>Test Mode</strong> is enabled. This is mainly used for troubleshooting purposes particularly if we want to simulate transactions on your PrestaShop store without having real dollar amounts debited from Credit Cards.</li>
+</ul>
+<p><img alt="config5.png" src="../../img/platforms/prestashop/config5.png" />
+<hr></p>
+<ul>
+<li><strong>Merchant ID</strong> This is the Oxipay Merchant ID that you are provided with as part of your on-boarding when signing-up with Oxipay.</li>
+</ul>
+<p><img alt="config6.png" src="../../img/platforms/prestashop/config6.png" />
+<hr></p>
+<ul>
+<li><strong>API Key</strong> The API Key or the Encryption key is a case-sentitive alpha-numeric that is used to authenticate payment requests originating from your store. It is similar to passwords that you use to login into your online email account for instnace, and so it is vital that you protect it and don't provide it to un-authorised individuals. We might also re-cycle your API and provide you with a new one if un-authorised individuals get hold of it or if it has been compromised.</li>
+</ul>
+<p><img alt="config7.png" src="../../img/platforms/prestashop/config7.png" />
+<hr></p>
+<ul>
+<li><strong>Test</strong> Indicates whether to process payments over the live Oxipay Gateway URL resulting in real transaction; or to process it over the Oxipay Sandbox Gateway URL which only produces simulated (test) transaction with no real dollar amounts being debited. By default it should be set to <strong>No</strong> unless you are attempting to diagnose issues with our help.</li>
+</ul>
+<p><img alt="config8.png" src="../../img/platforms/prestashop/config8.png" />
+<hr></p>
+<p>Once you have finished making the necessary configuration changes or updates, click on the <strong>Save</strong> button on the bottom left. If successful you will be presented with a success message at the top of the page, similar to the screenshot below.</p>
+<p><img alt="11.png" src="../../img/platforms/prestashop/11.png" /></p>
+<h2 id="quick-config-actions">Quick Config Actions</h2>
+<p>PrestaShop allows you to perform quick actions on your installed modules includes things such as disabling the plugin on specific devices or uninstalling it. To perform one of the quick actions:</p>
+<p><strong>1</strong> - Log into your PrestaShop admin panel.</p>
+<p><strong>2</strong> - However over the <strong>Modules and Services</strong> option on the left side menu and then click on <strong>Modules and Services</strong> item on the sub-menu that appears.</p>
+<p><strong>3</strong> - This will re-direct you to the <strong>List of Modules</strong> page.</p>
+<p><strong>4</strong> - Scroll downards until you bring the <strong>Modules List</strong> panel into focus and then type <strong>Oixpay</strong> in the search field in the panel's top left corner. This will bring the Oxipay module into focus and filter out all the other modules.</p>
+<p><strong>5</strong> - Click on the drop-down arrow next to the <strong>Configure</strong> button. This will open up a drop down menu similar to the one show in the screenshot underneath.</p>
+<p><img alt="12.png" src="../../img/platforms/prestashop/12.png" /></p>
+<p>Below is a quick summary of the various options available to you</p>
+<ul>
+<li><strong>Disable</strong> : Disables the plugin but leaves it installed on your PrestaShop. You can re-enable it with its existing settings at a later time. Oxipay, however, will not appear as a payment option on your store once disabled.
+<hr></li>
+<li><strong>Disable on mobiles</strong> : This option disables Oxipay only on mobile devices (smartphones such as iPhones for instance). This does not apply to tablets such as iPads or desktop computers.
+<hr></li>
+<li><strong>Diable on tables</strong> : Similar to above but disables Oxipay on tablets and not smartphones or desktop computers.
+<hr></li>
+<li><strong>Disable on computers</strong> : Disables Oxipay on desktop computers only.
+<hr></li>
+<li><strong>Reset</strong> : Resets the Oxipay module to its original state without any of the configuration settings that have been applied post installation.
+<hr></li>
+<li><strong>Uninstall</strong> : Uninstalls the plugin from your store. However, the plugin will still be available and you will be able to install it at a later time if you chose to without having to re-upload it again.
+<hr></li>
+<li><strong>Mark as Favorite</strong> : Marks Oxipay as one of your favourite plugins so that it becomes available from within the <strong>Favourites</strong> category list on the left hand side of the <strong>Modules List</strong> panel.</li>
+</ul>
+<p><img alt="13.png" src="../../img/platforms/prestashop/13.png" />
+<hr></p>
+<ul>
+<li><strong>Delete</strong> : Compeletely removes the plugin from your store. The plugin will no longer be available for installation again and the only way to add Oxipay back to your store as a payment method would be to perform the instructions in the <a href="#installing-oxipay">Installing Oxipay</a> section of the document again.</li>
+</ul>
+<h2 id="upgrading-oxipay">Upgrading Oxipay</h2>
+<p>To upgrade your Oxipay PrestaShop plugin and then install the newer version. To uninstall the plugin you would need to:</p>
+<p><strong>1</strong> - Open up the <strong>Quick Config Actions</strong> using the instructions in the <a href="#quick-config-actions">Quick Config Actions</a> section of this document.</p>
+<p><strong>2</strong> - From the drop-down menu that appears, click on <strong>Delete</strong>.</p>
+<p><img alt="14.png" src="../../img/platforms/prestashop/14.png" /></p>
+<p><strong>3</strong> - This will display a pop-up in your browser similar to the one show in the image underneath.</p>
+<p><img alt="15.png" src="../../img/platforms/prestashop/15.png" /></p>
+<p><strong>4</strong> - Click on <strong>OK</strong>. This will initiate the deletion of the Oxipay plugin. Once completed, you will be presented with a success message at the top of the page similar to the one show in the screenshot below.</p>
+<p><img alt="16.png" src="../../img/platforms/prestashop/16.png" /></p>
+<p><strong>5</strong> - You can now download the newer version of the Oxipay PrestaShop plugin and install it as per the instructions in the <a href="#installing-oxipay">Installing Oxipay</a> section of this document.</p>
               
             </div>
           </div>
