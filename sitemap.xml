@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,66 +12,44 @@
     
         
     <url>
-     <loc>None/platforms/shopify/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/platforms/shopify/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/platforms/woocommerce/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/platforms/woocommerce/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/platforms/magento_1/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/platforms/magento_1/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/platforms/magento_2/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/platforms/magento_2/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/platforms/onestep/</loc>
-     <lastmod>2016-12-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>None/developer_resources/introduction/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/platforms/onestep/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/developer_resources/checkout_process/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/platforms/prestashop/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/developer_resources/api_reference/</loc>
-     <lastmod>2016-12-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/developer_resources/sample_curl/</loc>
-     <lastmod>2016-12-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/developer_resources/signature_generation/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/platforms/cubecart/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -80,20 +58,54 @@
     
         
     <url>
-     <loc>None/guidelines/introduction/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/developer_resources/introduction/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/guidelines/installation/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/developer_resources/checkout_process/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/guidelines/widgets/</loc>
-     <lastmod>2016-12-12</lastmod>
+     <loc>/developer_resources/api_reference/</loc>
+     <lastmod>2017-01-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/developer_resources/sample_curl/</loc>
+     <lastmod>2017-01-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/developer_resources/signature_generation/</loc>
+     <lastmod>2017-01-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/guidelines/introduction/</loc>
+     <lastmod>2017-01-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/guidelines/installation/</loc>
+     <lastmod>2017-01-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/guidelines/widgets/</loc>
+     <lastmod>2017-01-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
