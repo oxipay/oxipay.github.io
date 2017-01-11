@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>CubeCart - Oxipay Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/jquery.modal.min.css" rel="stylesheet">
+  <link href="../../css/custom.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "CubeCart";
+    var mkdocs_page_input_path = "platforms\\cubecart.md";
+    var mkdocs_page_url = "/platforms/cubecart/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Oxipay Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Platforms</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../shopify/">Shopify</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../woocommerce/">WooCommerce</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magento_1/">Magento 1</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magento_2/">Magento 2</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../onestep/">OneStep</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../prestashop/">PrestaShop</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">CubeCart</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#setting-up-oxipay-on-a-cubecart-store">Setting up Oxipay on a CubeCart Store</a></li>
+                
+                    <li><a class="toctree-l4" href="#installing-oxipay">Installing Oxipay</a></li>
+                
+                    <li><a class="toctree-l4" href="#configuring-oxipay">Configuring Oxipay</a></li>
+                
+                    <li><a class="toctree-l4" href="#upgrading-oxipay">Upgrading Oxipay</a></li>
+                
+                    <li><a class="toctree-l4" href="#un-installing-oxipay">Un-installing Oxipay</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Developer Resources</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../developer_resources/introduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../developer_resources/checkout_process/">Checkout Process</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../developer_resources/api_reference/">API Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../developer_resources/sample_curl/">Sample cURL Script</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../developer_resources/signature_generation/">Signature Generation</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Marketing & Advertising Guidelines</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../guidelines/introduction/">Introduction</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../guidelines/installation/">Installation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../guidelines/widgets/">Widget list</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Oxipay Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Platforms &raquo;</li>
+        
+      
+    
+    <li>CubeCart</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="setting-up-oxipay-on-a-cubecart-store">Setting up Oxipay on a CubeCart Store</h1>
+<p>This document outlines the steps needed to install Oxipay on your CubeCart Store. Oxipay is a payment gateway that enables customers on your Stores to purchase items using their credit cards on an interest free payment plan.</p>
+<div class="panel">
+  At the time of writing this article, Oxipay was developed and tested against CubeCart version <code>6.1.1</code>, although the plugin should be compatible with other CubeCart versions. If you encounter any issues, please contact us to resolve them as soon as possible.
+</div>
+
+<h2 id="installing-oxipay">Installing Oxipay</h2>
+<div class="panel">
+  You will need a <b>Merchant ID</b> and <b>API Key</b> before continuing with the installation procedure.
+</div>
+
+<p>The plugin can be installed via CubeCart's Admin Control Panel, either manually or automatically using a Token. This section details how to upload the plugin, and install and configure its various parameters for it to work properly.</p>
+<div class="panel">
+  If you have trouble accessing your CubeCart's Admin Control Panel, please consult CubeCart's official support documentation or your IT department to resolve the issue.
+</div>
+
+<h3 id="automatic-installation-using-token">Automatic Installation using Token</h3>
+<p><strong>1</strong> - Navigate to the following URL.</p>
+<p><a href="https://www.cubecart.com/extensions/payment-gateways/oxipay">https://www.cubecart.com/extensions/payment-gateways/oxipay</a></p>
+<p><strong>2</strong> - Select the <strong>lightning bolt</strong> button, next to your required Oxipay plugin version, to reveal the <strong>Auto Install/Upgrade Token</strong></p>
+<p><img alt="autoinstall1.png" src="../../img/platforms/CubeCart/autoinstall1.png" /></p>
+<p><strong>3</strong> - Copy the <strong>Token</strong> from within the pop-up.</p>
+<p><img alt="autoinstall2.png" src="../../img/platforms/CubeCart/autoinstall2.png" /></p>
+<p><strong>4</strong> - Log into the CubeCart Admin Control Panel using a <strong>Username</strong> and <strong>Password</strong> combination that has already been configured as an Administrator.</p>
+<p><img alt="autoinstall3.png" src="../../img/platforms/CubeCart/autoinstall3.png" /></p>
+<p><strong>5</strong> - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the <strong>Extensions</strong> section and select <strong>Manage Extensions</strong>.</p>
+<p><img alt="autoinstall4.png" src="../../img/platforms/CubeCart/autoinstall4.png" /></p>
+<p><strong>6</strong> - Copy the <strong>Auto Install/Upgrade Token</strong> into the Token field on the <strong>Manage Extensions</strong> page and select the <strong>Go</strong> button.</p>
+<p><img alt="autoinstall5.png" src="../../img/platforms/CubeCart/autoinstall5.png" /></p>
+<p><strong>7</strong> - If the module has been installed correctly, the module will appear in the list of <strong>Available Extensions</strong>.</p>
+<p><img alt="autoinstall6.png" src="../../img/platforms/CubeCart/autoinstall6.png" /></p>
+<div class="panel">
+If the automatic installation is not successful, you will be presented with a message at the top of the page similar to the screenshot below. If this continues to be a problem, please refer to the <a href="#manual-installation">Manual Installation</a> procedure.
+</div>
+
+<p><img alt="autoinstall7.png" src="../../img/platforms/CubeCart/autoinstall7.png" /></p>
+<h3 id="manual-installation">Manual Installation</h3>
+<p><strong>1</strong> - Navigate to the following URL.</p>
+<p><a href="https://www.cubecart.com/extensions/payment-gateways/oxipay">https://www.cubecart.com/extensions/payment-gateways/oxipay</a></p>
+<p><strong>2</strong> - Select the <strong>download</strong> button , next to your required Oxipay plugin version, to download the Oxipay plugin ZIP file.</p>
+<p><img alt="manualinstall1.png" src="../../img/platforms/CubeCart/manualinstall1.png" /></p>
+<p><strong>3</strong> - Extract the ZIP file and copy the contents to the <strong>modules/gateway</strong> folder of your server’s/site directory.</p>
+<p><strong>4</strong> - Ensure the folders/files have adequate read/write permissions set.</p>
+<p><strong>5</strong> - Log into the CubeCart Admin Control Panel using a <strong>Username</strong> and <strong>Password</strong> combination that has already been configured as an Administrator.</p>
+<p><img alt="manualinstall2.png" src="../../img/platforms/CubeCart/manualinstall2.png" /></p>
+<p><strong>6</strong> - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the <strong>Extensions</strong> section and select <strong>Manage Extensions</strong>.</p>
+<p><img alt="manualinstall3.png" src="../../img/platforms/CubeCart/manualinstall3.png" /></p>
+<p><strong>7</strong> - If the module has been installed correctly, the module will appear in the list of <strong>Available Extensions</strong>.</p>
+<p><img alt="manualinstall4.png" src="../../img/platforms/CubeCart/manualinstall4.png" /></p>
+<h2 id="configuring-oxipay">Configuring Oxipay</h2>
+<div class="panel">
+  This section describes the <b>Module Settings</b> available once you have installed the Oxipay plugin. This includes the Oxipay endpoints to communicate with, as well as whether or not to enable Test Mode.  
+</div>
+
+<p><strong>1</strong> - Log into the CubeCart Admin Control Panel using a <strong>Username</strong> and <strong>Password</strong> combination that has already been configured as an Administrator.</p>
+<p><strong>2</strong> - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the <strong>Extensions</strong> section and select <strong>Manage Extensions</strong>.</p>
+<p><strong>3</strong> - Under the <strong>Available Extensions</strong> section, select the text <strong>OxiPay</strong> to configure the module settings. Descriptions of the options are listed below.</p>
+<p><img alt="config1.png" src="../../img/platforms/CubeCart/config1.png" />
+<div class="panel">
+  We have intentionally masked the <b>Merchant ID</b> and <b>API Key</b> in this support document. Please contact us and we will advise you of the settings to use.
+</div></p>
+<hr>
+
+<ul>
+<li>
+<p><strong>Status</strong> This must be enabled for the payment options to appear during checkout.
+<hr></p>
+</li>
+<li>
+<p><strong>Priority</strong>  If you have more than one payment gateway, please use this field to define the order they are shown in. A setting of '1' will show it first, '2' second, etc.
+<hr></p>
+</li>
+<li>
+<p><strong>Scope</strong> This allows you to specify whether you want the Oxipay plugin to be available via the Main Website only or the Mobile Website only, or both.
+<hr></p>
+</li>
+<li>
+<p><strong>Default</strong> This must be enabled if you would like Oxipay pre-selected for the Customer as the default payment option. 
+<hr></p>
+</li>
+<li>
+<p><strong>Merchant ID</strong> This is the Oxipay Merchant ID that you are provided with as part of your on-boarding when signing-up for Oxipay.
+<hr></p>
+</li>
+<li>
+<p><strong>API Key</strong> The API Key or the Encryption key is a case-sensitive alpha-numeric sequence that is used to authenticate payment requests originating from your Store. It is similar to passwords that you use to login into the various online portals, such as email. It is vital that you protect it and don't provide it to unauthorised individuals. We might also recycle your API and provide you with a new one, if unauthorised individuals get hold of it or if it has been compromised.
+<hr></p>
+</li>
+<li>
+<p><strong>Test Mode</strong> Indicates whether to process payments over the live Oxipay Gateway URL resulting in real transactions, or to process it over the Oxipay Sandbox Gateway URL which will produce simulated (test) transactions with no real dollar amounts being debited. By default it should be set to <strong>No</strong> unless we are attempting to diagnose issues on your Store to do with Oxipay.
+<hr></p>
+</li>
+<li>
+<p><strong>Test Gateway URL</strong> This specifies the test Oxipay end-point that the plugin would need to communicate with when <strong>Test Mode</strong> is enabled. This is mainly used for troubleshooting purposes, particularly if we want to simulate test transactions on your CubeCart Store without having real dollar amounts debited from Credit Cards.
+<hr></p>
+</li>
+<li>
+<p><strong>Gateway URL</strong> This specifies the live Oxipay end-point that the plugin would need to communicate with for it to be able to process payments via Oxipay. Note that transactions processed over this URL are real transactions that end up in real dollar amounts being deducted.</p>
+</li>
+</ul>
+<hr>
+
+<p><strong>4</strong> - Once you have finished making the necessary configuration changes, click the <strong>Save</strong> button.</p>
+<p><strong>5</strong> - <strong>Australia</strong> will be automatically set as an <strong>Enabled Region</strong> in the <strong>Allowed Zones</strong> tab. This must match the Country set in the CubeCart Store Settings.</p>
+<p><img alt="config2.png" src="../../img/platforms/CubeCart/config2.png" />
+<hr></p>
+<hr>
+
+<h2 id="upgrading-oxipay">Upgrading Oxipay</h2>
+<h3 id="automatic-upgrade">Automatic Upgrade</h3>
+<div class="panel">
+Importantly, when you perform an automatic upgrade, all the module settings are retained.
+That is, you do not need to type in your <b>Merchant ID</b> and <b>API Key</b> again.
+</div>
+
+<p><strong>1</strong> - Navigate to the following URL.</p>
+<p><a href="https://www.cubecart.com/extensions/payment-gateways/oxipay">https://www.cubecart.com/extensions/payment-gateways/oxipay</a></p>
+<p><strong>2</strong> - Select the <strong>lightning bolt</strong> button, next to your required Oxipay plugin version, to reveal the <strong>Auto Install/Upgrade Token</strong></p>
+<p><img alt="autoinstall1.png" src="../../img/platforms/CubeCart/autoinstall1.png" /></p>
+<p><strong>3</strong> - Copy the <strong>Token</strong> from within the pop-up.</p>
+<p><img alt="autoinstall2.png" src="../../img/platforms/CubeCart/autoinstall2.png" /></p>
+<p><strong>4</strong> - Log into the CubeCart Admin Control Panel using a <strong>Username</strong> and <strong>Password</strong> combination that has already been configured as an Administrator.</p>
+<p><img alt="autoinstall3.png" src="../../img/platforms/CubeCart/autoinstall3.png" /></p>
+<p><strong>5</strong> - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the <strong>Extensions</strong> section and select <strong>Manage Extensions</strong>.</p>
+<p><img alt="autoinstall4.png" src="../../img/platforms/CubeCart/autoinstall4.png" /></p>
+<p><strong>6</strong> - Copy the <strong>Auto Install/Upgrade Token</strong> into the Token field on the <strong>Manage Extensions</strong> page.</p>
+<p><img alt="autoinstall5.png" src="../../img/platforms/CubeCart/autoinstall5.png" /></p>
+<p><strong>7</strong> - If you enable the option to <strong>Backup if already exists</strong>, a backup of the previous plugin version will be created.</p>
+<p><strong>8</strong> - Select the <strong>Go</strong> button to complete the upgrade.</p>
+<hr>
+
+<h3 id="manual-upgrade">Manual Upgrade</h3>
+<div class="panel">
+Prior to manually upgrading, you will first need to un-install the previous version.
+</div>
+
+<h2 id="un-installing-oxipay">Un-installing Oxipay</h2>
+<p><strong>1</strong> - Log into the CubeCart Admin Control Panel using a <strong>Username</strong> and <strong>Password</strong> combination that has already been configured as an Administrator.</p>
+<p><img alt="uninstall1.png" src="../../img/platforms/CubeCart/uninstall1.png" /></p>
+<p><strong>2</strong> - Once logged in, you will be presented with your Store's dashboard. From the side menu that appears to the left, scroll to the <strong>Extensions</strong> section and select <strong>Manage Extensions</strong>.</p>
+<p><img alt="uninstall2.png" src="../../img/platforms/CubeCart/uninstall2.png" /></p>
+<p><strong>3</strong> - In the list of <strong>Available Extensions</strong>, select the <strong>delete</strong> button associated with the <strong>Oxipay</strong> extension.</p>
+<p><strong>4</strong> - If the module has been un-installed correctly, the module will no longer appear in the list of <strong>Available Extensions</strong>.</p>
+<p><img alt="uninstall3.png" src="../../img/platforms/CubeCart/uninstall3.png" /></p>
+<p><strong>5</strong> - You can now download the new version of the Oxipay CubeCart plugin and install it as per the instructions in the <a href="#installing-oxipay">Installing Oxipay</a> section of this document.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../developer_resources/introduction/" class="btn btn-neutral float-right" title="Introduction">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../prestashop/" class="btn btn-neutral" title="PrestaShop"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../prestashop/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../developer_resources/introduction/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/jquery.modal.js"></script>
+
+</body>
+</html>
