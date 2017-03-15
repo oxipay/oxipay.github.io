@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>List of widgets - Oxipay Documentation</title>
+  <title>Shopify Specific - Oxipay Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -19,9 +19,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "List of widgets";
-    var mkdocs_page_input_path = "guidelines\\widgets.md";
-    var mkdocs_page_url = "/guidelines/widgets/";
+    var mkdocs_page_name = "Shopify Specific";
+    var mkdocs_page_input_path = "price-info\\shopify.md";
+    var mkdocs_page_url = "/price-info/shopify/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -122,45 +122,33 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../introduction/">Introduction</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">List of widgets</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#register-interest-large">Register-interest large</a></li>
-    
-
-    <li class="toctree-l3"><a href="#register-interest-small">Register-interest small</a></li>
-    
-
-    <li class="toctree-l3"><a href="#more-info-large">More-info large</a></li>
-    
-
-    <li class="toctree-l3"><a href="#more-info-small">More-info small</a></li>
-    
-
-    <li class="toctree-l3"><a href="#price-info-widget">Price-info widget</a></li>
-    
-
-    </ul>
+    <a class="" href="../../guidelines/introduction/">Introduction</a>
                 </li>
                 <li class="">
+                    
+    <a class="" href="../../guidelines/widgets/">List of widgets</a>
+                </li>
+                <li class=" current">
                     
     <span class="caption-text">Installation</span>
     <ul class="subnav">
                 <li class="toctree-l3">
                     
-    <a class="" href="../installation/">Generic Installation</a>
+    <a class="" href="../../guidelines/installation/">Generic Installation</a>
+                </li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Shopify Specific</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#adding-shopifys-price-info-widget">Adding Shopify's Price-info Widget</a></li>
+    
+
+    </ul>
                 </li>
                 <li class="toctree-l3">
                     
-    <a class="" href="../../price-info/shopify/">Shopify Specific</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../price-info/woocommerce/">WooCommerce Specific</a>
+    <a class="" href="../woocommerce/">WooCommerce Specific</a>
                 </li>
     </ul>
                 </li>
@@ -192,8 +180,12 @@
           <li>Widgets &raquo;</li>
         
       
+        
+          <li>Installation &raquo;</li>
+        
+      
     
-    <li>List of widgets</li>
+    <li>Shopify Specific</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -203,49 +195,22 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="register-interest-large">Register-interest large</h3>
-<p><script id="registerInterestLarge" src="https://widgets.oxipay.com.au/content/scripts/register-interest-large.js"></script></p>
-<pre><code>&lt;script id=&quot;oxipay-banner&quot; src=&quot;https://widgets.oxipay.com.au/content/scripts/register-interest-large.js&quot;&gt;&lt;/script&gt;
+                <h1 id="adding-shopifys-price-info-widget">Adding Shopify's Price-info Widget</h1>
+<p>For adding Price-info Widget to your Website, follow the instruction<br>
+<strong>Step 1:</strong> Login into Shopify backend/Dashboard<br>
+<strong>Step 2:</strong> Navigate to Online Store &gt; Themes <br>
+<img alt="online-store.png" src="../../img/price-info/online-store.png" /><br><br>
+<img alt="thems.png" src="../../img/price-info/theme.png" /><br><br>
+<strong>Step 3:</strong> From top-right corner, select to Edit HTML/CSS<br>
+<img alt="theme-editor.png" src="../../img/price-info/theme-editor.png" /><br><br>
+<strong>Step 4:</strong> From left panel, navigate to Sections and select “product-template.liquid”<br>
+<img alt="theme-editor.png" src="../../img/price-info/left-sections.png" /><br><br>
+<strong>Step 5:</strong> Place the <code>&lt;script&gt;</code> tag in the desired place you'd like it to appear on your website. This should be added before <code>Add to Cart</code> button tag.<br></p>
+<pre><code>&lt;script id=&quot;oxipay-banner&quot; src=&quot; https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{current_variant.price | divided_by: 100.00}}&quot;&gt;&lt;/script&gt;
 </code></pre>
 
-<p><br/></p>
-<h3 id="register-interest-small">Register-interest small</h3>
-<p><script id="registerInterestSmall" src="https://widgets.oxipay.com.au/content/scripts/register-interest-small.js"></script></p>
-<pre><code>&lt;script id=&quot;oxipay-banner&quot; src=&quot;https://widgets.oxipay.com.au/content/scripts/register-interest-small.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-
-<p><br/></p>
-<h3 id="more-info-large">More-info large</h3>
-<p><script id="moreInfoLarge" src="https://widgets.oxipay.com.au/content/scripts/more-info-large.js"></script></p>
-<pre><code>&lt;script id=&quot;oxipay-banner&quot; src=&quot;https://widgets.oxipay.com.au/content/scripts/more-info-large.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-
-<p><br/></p>
-<h3 id="more-info-small">More-info small</h3>
-<p><script id="moreInfoSmall" src="https://widgets.oxipay.com.au/content/scripts/more-info-small.js"></script></p>
-<pre><code>&lt;script id=&quot;oxipay-banner&quot; src=&quot;https://widgets.oxipay.com.au/content/scripts/more-info-small.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-
-<p><br></p>
-<h3 id="price-info-widget">Price-info widget</h3>
-<p><script id="oxipay-price-info" src=" https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=0"></script></p>
-<pre><code>&lt;script id=&quot;oxipay-banner&quot; src=&quot; https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PlaceYourProductPrice&gt;&lt;/script&gt;
-</code></pre>
-
-<p><br/><br/></p>
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Installation based on Platforms</h3>
-  </div>
-  <div class="panel-body">
-<ul>
-  <li><a href="../../price-info/shopify">Shopify specific instructions</a></li>
-  <li><a href="../../price-info/woocommerce">WooCommerce specific instructions</a></li>
-</ul>
-  </div>
-</div>
-
-<p><br/><br/></p>
+<p><strong>Step 6:</strong> Save and you should see a working widget on your website.<br><br>
+<script id="oxipay-banner" src=" https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{current_variant.price | divided_by: 100.00}}"></script></p>
 <p><small>*We reserve the right to change any linked image at anytime without prior notice</small>
 <br/><br/>
 <small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.com.au?Subject=Oxipay Documentation">support@oxipay.com.au</a></small>
@@ -259,10 +224,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../installation/" class="btn btn-neutral float-right" title="Generic Installation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../woocommerce/" class="btn btn-neutral float-right" title="WooCommerce Specific">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../introduction/" class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../guidelines/installation/" class="btn btn-neutral" title="Generic Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -288,10 +253,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../introduction/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../guidelines/installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../installation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../woocommerce/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -301,9 +301,39 @@
             "title": "Introduction"
         }, 
         {
+            "location": "/guidelines/widgets/", 
+            "text": "Register-interest large\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/register-interest-large.js\n/script\n\n\n\n\n\n\n\nRegister-interest small\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/register-interest-small.js\n/script\n\n\n\n\n\n\n\nMore-info large\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/more-info-large.js\n/script\n\n\n\n\n\n\n\nMore-info small\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/more-info-small.js\n/script\n\n\n\n\n\n\n\nPrice-info widget\n\n\n\n\nscript id=\noxipay-banner\n src=\n https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PlaceYourProductPrice\n/script\n\n\n\n\n\n\n\n\n  \n\n    \nInstallation based on Platforms\n\n  \n\n  \n\n\n\n  \nShopify specific instructions\n\n  \nWooCommerce specific instructions\n\n\n\n  \n\n\n\n\n\n\n\n*We reserve the right to change any linked image at anytime without prior notice\n\n\n\n\nWe strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through \nsupport@oxipay.com.au\n\n\n\n\n\n\nVersion 1.10", 
+            "title": "List of widgets"
+        }, 
+        {
+            "location": "/guidelines/widgets/#register-interest-large", 
+            "text": "script id= oxipay-banner  src= https://widgets.oxipay.com.au/content/scripts/register-interest-large.js /script", 
+            "title": "Register-interest large"
+        }, 
+        {
+            "location": "/guidelines/widgets/#register-interest-small", 
+            "text": "script id= oxipay-banner  src= https://widgets.oxipay.com.au/content/scripts/register-interest-small.js /script", 
+            "title": "Register-interest small"
+        }, 
+        {
+            "location": "/guidelines/widgets/#more-info-large", 
+            "text": "script id= oxipay-banner  src= https://widgets.oxipay.com.au/content/scripts/more-info-large.js /script", 
+            "title": "More-info large"
+        }, 
+        {
+            "location": "/guidelines/widgets/#more-info-small", 
+            "text": "script id= oxipay-banner  src= https://widgets.oxipay.com.au/content/scripts/more-info-small.js /script", 
+            "title": "More-info small"
+        }, 
+        {
+            "location": "/guidelines/widgets/#price-info-widget", 
+            "text": "script id= oxipay-banner  src=  https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PlaceYourProductPrice /script", 
+            "title": "Price-info widget"
+        }, 
+        {
             "location": "/guidelines/installation/", 
             "text": "Adding a Widget to your Website\n\n\nStep 1:\n Choose the widget that you want to install from our \nWidgets list\n. \n\nStep 2:\n Place the \nscript\n tag in the desired place you'd like it to appear on your website.\n\nStep 3:\n Save and you should see a working widget on your website.\n\n\nWorking Example\n\n\n\n\nWe strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through \nsupport@oxipay.com.au\n\n\n\n\n\n\nVersion 1.10", 
-            "title": "Installation"
+            "title": "Generic Installation"
         }, 
         {
             "location": "/guidelines/installation/#adding-a-widget-to-your-website", 
@@ -316,29 +346,24 @@
             "title": "Working Example"
         }, 
         {
-            "location": "/guidelines/widgets/", 
-            "text": "Register-interest large\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://oxipay.com.au/widgets/register-interest-large.js\n/script\n\n\n\n\n\n\n\nRegister-interest small\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://oxipay.com.au/widgets/register-interest-small.js\n/script\n\n\n\n\n\n\n\nMore-info large\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://oxipay.com.au/widgets/more-info-large.js\n/script\n\n\n\n\n\n\n\nMore-info small\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://oxipay.com.au/widgets/more-info-small.js\n/script\n\n\n\n\n\n\n\n*We reserve to right to change any linked image at anytime without prior notice\n\n\n\n\nWe strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through \nsupport@oxipay.com.au\n\n\n\n\n\n\nVersion 1.10", 
-            "title": "Widget list"
+            "location": "/price-info/shopify/", 
+            "text": "Adding Shopify's Price-info Widget\n\n\nFor adding Price-info Widget to your Website, follow the instruction\n\n\nStep 1:\n Login into Shopify backend/Dashboard\n\n\nStep 2:\n Navigate to Online Store \n Themes \n\n\n\n\n\n\nStep 3:\n From top-right corner, select to Edit HTML/CSS\n\n\n\n\nStep 4:\n From left panel, navigate to Sections and select \u201cproduct-template.liquid\u201d\n\n\n\n\nStep 5:\n Place the \nscript\n tag in the desired place you'd like it to appear on your website. This should be added before \nAdd to Cart\n button tag.\n\n\nscript id=\noxipay-banner\n src=\n https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{current_variant.price | divided_by: 100.00}}\n/script\n\n\n\n\n\nStep 6:\n Save and you should see a working widget on your website.\n\n\n\n\n*We reserve the right to change any linked image at anytime without prior notice\n\n\n\n\nWe strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through \nsupport@oxipay.com.au\n\n\n\n\n\n\nVersion 1.10", 
+            "title": "Shopify Specific"
         }, 
         {
-            "location": "/guidelines/widgets/#register-interest-large", 
-            "text": "script id= oxipay-banner  src= https://oxipay.com.au/widgets/register-interest-large.js /script", 
-            "title": "Register-interest large"
+            "location": "/price-info/shopify/#adding-shopifys-price-info-widget", 
+            "text": "For adding Price-info Widget to your Website, follow the instruction  Step 1:  Login into Shopify backend/Dashboard  Step 2:  Navigate to Online Store   Themes     Step 3:  From top-right corner, select to Edit HTML/CSS   Step 4:  From left panel, navigate to Sections and select \u201cproduct-template.liquid\u201d   Step 5:  Place the  script  tag in the desired place you'd like it to appear on your website. This should be added before  Add to Cart  button tag.  script id= oxipay-banner  src=  https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice={{current_variant.price | divided_by: 100.00}} /script   Step 6:  Save and you should see a working widget on your website.   *We reserve the right to change any linked image at anytime without prior notice   We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through  support@oxipay.com.au    Version 1.10", 
+            "title": "Adding Shopify's Price-info Widget"
         }, 
         {
-            "location": "/guidelines/widgets/#register-interest-small", 
-            "text": "script id= oxipay-banner  src= https://oxipay.com.au/widgets/register-interest-small.js /script", 
-            "title": "Register-interest small"
+            "location": "/price-info/woocommerce/", 
+            "text": "Adding WooCommerce's Price-info Widget\n\n\nFor adding Price-info Widget to your Website, follow the instruction\n\n\nStep 1:\n Find \nPrice.php\n from the following loaction in your hosting (Wordpress intalled Folder) and open it with your desired text-editior \n\n\nYourWordpressFolder\\wp-content\\plugins\\woocommerce\\templates\\single-product\n\n\n\n\nStep 2:\n Find \"Price tag\" as shown below \n\n\np class=\nprice\n?php echo $product-\nget_price_html(); ?\n/p\n\n\n\n\n\nStep 3:\n Place the \nscript\n tag in the below \"Price tag\".\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=\n?php echo $product-\nget_display_price() ?\n/script\n\n\n\n\n\nStep 4:\n Save and you should see a working widget on your website.\n\n\n\n\n\n\n\n  \nNote:\n If you are using a custom template for WooCommerce, \"Price.php\" will be located in \"yourtheme/woocommerce/single-product/price.php.\"\n\n\n\n\n\n**We reserve the right to change any linked image at anytime without prior notice\n\n\n\n\nWe strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through \nsupport@oxipay.com.au\n\n\n\n\n\n\nVersion 1.10", 
+            "title": "WooCommerce Specific"
         }, 
         {
-            "location": "/guidelines/widgets/#more-info-large", 
-            "text": "script id= oxipay-banner  src= https://oxipay.com.au/widgets/more-info-large.js /script", 
-            "title": "More-info large"
-        }, 
-        {
-            "location": "/guidelines/widgets/#more-info-small", 
-            "text": "script id= oxipay-banner  src= https://oxipay.com.au/widgets/more-info-small.js /script    *We reserve to right to change any linked image at anytime without prior notice   We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through  support@oxipay.com.au    Version 1.10", 
-            "title": "More-info small"
+            "location": "/price-info/woocommerce/#adding-woocommerces-price-info-widget", 
+            "text": "For adding Price-info Widget to your Website, follow the instruction  Step 1:  Find  Price.php  from the following loaction in your hosting (Wordpress intalled Folder) and open it with your desired text-editior   YourWordpressFolder\\wp-content\\plugins\\woocommerce\\templates\\single-product  Step 2:  Find \"Price tag\" as shown below   p class= price ?php echo $product- get_price_html(); ? /p   Step 3:  Place the  script  tag in the below \"Price tag\".  script id= oxipay-banner  src= https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice= ?php echo $product- get_display_price() ? /script   Step 4:  Save and you should see a working widget on your website.    \n   Note:  If you are using a custom template for WooCommerce, \"Price.php\" will be located in \"yourtheme/woocommerce/single-product/price.php.\"   **We reserve the right to change any linked image at anytime without prior notice   We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through  support@oxipay.com.au    Version 1.10", 
+            "title": "Adding WooCommerce's Price-info Widget"
         }
     ]
 }
