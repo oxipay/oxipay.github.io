@@ -87,6 +87,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>/developer_resources/test_credit_card_numbers/</loc>
+     <lastmod>2017-03-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     

@@ -296,6 +296,26 @@
             "title": "PHP Example"
         }, 
         {
+            "location": "/developer_resources/test_credit_card_numbers/", 
+            "text": "Test Credit Card Numbers\n\n\nDue to PCI DSS compliance \nonly the following credit card numbers are able to be used in the secure test environment\n, all other cards will result in a decline.\n\n\nAccepted Numbers\n\n\n\n\n\n\n\n\nType\n\n\nPAN\n\n\nCountries Available\n\n\nAU Result\n\n\nNZ Result\n\n\n\n\n\n\n\n\n\n\nVISA\n\n\n4242 4242 4242 4242\n\n\nAU, NZ\n\n\nAlways approves\n\n\nAlways approves\n\n\n\n\n\n\nVISA\n\n\n4111 1111 1111 1111\n\n\nAU Only\n\n\nAlways approves\n\n\nN/A\n\n\n\n\n\n\nVISA\n\n\n4564 8099 9999 9992\n\n\nAU, NZ\n\n\nAlways approves\n\n\nDynamic \nsee below\n\n\n\n\n\n\nVISA\n\n\n4564 4564 4564 4564\n\n\nAU, NZ\n\n\nAlways approves\n\n\nDynamic \nsee below\n\n\n\n\n\n\nMASTERCARD\n\n\n5506 7500 0000 4364\n\n\nAU, NZ\n\n\nAlways approves\n\n\nAlways approves\n\n\n\n\n\n\nMASTERCARD\n\n\n5430 4899 9999 9992\n\n\nAU, NZ\n\n\nAlways approves\n\n\nDynamic \nsee below\n\n\n\n\n\n\nMASTERCARD\n\n\n5537 5010 1010 9112\n\n\nAU, NZ\n\n\nAlways approves\n\n\nDynamic \nsee below\n\n\n\n\n\n\n\n\nNZ CVV Values and Outcomes\n\n\nNZ allows some cards to dynamically return different test results. The following CVV values can be used against NZ to force certain test outcomes.\n\n\n\n\n\n\n\n\nCVV Code\n\n\nNZ Response Code\n\n\n\n\n\n\n\n\n\n\n100\n\n\nM (Matched)\n\n\n\n\n\n\n200\n\n\nN (Not Matched)\n\n\n\n\n\n\n300\n\n\nP (Not Processed)\n\n\n\n\n\n\n400\n\n\nS (Suspicious)\n\n\n\n\n\n\n500\n\n\nI (Issuer Not Registered)\n\n\n\n\n\n\nOther number\n\n\nU (Unsupported)", 
+            "title": "Test Credit Card Numbers"
+        }, 
+        {
+            "location": "/developer_resources/test_credit_card_numbers/#test-credit-card-numbers", 
+            "text": "Due to PCI DSS compliance  only the following credit card numbers are able to be used in the secure test environment , all other cards will result in a decline.", 
+            "title": "Test Credit Card Numbers"
+        }, 
+        {
+            "location": "/developer_resources/test_credit_card_numbers/#accepted-numbers", 
+            "text": "Type  PAN  Countries Available  AU Result  NZ Result      VISA  4242 4242 4242 4242  AU, NZ  Always approves  Always approves    VISA  4111 1111 1111 1111  AU Only  Always approves  N/A    VISA  4564 8099 9999 9992  AU, NZ  Always approves  Dynamic  see below    VISA  4564 4564 4564 4564  AU, NZ  Always approves  Dynamic  see below    MASTERCARD  5506 7500 0000 4364  AU, NZ  Always approves  Always approves    MASTERCARD  5430 4899 9999 9992  AU, NZ  Always approves  Dynamic  see below    MASTERCARD  5537 5010 1010 9112  AU, NZ  Always approves  Dynamic  see below", 
+            "title": "Accepted Numbers"
+        }, 
+        {
+            "location": "/developer_resources/test_credit_card_numbers/#nz-cvv-values-and-outcomes", 
+            "text": "NZ allows some cards to dynamically return different test results. The following CVV values can be used against NZ to force certain test outcomes.     CVV Code  NZ Response Code      100  M (Matched)    200  N (Not Matched)    300  P (Not Processed)    400  S (Suspicious)    500  I (Issuer Not Registered)    Other number  U (Unsupported)", 
+            "title": "NZ CVV Values and Outcomes"
+        }, 
+        {
             "location": "/guidelines/introduction/", 
             "text": "Placing Oxipay widgets on your website is a great way to introduce Oxipay to your users and drive more sales through your online store. The following documentation will guide you through the process of getting Oxipay widgets displayed on your website.\n\n\n\n  \n\n    \nWhat is a widget\n\n  \n\n  \n\n    In the context of this documentation, a widget is a banner or tag that will open a modal dialog (a.k.a. popup) when clicked. The content of the modal dialog can be any web-page.\n  \n\n\n\n\n\nWe strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through \nsupport@oxipay.com.au\n\n\n\n\n\n\nVersion 1.10", 
             "title": "Introduction"
