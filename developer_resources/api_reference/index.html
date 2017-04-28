@@ -222,7 +222,7 @@
 <h2 id="oxipay-endpoints">Oxipay Endpoints</h2>
 <p>Posting a request to the live payment gateway with the <code>x_test</code> set to <code>false</code> will process a real transaction. This means the credit card that was used as part of the checkout process will be debited. On the other hand, posting to the test gateway simulates a transaction and is not processed as a real transaction; that is, no real dollar amount will be debited from the specified credit card.</p>
 <p>To test Oxipay, you can use the test (sandbox) URL or you can use the live payment gateway with the testing flag enabled <code>x_test = true</code>. 
-Test transactions will not incur any debits, and any credit card details will not be stored. </p>
+Test transactions will not incur any debits, and any credit card details will not be stored.</p>
 <table>
 <thead>
 <tr>
@@ -237,7 +237,7 @@ Test transactions will not incur any debits, and any credit card details will no
 </tr>
 <tr>
 <td>Sandbox Endpoint</td>
-<td><a href="https://xpozsecure.certegyezipay.com.au/Checkout?platform=Default">https://securesandbox.oxipay.com.au/Checkout?platform=Default</a></td>
+<td><a href="https://securesandbox.oxipay.com.au/Checkout?platform=Default">https://securesandbox.oxipay.com.au/Checkout?platform=Default</a></td>
 </tr>
 </tbody>
 </table>
@@ -414,7 +414,7 @@ Test transactions will not incur any debits, and any credit card details will no
 </tr>
 <tr>
 <td>x_test <strong>Required</strong></td>
-<td>Indicates whether the transaciton is to be processed using the live or test Oxipay endpoint</td>
+<td>Indicates whether the transaction is to be processed using the live or test Oxipay endpoint</td>
 <td>true/false</td>
 <td>true</td>
 </tr>
