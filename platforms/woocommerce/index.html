@@ -67,19 +67,13 @@
     <a class="current" href="./">WooCommerce</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#setup-on-woocommerce">Setup on WooCommerce</a></li>
+    <li class="toctree-l3"><a href="#supported-tech-stacks">Supported Tech Stacks</a></li>
     
-        <ul>
-        
-            <li><a class="toctree-l4" href="#automatic-installation">Automatic Installation</a></li>
-        
-            <li><a class="toctree-l4" href="#manual-installation">Manual Installation</a></li>
-        
-            <li><a class="toctree-l4" href="#configuring-oxipay">Configuring Oxipay</a></li>
-        
-            <li><a class="toctree-l4" href="#updating-plugin">Updating Plugin</a></li>
-        
-        </ul>
+
+    <li class="toctree-l3"><a href="#automatic-installation">Automatic Installation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#manual-installation">Manual Installation</a></li>
     
 
     </ul>
@@ -207,8 +201,17 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="setup-on-woocommerce">Setup on WooCommerce</h1>
-<p>Oxipay can be installed Automatically by uploading the plugin or manually by copying plugin files into the webserver.</p>
+                <h1>Setup on WooCommerce</h1>
+
+<p>You can install Oxipay automatically by uploading the plugin or manually by copying plugin files. Use the same instructions to upgrade your existing plugin to a newer release.</p>
+<h2 id="supported-tech-stacks">Supported Tech Stacks</h2>
+<p>The plugin has been developed and tested against the following Magento tech stacks:</p>
+<table style="font-size:1.1rem">
+    <tr><td>Magento Platform</td><td>Operating System</td><td>MySQL</td><td>PHP Version</td><td>Web Server</td><tr>
+    <tr><td>Magento 1.9.1.0 (CE)</td><td>Ubuntu 16.04 LTS</td><td>14.14</td><td>5.6.30</td><td>Apache 2.4.18</td><tr>
+    <tr><td>Magento 1.4.2.0 (CE)</td><td>Ubuntu 14.04</td><td>14.14</td><td>5.5.9</td><td>Apache 2.4.7</td><tr>
+</table>
+
 <h2 id="automatic-installation">Automatic Installation</h2>
 <div class="panel">
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
@@ -225,15 +228,16 @@
 <p><img alt="23.png" src="../../img/platforms/woocommerce/23.png" /></p>
 <h2 id="manual-installation">Manual Installation</h2>
 <div class="panel">
-  We recommend an IT professional or a Web Developer perform installation using the procedure below as they require solid knowledge of the WordPress and WooCommerce platforms.
+  We recommend manual installation be performed by an IT professional or a Web Developer.
 </div>
 
 <p>1 - Download the plugin from <a href="https://github.com/oxipay/oxipay-woocommerce/releases">github.com/oxipay/oxipay-woocommerce/releases</a>.</p>
-<p>2 - Unzip it then copy the un-zipped folder into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins</p>
-<h2 id="configuring-oxipay">Configuring Oxipay</h2>
-<p>1 - Open WooCommerce's Settings page, then click on <strong>Checkout</strong> then <strong>Oxipay</strong>.</p>
+<p>2 - Unzip it then copy the files into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins</p>
+<h2>Oxipay Settings</h2>
+
+<p>Open WooCommerce's <strong>Settings</strong> page, click on <strong>Checkout</strong> then on <strong>Oxipay</strong>.</p>
 <p><img alt="11.png" src="../../img/platforms/woocommerce/11.png" /></p>
-<p>Below is a description of the various Oxipay settings.</p>
+<p>Below is a description of the various settings you will find there.</p>
 <p><strong>Enabled</strong>: Enables or disables Oxipay</p>
 <p><strong>Title</strong>: Title for Oxipay that is displayed on checkout screen.</p>
 <p><strong>Description</strong>: Description for Oxipay that is displayed on checkout screen.</p>
@@ -241,8 +245,6 @@
 <p><strong>Oxipay Gateway URL</strong>: URL that your site communicates with to process payments over Oxipay.</p>
 <p><strong>Merchant ID</strong>: Identifies your business and provided as part of your onboarding.</p>
 <p><strong>API Key</strong>: Code used to verify that payment requests from your site are valid. </p>
-<h2 id="updating-plugin">Updating Plugin</h2>
-<p>You can update your WooCommerce Oxipay plugin to a newer version by following the installation instructions outlined above.</p>
               
             </div>
           </div>
