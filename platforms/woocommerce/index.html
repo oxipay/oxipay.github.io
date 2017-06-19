@@ -67,10 +67,10 @@
     <a class="current" href="./">WooCommerce</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#automatic-installation">Automatic Installation</a></li>
+    <li class="toctree-l3"><a href="#plugin-installation">Plugin Installation</a></li>
     
 
-    <li class="toctree-l3"><a href="#manual-installation">Manual Installation</a></li>
+    <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
     
 
     </ul>
@@ -201,7 +201,7 @@
                 <h1>Setup on WooCommerce</h1>
 
 <p>You can install Oxipay automatically by uploading the plugin or manually by copying plugin files. Use the same instructions to upgrade your existing plugin to a newer release.</p>
-<h2 id="automatic-installation">Automatic Installation</h2>
+<h2 id="plugin-installation">Plugin Installation</h2>
 <div class="panel">
   You will need your <b>Merchant ID</b> and an <b>Encryption Key</b> handy before continuing with the installation.
 </div>
@@ -215,25 +215,38 @@
 <p>7 - This will take you to the <strong>Plugins</strong> page with a <strong>Plugin activated</strong> message at the top.</p>
 <p>8 - Examine installed plugins and confirm Oxipay is installed and activated.</p>
 <p><img alt="23.png" src="../../img/platforms/woocommerce/23.png" /></p>
-<h2 id="manual-installation">Manual Installation</h2>
-<div class="panel">
-  We recommend manual installation be performed by an IT professional or a Web Developer.
-</div>
-
-<p>1 - Download the plugin from <a href="https://github.com/oxipay/oxipay-woocommerce/releases">github.com/oxipay/oxipay-woocommerce/releases</a>.</p>
-<p>2 - Unzip it then copy the files into your WordPress server at the following path: [wordpress-folder]/wp-content/plugins</p>
-<h2>Oxipay Settings</h2>
-
+<h2 id="configuration">Configuration</h2>
 <p>Open WooCommerce's <strong>Settings</strong> page, click on <strong>Checkout</strong> then on <strong>Oxipay</strong>.</p>
 <p><img alt="11.png" src="../../img/platforms/woocommerce/11.png" /></p>
-<p>Below is a description of the various settings you will find there.</p>
+<p>Below is a description of the various settings you will find in the Oxipay settings page.</p>
 <p><strong>Enabled</strong>: Enables or disables Oxipay</p>
 <p><strong>Title</strong>: Title for Oxipay that is displayed on checkout screen.</p>
 <p><strong>Description</strong>: Description for Oxipay that is displayed on checkout screen.</p>
 <p><strong>Shop Name</strong>: Your online store's name as displayed on the Internet or TV.</p>
-<p><strong>Oxipay Gateway URL</strong>: URL that your site communicates with to process payments over Oxipay.</p>
-<p><strong>Merchant ID</strong>: Identifies your business and provided as part of your onboarding.</p>
-<p><strong>API Key</strong>: Code used to verify that payment requests from your site are valid. </p>
+<p><strong>Oxipay Gateway URL</strong>: The Oxipay gateway that the plugin would need to communicate with for it to process payments via Oxipay.</p>
+<table>
+<thead>
+<tr>
+<th>Oxipay Environment</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Production Gateway</td>
+<td>https://secure.oxipay.com.au/Checkout?platform=WooCommerce</td>
+</tr>
+<tr>
+<td>Sandbox Gateway</td>
+<td>https://securesandbox.oxipay.com.au/Checkout?platform=WooCommerce</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Merchant ID</strong>: Identifies your business and is provided as part of your onboarding.</p>
+<p><strong>API Key</strong>: Code used to verify that payment requests from your site are valid. 
+<div class="panel">
+  The Oxipay Platform Integration Team will provide you with your API key over the phone.
+</div></p>
               
             </div>
           </div>

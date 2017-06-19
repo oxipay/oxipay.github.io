@@ -77,6 +77,9 @@
     <li class="toctree-l3"><a href="#plugin-installation">Plugin Installation</a></li>
     
 
+    <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
+    
+
     </ul>
                 </li>
                 <li class="">
@@ -200,15 +203,37 @@
               
                 <h1>Setup on Magento 1</h1>
 
-<p>You can install Oxipay on your site by manually copying plugin files across into your store's webserver. Use the same instructions to upgrade your existing plugin to a newer release.</p>
+<p>You can install Oxipay plugin by manually copying plugin files across into your store's webserver. <br>
+Use the same instructions to upgrade your existing plugin to a newer release.</p>
 <h2 id="supported-tech-stacks">Supported Tech Stacks</h2>
 <p>Oxipay has been developed and tested against the following Magento tech stacks:</p>
 <table>
-    <tr><td>Magento Version</td><td>Operating System</td><td>SQL</td><td>PHP Version</td><td>Web Server</td><tr>
-    <tr><td>Magento 1.9.1.0 (CE)</td><td>Ubuntu 16.04 LTS</td><td></td><td>5.6.30</td><td>Apache 2.4.18</td><tr>
-    <tr><td>Magento 1.4.2.0 (CE)</td><td>Ubuntu 14.04</td><td></td><td>5.5.9</td><td>Apache 2.4.7</td><tr>
+<thead>
+<tr>
+<th>Magento Version</th>
+<th>Operating System</th>
+<th>SQL</th>
+<th>PHP Version</th>
+<th>Web Server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Magento 1.9.1.0 (CE)</td>
+<td>Ubuntu 16.04 LTS</td>
+<td>5.5.55</td>
+<td>5.6.30</td>
+<td>Apache 2.4.18</td>
+</tr>
+<tr>
+<td>Magento 1.4.2.0 (CE)</td>
+<td>Ubuntu 14.04 LTS</td>
+<td>5.5.54</td>
+<td>5.5.9</td>
+<td>Apache 2.4.7</td>
+</tr>
+</tbody>
 </table>
-
 <h2 id="plugin-installation">Plugin Installation</h2>
 <div class="panel">
   You will need your <b>Merchant Number</b> and an <b>Encryption Key</b> handy before continuing with the installation.
@@ -222,17 +247,17 @@
 <li>/app/design/frontend/base/default/template </li>
 <li>/app/etc/modules/Oxipay_Oxipayments.xml</li>
 </ul>
-<p>5 - Login into Magento's <strong>Admin Panel</strong>, click on <strong>System</strong> then select <strong>Cache Management</strong>.</p>
-<p>4 - On the <strong>Cache Management</strong> page, click on <strong>Flush Magento Cache</strong>.</p>
+<p>4 - Login into Magento's <strong>Admin Panel</strong>, click on <strong>System</strong> then select <strong>Cache Management</strong>.</p>
+<p>5 - On the <strong>Cache Management</strong> page, click on <strong>Flush Magento Cache</strong>.</p>
 <p><img alt="3.png" src="../../img/platforms/magento_1/3.png" /></p>
-<p>5 - Navigating to <strong>System</strong> &gt; <strong>Configuration</strong>.</p>
-<p>6 - On <strong>Configuration</strong> page, scroll downwards then click on <strong>Payment Methods</strong> on left side menu.</p>
+<h2 id="configuration">Configuration</h2>
+<p>1 - Navigating to <strong>System</strong> &gt; <strong>Configuration</strong>.</p>
+<p>2 - On <strong>Configuration</strong> page, scroll downwards then click on <strong>Payment Methods</strong> on left side menu.</p>
 <p><img alt="5.png" src="../../img/platforms/magento_1/5.png" /></p>
-<p>7 - Confirm  <strong>Oxipay Checkout</strong> is visible and once expanded looks similar to the image below.</p>
-<div class="panel">
+<p>3 - Confirm  <strong>Oxipay Checkout</strong> is visible and once expanded looks similar to the image below.</p>
+<p><xdiv class="panel">
   The <b>Merchant Number</b> and <b>API Key</b> have been blacked out in the image.
-</div>
-
+</div></p>
 <p><img alt="6.png" src="../../img/platforms/magento_1/6.png" /></p>
               
             </div>
