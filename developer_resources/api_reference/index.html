@@ -269,6 +269,12 @@ Test transactions will not incur any debits, and any credit card details will no
 <td>99.90</td>
 </tr>
 <tr>
+<td>x_currency</td>
+<td>Currency of the transaction</td>
+<td>ISO-4217</td>
+<td>AUD</td>
+</tr>
+<tr>
 <td>x_customer_billing_address1</td>
 <td>Billing address line 1</td>
 <td>unicode string</td>
@@ -448,7 +454,8 @@ x_reference=123&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=AUD&amp;x_
 <hr></p>
 <p><a name="Responses"></a></p>
 <h2 id="post-and-get-responses">POST and GET responses</h2>
-<p>Note that that there are two responses from Oxipay. The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the endpoint specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.</p>
+<p>Note that that there are two responses from Oxipay. </p>
+<p>The first response that Oxipay always performs is a server-to-server asynchronous POST to the shopping cart on the endpoint specified in the <code>x_url_callback</code> and in the format <code>application/x-www-form-urlencoded</code>. Similar to the request POST, the response POST includes key-values pairs that are specific to that transaction and indicate things such as the outcome of that particular transaction if it has failed or is completed successfully for instance.</p>
 <p>The second response is a HTTP GET to the client on either of the URLs specified in <code>x_url_complete</code> or <code>x_url_cancel</code>.</p>
 <h2 id="response-post-values">Response POST values</h2>
 <p>Below is an overview of the various response key-value pairs that Oxipay returns after it has finished processing a transaction. Note that some of these key-value pairs echo corresponding key-value pairs in the request that Oxipay receives - as is the case with <code>x_currency</code> for instance.</p>
@@ -463,7 +470,7 @@ x_reference=123&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=AUD&amp;x_
 </thead>
 <tbody>
 <tr>
-<td>x_merchant_id <strong>Required</strong></td>
+<td>x_account_id <strong>Required</strong></td>
 <td>This is the Merchant ID assigned by Oxipay to the merchant</td>
 <td>unicode string</td>
 <td>123456</td>
@@ -475,10 +482,16 @@ x_reference=123&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=AUD&amp;x_
 <td>19783</td>
 </tr>
 <tr>
+<td>x_currency</td>
+<td>Currency of the transaction</td>
+<td>ISO-4217</td>
+<td>AUD</td>
+</tr>
+<tr>
 <td>x_test <strong>Required</strong></td>
 <td>Indicates whether the transaction is to be processed as a live or a test transaction</td>
-<td>true/false</td>
-<td>true</td>
+<td>True/False</td>
+<td>False</td>
 </tr>
 <tr>
 <td>x_amount <strong>Required</strong></td>
