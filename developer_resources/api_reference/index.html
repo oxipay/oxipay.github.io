@@ -470,49 +470,49 @@ x_reference=123&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=AUD&amp;x_
 </thead>
 <tbody>
 <tr>
-<td>x_account_id <strong>Required</strong></td>
+<td>x_account_id</td>
 <td>This is the Merchant ID assigned by Oxipay to the merchant</td>
 <td>unicode string</td>
 <td>123456</td>
 </tr>
 <tr>
-<td>x_reference <strong>Required</strong></td>
+<td>x_reference</td>
 <td>A reference that uniquely references the order and assigned by the merchant</td>
 <td>ascii string</td>
 <td>19783</td>
 </tr>
 <tr>
-<td>x_currency <strong>Required</strong></td>
+<td>x_currency</td>
 <td>Currency of the transaction</td>
 <td>ISO-4217</td>
 <td>AUD</td>
 </tr>
 <tr>
-<td>x_test <strong>Required</strong></td>
+<td>x_test</td>
 <td>Indicates whether the transaction is to be processed as a live or a test transaction</td>
 <td>True/False</td>
 <td>False</td>
 </tr>
 <tr>
-<td>x_amount <strong>Required</strong></td>
+<td>x_amount</td>
 <td>Represents the transaction's total amount including any taxes and shipping costs</td>
 <td>decimal</td>
 <td>99.90</td>
 </tr>
 <tr>
-<td>x_gateway_reference <strong>Required</strong></td>
+<td>x_gateway_reference</td>
 <td>A reference for the authorisation issues by Oxipay that is unique</td>
 <td>unique string</td>
 <td>123</td>
 </tr>
 <tr>
-<td>x_timestamp <strong>Required</strong></td>
+<td>x_timestamp</td>
 <td>Time at which the transaction is completed, in UTC format YYYY-MM-DDTHH:MM:SSZ</td>
 <td>iso-8601 in UTC</td>
 <td>2017-06-24T12:11:43Z</td>
 </tr>
 <tr>
-<td>x_result <strong>Required</strong></td>
+<td>x_result</td>
 <td>Values that represent the outcome of a transaction</td>
 <td>Valid values are <strong>completed</strong>, <strong>failed</strong> and <strong>pending</strong></td>
 <td><strong>failed</strong></td>
