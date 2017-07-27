@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Magento 1 - Oxipay Documentation</title>
+  <title>Magento 1 Specific - Oxipay Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -19,9 +19,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Magento 1";
-    var mkdocs_page_input_path = "platforms\\magento_1.md";
-    var mkdocs_page_url = "/platforms/magento_1/";
+    var mkdocs_page_name = "Magento 1 Specific";
+    var mkdocs_page_input_path = "price-info\\magento_1.md";
+    var mkdocs_page_url = "/price-info/magento_1/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -60,39 +60,27 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../shopify/">Shopify</a>
+    <a class="" href="../../platforms/shopify/">Shopify</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../woocommerce/">WooCommerce</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Magento 1</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#supported-tech-stacks">Supported Tech Stacks</a></li>
-    
-
-    <li class="toctree-l3"><a href="#plugin-installation">Plugin Installation</a></li>
-    
-
-    <li class="toctree-l3"><a href="#configuration">Configuration</a></li>
-    
-
-    </ul>
+    <a class="" href="../../platforms/woocommerce/">WooCommerce</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../magento_2/">Magento 2</a>
+    <a class="" href="../../platforms/magento_1/">Magento 1</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../prestashop/">PrestaShop</a>
+    <a class="" href="../../platforms/magento_2/">Magento 2</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../cubecart/">CubeCart</a>
+    <a class="" href="../../platforms/prestashop/">PrestaShop</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../platforms/cubecart/">CubeCart</a>
                 </li>
     </ul>
 	    </li>
@@ -140,7 +128,7 @@
                     
     <a class="" href="../../guidelines/widgets/">List of widgets</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
     <span class="caption-text">Installation</span>
     <ul class="subnav">
@@ -150,15 +138,21 @@
                 </li>
                 <li class="toctree-l3">
                     
-    <a class="" href="../../price-info/shopify/">Shopify Specific</a>
+    <a class="" href="../shopify/">Shopify Specific</a>
                 </li>
                 <li class="toctree-l3">
                     
-    <a class="" href="../../price-info/woocommerce/">WooCommerce Specific</a>
+    <a class="" href="../woocommerce/">WooCommerce Specific</a>
                 </li>
-                <li class="toctree-l3">
+                <li class="toctree-l3 current">
                     
-    <a class="" href="../../price-info/magento_1/">Magento 1 Specific</a>
+    <a class="current" href="./">Magento 1 Specific</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#adding-magento-1s-price-info-widget">Adding Magento 1's Price-info Widget</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
                 </li>
@@ -187,11 +181,15 @@
     
       
         
-          <li>Platforms &raquo;</li>
+          <li>Widgets &raquo;</li>
+        
+      
+        
+          <li>Installation &raquo;</li>
         
       
     
-    <li>Magento 1</li>
+    <li>Magento 1 Specific</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -201,65 +199,30 @@
           <div role="main">
             <div class="section">
               
-                <h1>Setup on Magento 1</h1>
+                <h1 id="adding-magento-1s-price-info-widget">Adding Magento 1's Price-info Widget</h1>
+<p>For adding Price-info Widget to your Magento 1 Website, follow the instruction<br>
+<strong>Step 1:</strong> Find <code>view.phtml</code> from the following location in your hosting (Magento installed Folder) and open it with your desired text-editor<br></p>
+<pre><code>YOUR_MAGENTO_FOLDER/app/design/frontend/rwd/YOUR_TEMPLATE_FOLDER/template/catalog/product/view.phtml
+</code></pre>
 
-<p>You can install Oxipay plugin by manually copying plugin files across into your store's webserver. <br>
-Use the same instructions to upgrade your existing plugin to a newer release.</p>
-<h2 id="supported-tech-stacks">Supported Tech Stacks</h2>
-<p>Oxipay has been developed and tested against the following Magento tech stacks:</p>
-<table>
-<thead>
-<tr>
-<th>Magento Version</th>
-<th>Operating System</th>
-<th>SQL</th>
-<th>PHP Version</th>
-<th>Web Server</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Magento 1.9.1.0 (CE)</td>
-<td>Ubuntu 16.04 LTS</td>
-<td>5.5.55</td>
-<td>5.6.30</td>
-<td>Apache 2.4.18</td>
-</tr>
-<tr>
-<td>Magento 1.4.2.0 (CE)</td>
-<td>Ubuntu 14.04 LTS</td>
-<td>5.5.54</td>
-<td>5.5.9</td>
-<td>Apache 2.4.7</td>
-</tr>
-</tbody>
-</table>
-<h2 id="plugin-installation">Plugin Installation</h2>
-<div class="panel">
-  You will need your <b>Merchant Number</b> and an <b>Encryption Key</b> handy before continuing with the installation.
+<p><strong>Step 2:</strong> Find "getPriceHtml"<br></p>
+<p>There should be only one occurance of the "getPriceHtml" string, and it may look similar to:</p>
+<pre><code>&lt;?php echo $this-&gt;getPriceHtml($_product); ?&gt;
+</code></pre>
+
+<p><strong>Step 3:</strong> Place the following <code>&lt;script&gt;</code> tag below the "getPriceHtml" code.<br></p>
+<pre><code>&lt;script id=&quot;oxipay-price-info&quot; src=&quot;https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=&lt;?php echo $_product-&gt;getFinalPrice(); ?&gt;&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<div class="alert alert-danger">
+    You may try inserting the code a few lines below the "getPriceHtml" code, or below some other elements. Try different places and view the visual appearance to find the most suitable place for your site.<br>
+    You may need to flush cache for the changes to take effect. 
 </div>
 
-<p>1 - You can create a backup of your store by navigating to <strong>System</strong> -&gt; <strong>Tools</strong> -&gt; <strong>Backup</strong>.</p>
-<p>2 - Download the Oxipay plugin from <a href="https://github.com/oxipay/oxipay-magento-1.x/releases">github.com/oxipay/oxipay-magento-1.x/releases</a>.</p>
-<p>3 - Unzip it, then copy the following plugin files and folders into the corresponding folder on the <code>app</code> folder on the Magento root directory.</p>
-<ul>
-<li>/app/code/community/Oxipay</li>
-<li>/app/design/frontend/base/default/template/oxipayments</li>
-<li>/app/design/adminhtml/base/default/template/oxipayments</li>
-<li>/app/etc/modules/Oxipay_Oxipayments.xml</li>
-</ul>
-<p>4 - Login into Magento's <strong>Admin Panel</strong>, click on <strong>System</strong> then select <strong>Cache Management</strong>.</p>
-<p>5 - On the <strong>Cache Management</strong> page, click on <strong>Flush Magento Cache</strong>.</p>
-<p><img alt="3.png" src="../../img/platforms/magento_1/3.png" /></p>
-<h2 id="configuration">Configuration</h2>
-<p>1 - Navigating to <strong>System</strong> &gt; <strong>Configuration</strong>.</p>
-<p>2 - On <strong>Configuration</strong> page, scroll downwards then click on <strong>Payment Methods</strong> on left side menu.</p>
-<p><img alt="5.png" src="../../img/platforms/magento_1/5.png" /></p>
-<p>3 - Confirm  <strong>Oxipay Checkout</strong> is visible and once expanded looks similar to the image below.</p>
-<p><xdiv class="panel">
-  Some fields have been blurred out in the image.
-</div></p>
-<p><img alt="6.png" src="../../img/platforms/magento_1/6.png" /></p>
+<p><br>
+<strong>Step 4:</strong> Save and you should see a working widget on your website.<br><br>
+<script id="oxipay-price-info" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=0"></script>
+<br></p>
               
             </div>
           </div>
@@ -267,10 +230,8 @@ Use the same instructions to upgrade your existing plugin to a newer release.</p
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../magento_2/" class="btn btn-neutral float-right" title="Magento 2">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../woocommerce/" class="btn btn-neutral" title="WooCommerce"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../woocommerce/" class="btn btn-neutral" title="WooCommerce Specific"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -298,8 +259,6 @@ Use the same instructions to upgrade your existing plugin to a newer release.</p
       
         <span><a href="../woocommerce/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../magento_2/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
