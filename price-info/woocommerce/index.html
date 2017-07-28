@@ -150,6 +150,10 @@
 
     </ul>
                 </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../magento_1/">Magento 1 Specific</a>
+                </li>
     </ul>
                 </li>
     </ul>
@@ -197,7 +201,7 @@
               
                 <h1 id="adding-woocommerces-price-info-widget">Adding WooCommerce's Price-info Widget</h1>
 <p>For adding Price-info Widget to your Website, follow the instruction<br>
-<strong>Step 1:</strong> Find <code>Price.php</code> from the following location in your hosting (Wordpress installed Folder) and open it with your desired text-editor <br></p>
+<strong>Step 1:</strong> Find <code>price.php</code> from the following location in your hosting (Wordpress installed Folder) and open it with your desired text-editor <br></p>
 <pre><code>YourWordpressFolder\wp-content\plugins\woocommerce\templates\single-product
 </code></pre>
 
@@ -206,28 +210,24 @@
 </code></pre>
 
 <p><strong>Step 3:</strong> Place the following <code>&lt;script&gt;</code> tag below the "Price tag".<br></p>
-<pre><code>&lt;script id=&quot;oxipay-price-info&quot; src=&quot;https://widgets.oxipay.co.nz/content/scripts/price-info.js?productPrice=&lt;?php echo $product-&gt;get_display_price() ?&gt;&quot;&gt;&lt;/script&gt;
+<pre><code>&lt;script id=&quot;oxipay-price-info&quot; src=&quot;https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=&lt;?php echo wc_get_price_to_display($product); ?&gt;&quot;&gt;&lt;/script&gt;
 </code></pre>
 
 <p><strong>Step 4:</strong> Save and you should see a working widget on your website.<br><br>
-<script id="oxipay-price-info" src="https://widgets.oxipay.co.nz/content/scripts/price-info.js?productPrice=0"></script>
+<script id="oxipay-price-info" src="https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=0"></script>
 <br>
 <div class="alert alert-danger">
-  <strong>Note:</strong> If you are using a custom template for WooCommerce, "Price.php" will be located in "yourtheme/woocommerce/single-product/price.php."
+  <strong>Note:</strong> If you are using a custom template for WooCommerce, "price.php" will be located in "yourtheme/woocommerce/single-product/price.php."
 </div>
 <br></p>
-<p><small>**We reserve the right to change any linked image at anytime without prior notice</small>
-<br/><br/>
-<small>We strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through <a href="mailto:support@oxipay.co.nz?Subject=Oxipay Documentation">support@oxipay.co.nz</a></small>
-<br>
-<br>
-<small>Version 1.10</small></p>
               
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../magento_1/" class="btn btn-neutral float-right" title="Magento 1 Specific">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../shopify/" class="btn btn-neutral" title="Shopify Specific"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -258,6 +258,8 @@
       
         <span><a href="../shopify/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../magento_1/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
