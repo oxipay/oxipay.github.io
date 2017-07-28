@@ -171,10 +171,6 @@
                     
     <a class="" href="../../price-info/woocommerce/">WooCommerce Specific</a>
                 </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../price-info/magento_1/">Magento 1 Specific</a>
-                </li>
     </ul>
                 </li>
     </ul>
@@ -233,11 +229,11 @@ Test transactions will not incur any debits, and any credit card details will no
 <tbody>
 <tr>
 <td>Production Endpoint</td>
-<td><a href="https://secure.oxipay.com.au/Checkout?platform=Default">https://secure.oxipay.com.au/Checkout?platform=Default</a></td>
+<td><a href="https://secure.oxipay.co.nz/Checkout?platform=Default">https://secure.oxipay.co.nz/Checkout?platform=Default</a></td>
 </tr>
 <tr>
 <td>Sandbox Endpoint</td>
-<td><a href="https://securesandbox.oxipay.com.au/Checkout?platform=Default">https://securesandbox.oxipay.com.au/Checkout?platform=Default</a></td>
+<td><a href="https://securesandbox.oxipay.co.nz/Checkout?platform=Default">https://securesandbox.oxipay.co.nz/Checkout?platform=Default</a></td>
 </tr>
 </tbody>
 </table>
@@ -272,31 +268,31 @@ Test transactions will not incur any debits, and any credit card details will no
 <td>x_currency <strong>Required</strong></td>
 <td>Currency of the transaction</td>
 <td>ISO-4217</td>
-<td>AUD</td>
+<td>NZD</td>
 </tr>
 <tr>
 <td>x_customer_billing_address1</td>
 <td>Billing address line 1</td>
 <td>unicode string</td>
-<td>97 Pirie St</td>
+<td>120 Albert Street</td>
 </tr>
 <tr>
 <td>x_customer_billing_address2</td>
 <td>Billing address line 2</td>
 <td>unicode string</td>
-<td>Level 6</td>
+<td>Level 14</td>
 </tr>
 <tr>
 <td>x_customer_billing_city</td>
 <td>Billing city</td>
 <td>unicode string</td>
-<td>Adelaide</td>
+<td>Auckland</td>
 </tr>
 <tr>
 <td>x_customer_billing_country</td>
 <td>Billing country</td>
 <td>iso-3166-1 alpha-2</td>
-<td>AU</td>
+<td>NZ</td>
 </tr>
 <tr>
 <td>x_customer_billing_state</td>
@@ -332,31 +328,31 @@ Test transactions will not incur any debits, and any credit card details will no
 <td>x_customer_phone</td>
 <td>Customer's phone number</td>
 <td>unicode string</td>
-<td>0400 000 000</td>
+<td>0800 444 827</td>
 </tr>
 <tr>
 <td>x_customer_shipping_address1</td>
 <td>Shipping address line 1</td>
 <td>unicode string</td>
-<td>97 Pirie St</td>
+<td>120 Albert Street</td>
 </tr>
 <tr>
 <td>x_customer_shipping_address2</td>
 <td>Shipping address line 2</td>
 <td>unicode string</td>
-<td>Level 6</td>
+<td>Level 14</td>
 </tr>
 <tr>
 <td>x_customer_shipping_city</td>
 <td>Shipping city</td>
 <td>unicode string</td>
-<td>Adelaide</td>
+<td>Auckland</td>
 </tr>
 <tr>
 <td>x_customer_shipping_country</td>
 <td>Shipping country</td>
 <td>unicode string</td>
-<td>AU</td>
+<td>NZ</td>
 </tr>
 <tr>
 <td>x_customer_shipping_first_name</td>
@@ -374,19 +370,19 @@ Test transactions will not incur any debits, and any credit card details will no
 <td>x_customer_shipping_phone</td>
 <td>Customer's phone number (Shipping)</td>
 <td>unicode string</td>
-<td>0400 000 000</td>
+<td>0800 444 827</td>
 </tr>
 <tr>
 <td>x_customer_shipping_state</td>
 <td>Shipping state</td>
 <td>unicode string</td>
-<td>SA</td>
+<td>Auckland</td>
 </tr>
 <tr>
 <td>x_customer_shipping_postcode</td>
 <td>Shipping postcode</td>
 <td>unicode string</td>
-<td>5000</td>
+<td>1010</td>
 </tr>
 <tr>
 <td>x_description</td>
@@ -404,7 +400,7 @@ Test transactions will not incur any debits, and any credit card details will no
 <td>x_shop_country <strong>Required</strong></td>
 <td>Country of where the merchant's store is located</td>
 <td>iso-3166-1alpha-2</td>
-<td>AU</td>
+<td>NZ</td>
 </tr>
 <tr>
 <td>x_shop_name <strong>Required</strong></td>
@@ -428,19 +424,19 @@ Test transactions will not incur any debits, and any credit card details will no
 <td>x_url_callback <strong>Required</strong></td>
 <td>Callback notifications are sent asynchronously to this URL</td>
 <td>URL</td>
-<td>shop.com.au/callback</td>
+<td>shop.co.nz/callback</td>
 </tr>
 <tr>
 <td>x_url_cancel <strong>Required</strong></td>
 <td>Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead</td>
 <td>URL</td>
-<td>shop.com.au/cancel</td>
+<td>shop.co.nz/cancel</td>
 </tr>
 <tr>
 <td>x_url_complete <strong>Required</strong></td>
 <td>Customers are redirected to this URL if they have successfully processed their transaction using Oxipay</td>
 <td>URL</td>
-<td>shop.com.au/compete</td>
+<td>shop.co.nz/compete</td>
 </tr>
 </tbody>
 </table>
@@ -448,7 +444,7 @@ Test transactions will not incur any debits, and any credit card details will no
 <p>Below is a sample request that might be posted to an Oxipay endpoint that is in the <code>application/x-www-form-urlencoded</code> format. In this example, please ignore values for individual keys - such as the value for <code>x_signature</code> - since this sample POST is for demonstration purposes only and does not demonstrate a real transaction that can be completed by Oxipay.</p>
 <p><hr>
 <div style="font-family: monospace; font-size:1.2rem; color: #DC143C; word-wrap: break-word !important;">
-x_reference=123&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=AUD&amp;x_url_callback=sample_callback_url&amp;x_url_complete=sample_complete_url&amp;x_shop_country=AU&amp;x_shop_name=Sample+Shop&amp;x_test=true&amp;x_customer_first_name=first&amp;x_customer_last_name=last&amp;x_customer_email=sample%40email.com&amp;x_customer_billing_country=AU&amp;x_customer_billing_city=Adelaide&amp;x_customer_billing_address1=97+Pirie&amp;x_customer_billing_address2=St&amp;x_customer_billing_state=SA&amp;x_customer_billing_zip=5000&amp;x_invoice=%123
+x_reference=123&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=NZD&amp;x_url_callback=sample_callback_url&amp;x_url_complete=sample_complete_url&amp;x_shop_country=NZ&amp;x_shop_name=Sample+Shop&amp;x_test=true&amp;x_customer_first_name=first&amp;x_customer_last_name=last&amp;x_customer_email=sample%40email.com&amp;x_customer_billing_country=NZ&amp;x_customer_billing_city=Auckland&amp;x_customer_billing_address1=120+Albert&amp;x_customer_billing_address2=St&amp;x_customer_billing_state=Auckland&amp;x_customer_billing_zip=1010&amp;x_invoice=%123
 &amp;x_description=Sample+Store+-+%123&amp;x_url_cancel=sample_cancel_url&amp;x_signature=dummy_signature
 </div>
 <hr></p>
@@ -485,7 +481,7 @@ x_reference=123&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=AUD&amp;x_
 <td>x_currency</td>
 <td>Currency of the transaction</td>
 <td>ISO-4217</td>
-<td>AUD</td>
+<td>NZD</td>
 </tr>
 <tr>
 <td>x_test</td>
