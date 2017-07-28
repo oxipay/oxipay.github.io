@@ -262,7 +262,7 @@
         }, 
         {
             "location": "/guidelines/widgets/", 
-            "text": "Register-interest large\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/register-interest-large.js\n/script\n\n\n\n\n\n\n\nRegister-interest small\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/register-interest-small.js\n/script\n\n\n\n\n\n\n\nMore-info large\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/more-info-large.js\n/script\n\n\n\n\n\n\n\nMore-info small\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/more-info-small.js\n/script\n\n\n\n\n\n\n\nPrice-info widget\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PlaceYourProductPrice\n/script\n\n\n\n\n\n\n\n\n  \n\n    \nInstallation based on Platforms\n\n  \n\n  \n\n\n\n  \nShopify specific instructions\n\n  \nWooCommerce specific instructions\n\n\n\n  \n\n\n\n\n\n\n\n*We reserve the right to change any linked image at anytime without prior notice\n\n\n\n\nWe strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through \nsupport@oxipay.com.au\n\n\n\n\n\n\nVersion 1.10", 
+            "text": "Register-interest large\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/register-interest-large.js\n/script\n\n\n\n\n\n\n\nRegister-interest small\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/register-interest-small.js\n/script\n\n\n\n\n\n\n\nMore-info large\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/more-info-large.js\n/script\n\n\n\n\n\n\n\nMore-info small\n\n\n\n\nscript id=\noxipay-banner\n src=\nhttps://widgets.oxipay.com.au/content/scripts/more-info-small.js\n/script\n\n\n\n\n\n\n\nPrice-info widget\n\n\n\n\nscript id=\noxipay-price-info\n src=\nhttps://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PLACE_YOUR_PRODUCT_PRICE\n/script\n\n\n\n\n\n\n\n\n  \n\n    \nInstallation based on Platforms\n\n  \n\n  \n\n\n\n  \nShopify specific instructions\n\n  \nWooCommerce specific instructions\n\n\n\n  \n\n\n\n\n\n\n\n*We reserve the right to change any linked image at anytime without prior notice\n\n\n\n\nWe strive to write good documentation for our merchants. If there is a way we can improve our documentation, please let us know through \nsupport@oxipay.com.au\n\n\n\n\n\n\nVersion 1.10", 
             "title": "List of widgets"
         }, 
         {
@@ -287,7 +287,7 @@
         }, 
         {
             "location": "/guidelines/widgets/#price-info-widget", 
-            "text": "script id= oxipay-banner  src= https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PlaceYourProductPrice /script", 
+            "text": "script id= oxipay-price-info  src= https://widgets.oxipay.com.au/content/scripts/price-info.js?productPrice=PLACE_YOUR_PRODUCT_PRICE /script", 
             "title": "Price-info widget"
         }, 
         {
