@@ -76,10 +76,6 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../platforms/onestep/">OneStep</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../../platforms/prestashop/">PrestaShop</a>
                 </li>
                 <li class="">
@@ -174,6 +170,10 @@
                 <li class="toctree-l3">
                     
     <a class="" href="../../price-info/woocommerce/">WooCommerce Specific</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../price-info/magento_1/">Magento 1 Specific</a>
                 </li>
     </ul>
                 </li>
@@ -416,7 +416,7 @@ Test transactions will not incur any debits, and any credit card details will no
 <td>x_signature <strong>Required</strong></td>
 <td>Request payload that is signed/verified using HMAC-SHA256</td>
 <td>hex string, case-insensitive</td>
-<td>See <a href="">Signature Generation</a></td>
+<td>See <a href="../signature_generation/">Signature Generation</a></td>
 </tr>
 <tr>
 <td>x_test <strong>Required</strong></td>
@@ -428,19 +428,19 @@ Test transactions will not incur any debits, and any credit card details will no
 <td>x_url_callback <strong>Required</strong></td>
 <td>Callback notifications are sent asynchronously to this URL</td>
 <td>URL</td>
-<td>shop.com.au/callback</td>
+<td>https://shop.com.au/callback</td>
 </tr>
 <tr>
 <td>x_url_cancel <strong>Required</strong></td>
 <td>Customers are redirected to this URL if they want to quit their Oxipay transaction and return to the shopping cart store instead</td>
 <td>URL</td>
-<td>shop.com.au/cancel</td>
+<td>https://shop.com.au/cancel</td>
 </tr>
 <tr>
 <td>x_url_complete <strong>Required</strong></td>
 <td>Customers are redirected to this URL if they have successfully processed their transaction using Oxipay</td>
 <td>URL</td>
-<td>shop.com.au/compete</td>
+<td>https://shop.com.au/compete</td>
 </tr>
 </tbody>
 </table>
@@ -515,7 +515,7 @@ x_reference=123&amp;x_account_id=1&amp;x_amount=100.00&amp;x_currency=AUD&amp;x_
 <td>x_result</td>
 <td>Values that represent the outcome of a transaction</td>
 <td>Valid values are <strong>completed</strong>, <strong>failed</strong> and <strong>pending</strong></td>
-<td><strong>failed</strong></td>
+<td><strong>completed</strong></td>
 </tr>
 </tbody>
 </table>
